@@ -1,0 +1,15 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+Wait(1)
+CreateCreature("ADStormA",[2370.2360],9)
+CreateCreature("ADStormB",[2279.2406],9)
+CreateCreature("ADStormC",[2326.2430],9)
+MoveViewObject(Player1,INSTANT)
+MultiPlayerSync()
+Wait(1)
+PlaySong(0)
+ActionOverride("ADStormA",StartDialogueNoSet(Player1))
+END

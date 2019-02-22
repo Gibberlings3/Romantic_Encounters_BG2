@@ -1,0 +1,22 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+StorePartyLocations()
+Wait(1)
+FadeToColor([20.0],0)
+Wait(1)
+LeaveAreaLUAPanic("ARRE03","",[495.291],3)
+LeaveAreaLUA("ARRE03","",[495.291],3)
+CreateCreatureObjectOffset("C-Renal",Player1,[50.50])
+ActionOverride("C-Renal",MoveToPoint([446.273])
+ActionOverride("C-Renal",FaceObject(Player1))
+MultiPlayerSync()
+Explore()
+Wait(1)
+FadeFromColor([20.0],0)
+MoveViewObject(Player1,INSTANT)
+Wait(1)
+ActionOverride("C-Renal",StartDialogueNoSet(Player1))
+END

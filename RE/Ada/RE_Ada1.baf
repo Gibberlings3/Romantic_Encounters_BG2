@@ -1,0 +1,22 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+StorePartyLocations()
+FadeToColor([20.0],0)
+Wait(1)
+SetGlobal("RE_AdaGuardMoves","GLOBAL",1)
+ActionOverride(Player2,JumpToPoint([932.881])
+ActionOverride(Player3,JumpToPoint([979.876])
+ActionOverride(Player4,JumpToPoint([1031.863])
+ActionOverride(Player5,JumpToPoint([1069.850])
+ActionOverride(Player6,JumpToPoint([1107.832])
+Wait(1)
+MultiPlayerSync()
+Explore()
+Wait(1)
+FadeFromColor([20.0],0)
+MoveViewObject(Player1,INSTANT)
+ActionOverride("talmiss",StartDialogueNoSet(Player1))
+END

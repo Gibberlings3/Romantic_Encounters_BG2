@@ -1,0 +1,25 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+Wait(1)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride("UDSVIR03",JumpToPoint([2034.843]))
+Wait(1)
+ActionOverride("UDSVIR03",Face(0))
+Wait(1)
+JumpToPoint([1513.773])
+ActionOverride(Player2,JumpToPoint([1533.773]))
+ActionOverride(Player3,JumpToPoint([1533.743]))
+ActionOverride(Player4,JumpToPoint([1533.743]))
+ActionOverride(Player5,JumpToPoint([1533.713]))
+ActionOverride(Player6,JumpToPoint([1533.713]))
+Wait(1)
+MultiPlayerSync()
+FadeFromColor([20.0],0)
+MoveViewObject(Player1,INSTANT)
+Wait(1)
+EndCutSceneMode()
+END

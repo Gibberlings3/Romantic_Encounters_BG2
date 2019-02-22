@@ -1,0 +1,9 @@
+IF
+Gender(Player1,MALE)
+Global("RE_AnneJonSpawn1","AR0400",0)
+THEN
+RESPONSE #100
+CreateCreature("RE_Jon",[2297.2495],0)
+SetGlobal("RE_AnneJonSpawn1","AR0400",1)
+Continue()
+END

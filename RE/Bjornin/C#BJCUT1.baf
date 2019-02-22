@@ -1,0 +1,22 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+StorePartyLocations()
+Wait(1)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride("C#BJORNI",MoveBetweenAreas("ARRE07",[1368.208],0))
+LeaveAreaLUAPanic("ARRE07","",[1389.224],8)
+LeaveAreaLUA("ARRE07","",[1389.224],8)
+MultiPlayerSync()
+Explore()
+FaceObject("C#BJORNI")
+ActionOverride("C#BJORNI",FaceObject(Player1))
+Wait(1)
+FadeFromColor([20.0],0)
+MoveViewObject(Player1,INSTANT)
+Wait(1)
+ActionOverride("C#BJORNI",StartDialogueNoSet(Player1))
+END

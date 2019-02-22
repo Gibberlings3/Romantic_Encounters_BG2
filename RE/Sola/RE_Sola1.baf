@@ -1,0 +1,20 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+StorePartyLocations()
+Wait(1)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride("Solaufein",MoveBetweenAreas("AR2204",[570.611],0))
+LeaveAreaLUAPanic("AR2204","",[561.651],8)
+LeaveAreaLUA("AR2204","",[561.651],8)
+MultiPlayerSync()
+Explore()
+Wait(1)
+FadeFromColor([20.0],0)
+MoveViewObject(Player1,INSTANT)
+Wait(1)
+ActionOverride("Solaufein",StartDialogueNoSet(Player1))
+END

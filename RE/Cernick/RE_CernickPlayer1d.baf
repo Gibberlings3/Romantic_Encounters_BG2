@@ -1,0 +1,13 @@
+IF
+Global("RE_cjcap","GLOBAL",2)
+AreaCheck("AR1307")
+!StateCheck("KPCAPT02",CD_STATE_NOTVALID)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+RealSetGlobalTimer("RE_DreamTimer","GLOBAL",100)
+SetGlobal("RE_cjcap","GLOBAL",3)
+ClearAllActions()
+StartCutSceneMode()
+StartCutScene("RE_Cern1")
+END

@@ -1,0 +1,11 @@
+IF
+  Dead("yaga01")
+  GlobalGT("B!LaranCourt","GLOBAL",0)
+  Global("B!RE_MessengerSpawn","GLOBAL",0)
+  !AreaCheck("AR4500")
+  AreaType(OUTDOOR)
+THEN
+  RESPONSE #100
+    SetGlobal("B!RE_MessengerSpawn","GLOBAL",1)
+    CreateCreatureObjectOffset("B!REMsn",Player1,[100.100])
+END

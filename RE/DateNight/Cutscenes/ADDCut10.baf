@@ -1,0 +1,19 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+Wait(1)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride("Imoen2",LeaveAreaLUA("AR0704","",[582.601],3))
+LeaveAreaLUAPanic("AR0704","",[528.657],10)
+LeaveAreaLUA("AR0704","",[528.657],10)
+MoveViewObject(Player1,INSTANT)
+CreateCreature("ADWaiter",[545.601],0)
+MultiPlayerSync()
+Wait(1)
+FadeFromColor([20.0],0)
+Wait(1)
+ActionOverride("ADWaiter",StartDialogueNoSet(Player1))
+END

@@ -1,0 +1,17 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+ActionOverride("RE_Sheri",MoveBetweenAreas("AR0704",[404.766],7))
+Wait(1)
+FadeToColor([20.0],0)
+Wait(1)
+RestorePartyLocations()
+MultiPlayerSync()
+Wait(1)
+FadeFromColor([20.0],0)
+MoveViewObject(Player1,INSTANT)
+Wait(1)
+EndCutSceneMode()
+END

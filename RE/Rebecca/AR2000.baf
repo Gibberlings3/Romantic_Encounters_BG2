@@ -1,0 +1,8 @@
+IF
+Global("RE_RebeccaSpawned","GLOBAL",0)
+THEN
+RESPONSE #100
+CreateCreature("RE_Reb",[911.3087],0)
+SetGlobal("RE_RebeccaSpawned","GLOBAL",1)
+Continue()
+END

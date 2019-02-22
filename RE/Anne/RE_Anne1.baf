@@ -1,0 +1,27 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+FadeToColor([20.0],0)
+Wait(1)
+SetGlobal("RE_AnneTeleport","GLOBAL",1)
+LeaveAreaLUAPanic("ARRE08","",[446.562],9)
+LeaveAreaLUA("ARRE08","",[446.562],9)
+ActionOverride(Player2,LeaveAreaLUA("ARRE08","",[480.573],9))
+ActionOverride(Player3,LeaveAreaLUA("ARRE08","",[517.587],9))
+ActionOverride(Player4,LeaveAreaLUA("ARRE08","",[420.589],9))
+ActionOverride(Player5,LeaveAreaLUA("ARRE08","",[456.605],9))
+ActionOverride(Player6,LeaveAreaLUA("ARRE08","",[487.621],9))
+MultiPlayerSync()
+Explore()
+Wait(1)
+CreateCreature("RE_Carl",[605.509],2)
+CreateCreature("RE_Carl1",[721.490],2)
+CreateCreature("RE_Carl2",[670.449],2)
+CreateCreature("RE_Anne",[700.500],2)
+Wait(1)
+FadeFromColor([20.0],0)
+Wait(1)
+ActionOverride(Player1,StartDialog("player1",Player1))
+END

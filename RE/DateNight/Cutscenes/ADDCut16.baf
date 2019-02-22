@@ -1,0 +1,20 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride("Aerie",LeaveAreaLUA("AR0400","",[397.2440],3))
+LeaveAreaLUAPanic("AR0400","",[336.2488],10)
+LeaveAreaLUA("AR0400","",[336.2488],10)
+MoveViewObject(Player1,INSTANT)
+CreateCreature("ADMugger",[282.2325],15)
+CreateCreature("ADMugg1",[213.2300],15)
+CreateCreature("ADMugg2",[342.2280],15)
+MultiPlayerSync()
+Wait(1)
+FadeFromColor([20.0],0)
+Wait(1)
+ActionOverride(Player1,StartDialog("player1",Player1))
+END

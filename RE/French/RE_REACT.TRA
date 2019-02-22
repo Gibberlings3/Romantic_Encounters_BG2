@@ -1,0 +1,565 @@
+//Aerie sur Ada
+
+@0    = ~Que faisais-tu là-dedans, <CHARNAME>? Ce fut bien long...~ [RE_BLANK]
+@1    = ~Elle voulait me montrer comment utiliser mes compétences d'une manière plus efficace, Aerie.~
+@2    = ~La Maîtresse du Climat Ada m'a appris des choses que tu ne connaîtras jamais, Aerie, sur le désir et la satisfaction.~
+@3    = ~Lorsque je me suis rendu compte qu'elle voulait seulement coucher avec moi, je suis parti.~
+@4    = ~Qu'est-ce qu'elle voulait t'apprendre ?~
+@5    = ~Elle ne voulait pas m'apprendre quoi que ce soit. Elle voulait seulement coucher avec moi. Je suis parti dès que je m'en suis rendu compte.~
+@6    = ~Elle m'a montré une étonnante façon d'utiliser mon propre désir pour me débarrasser de mes tensions.~
+@7    = ~Tu... tu... tu n'aurais pas osé ! Comment as-tu pu faire cela ?! Non, je ne veux plus rien entendre !~
+@8    = ~Ohh ! Comment peut-elle être aussi terrible ? Mais tant que tu ne lui as pas cédé... ne l'approche plus, je t'en prie...~
+@9    = ~Mais les bruits que vous faisiez... J'ai entendu ! Tout le monde a entendu ! Tu me mens ! Comment as-tu pu faire cela ?! Non, je ne veux plus rien entendre !~
+
+//Aerie sur Bodhi
+
+@10   = ~Tu... tu as demandé à cette... ce vampire... Pourquoi, <CHARNAME> ? Je n'arrive pas à comprendre pourquoi tu aurais pu souhaiter une chose aussi horrible !~ [RE_BLANK]
+@11   = ~Je... je n'étais pas moi-même. Bodhi a utilisé ses pouvoirs mentaux pour m'attirer à elle.~
+@12   = ~Bodhi est beaucoup plus sensuelle que toi, et de loin !~
+@13   = ~Par pitié, Aerie, calme-toi un peu. N'oublie pas que nous avons vraiment besoin de son aide.~
+@14   = ~Parce que c'était la meilleure nuit de toute ma vie.~
+@15   = ~Alors... elle t'a juste utilisé, et c'est tout ? Oooh, quelle horrible chose ! Mais, <CHARNAME>, est-ce que c'est vrai ? Est-ce la vérité ?~
+@16   = ~Je ne te mens pas. Bodhi est un vampire. Elle en est capable, et de bien d'autres choses encore.~
+@17   = ~Non. Je l'ai fait de manière totalement consentante.~
+@18   = ~Tu... tu... Non, je ne veux pas l'entendre ! Je ne veux pas savoir ! Laisse-moi ! Laisse-moi seule !~
+@19   = ~T-tu as peut-être raison, <CHARNAME>, mais je n'aime pas cela quand même. Je t'en prie, ne le refais plus.~
+@20   = ~Bien... bien sûr. C'est juste que... la façon dont tu t'adressais à elle, j'ai pensé que, peut-être... Oh, pardon, je suis désolée !~
+
+//Aerie sur Busya
+
+@21   = ~Je vois que toi et la maîtresse des guildes B-Busya vous êtes amusés.~ [RE_BLANK]
+@22   = ~Oui, elle m'a montré la ville. J'étais désolé de ne pas te rejoindre après. J'étais fatigué, alors je suis parti me coucher directement.~
+@23   = ~Oui, tout à fait.~
+@24   = ~Je suis content que tu t'en sois aperçu.~
+@25   = ~Que veux-tu dire ? Tu penses que j'ai couché avec elle ?~
+@26   = ~Ah. Je... je suis désolée d'avoir posé la question.~
+@27   = ~Ah. Je... je pensais... mais laisse tomber, <CHARNAME> ! C'est une femme bien... c'est ri-ridicule...~
+@28   = ~Je suis désolée.~
+
+//Aerie sur Chanelle
+
+@29   = ~T-tu as laissé cette fille te donner le bain ? <CHARNAME>, je... je n'aime pas ça. Est-ce que... tu l'as laissée te... toucher ?~ [RE_BLANK]
+@30   = ~Non, pas du tout. Elle s'occupait de moi, c'est tout.~
+@31   = ~Chanelle est une jolie fille, mais je n'ai d'yeux que pour toi.~
+@32   = ~Si j'ai couché avec elle ? Oui, bien sûr.~
+@33   = ~Je vois. Oh, <CHARNAME>... s'il te plaît, ne refais jamais ça.~
+@34   = ~Tu... tu es une personne ignoble ! C'est une s-simple servante, et tu en as abusé comme ça ! Oh... éloigne-toi de moi !~
+
+//Aerie sur Haer'Dalis
+
+@35   = ~<CHARNAME>... je peux te parler en tête à tête, s'il te plaît. Qu-que se passe-t-il entre Haer'Dalis et toi ?~ [RE_BLANK]
+@36   = ~Rien.~
+@37   = ~Il a avoué qu'il était attiré par moi.~
+@38   = ~Depuis quand cela te regarde ?~
+@39   = ~Je te propose de lui demander.~
+@40   = ~Rien ? Comment peux-tu dire cela ? Je... je vous ai vu discuter plus d'une fois !~
+@41   = ~Ah... ah bon ? Mais... si peu de temps après... je ne comprends pas...~
+@42   = ~Mais je... il... oh, laisse tomber.~
+@43   = ~Lui ? Non... non, je ne le ferai pas.~
+@44   = ~Je suis désolée, <CHARNAME>. Ce n'est... ce ne sont pas mes affaires, et je ne devrais pas m'en mêler.~
+
+//Aerie sur Ilona
+
+@45   = ~Cette fille avait l'air de t'aimer beaucoup. Elle n'avait d'yeux que pour toi durant le d-dîner.~ [RE_BLANK]
+@46   = ~Et ?~
+@47   = ~C'est tout naturel, puisque je l'ai sauvée.~
+@48   = ~Est-ce que tu insinues que j'ai répondu à ses avances d'une façon ou d'une autre ?~
+@49   = ~Et en retour j'ai couché avec elle. Nous sommes quittes.~
+@50   = ~C'est juste que cela ne me plaît pas, <CHARNAME>. Je sais bien que tu es un héros, que tu es p-populaire, mais...~
+@51   = ~J'espère que tu ne t'intéresses à aucune autre femme. Parce que tu... aimes quelqu'un n'est-ce pas ?~
+@52   = ~Tu... tu l'as touchée, et... Ooooh, comme j'aimerais être restée au cirque !~
+
+//Aerie sur Sheri
+
+@53   = ~Tu... tu viens j-juste de danser avec elle. Elle est très jolie, non ?~ [RE_BLANK]
+@54   = ~En effet, c'est une femme magnifique, je n'ai pas pu résister. Je suis vraiment désolé si cela t'a gênée, Aerie.~
+@55   = ~Et c'est un problème ? Tu sais que tu attires les regards de nombreux hommes, toi aussi.~
+@56   = ~Je l'apprécie, mais pas de quoi t'inquiéter. Ce n'était qu'une danse.~
+@57   = ~Oui... Je crois que je suis amoureux.~
+@58   = ~Ce ne sont pas tes oignons, Aerie. Retourne dans le rang.~
+@59   = ~Bien... J'étais inquiète à ton sujet. Pendant un moment. Je croyais... mais n'y pensons plus, <CHARNAME>. Je... j'espère que je peux te faire confiance.~
+@60   = ~Oh, Je... ne te dérangerai plus jamais, alors.~
+
+//Aerie sur Solaufein
+
+@61   = ~<CHARNAME>... qu-que se passe-t-il ? Toi et Solaufein... est-ce que... avez-vous... ?~ [RE_BLANK]
+@62   = ~Qu-qu'est-ce que cela veut dire ? Je n'y comprends rien !~
+@63   = ~Eh bien vois-tu, il arrive parfois qu'un homme aime d'autres hommes. Donc, Solaufein et moi...~
+@64   = ~J'ai demandé à Phaere qu'elle m'accorde les services de Solaufein. Au lit. Et j'en ai été très satisfait.~
+@65   = ~Nous sommes juste montés pour nous détendre. Je me suis fait masser, j'ai bu du vin... mais il ne s'est rien passé de ce que tu imagines.~
+@66   = ~N'en tiens pas compte, je t'en prie. C'était juste un stratagème.~
+@67   = ~Toi - <CHARNAME>, espèce de pervers... ! Les drow - tous les drows - sont des créatures horribles et maléfiques, et toi... (frissonne) Ne me parle plus.~
+@68   = ~Un... stratagème ? Qu-que veux-tu dire par là ?~
+@69   = ~J'ai pensé que Phaere m'appréciait beaucoup. Alors j'ai décidé de lui montrer que j'aime les hommes, de façon à ce qu'elle n'ait plus envie de moi.~
+@70   = ~J'étais inquiet des attentions de Phaere, et qu'elle puisse te faire du mal. Alors j'ai organisé une diversion avec Solaufein.~
+@71   = ~Nous sommes montés pour nous détendre. Je me suis fait masser, j'ai bu du vin... mais il ne s'est rien passé de ce que tu imagines.~
+@72   = ~Eh bien... oui, Solaufein et moi avons couché ensemble.~
+@73   = ~Je vois. Donc vous n'avez... vous n'avez pas... ?~
+@74   = ~D'accord. Mais ne me refais plus peur comme cela, s'il te plaît.~
+
+//Jaheira sur Ada
+
+@75   = ~C'était à quel sujet ?~ [RE_BLANK]
+@76   = ~Elle voulait me montrer comment utiliser mes compétences d'une manière plus efficace.~
+@77   = ~C'était, Jaheira, une façon incroyablement délirante, désinhibée pour me débarrasser de mes tensions.~
+@78   = ~Lorsque je me suis rendu compte qu'elle voulait seulement coucher avec moi, je suis parti.~
+@79   = ~Et elle voulait seulement coucher avec moi. Je suis parti dès que je m'en suis rendu compte..~
+@80   = ~Et elle m'a fait vivre les heures les plus chaudes de ma vie.~
+@81   = ~Méprisable ! Mais je refuse d'en entendre davantage sur tes conquêtes.~
+@82   = ~C'est ce que tu veux me faire croire. Très bien, je te crois... pour le moment.~
+@83   = ~L'abjecte tentatrice ! Tu as eu raison de lui résister, <CHARNAME> !~
+@84   = ~J'ai entendu ses cris, et les tiens. Tu me prends vraiment pour une idiote ? Laisse tomber. Je ne veux plus entendre parler de tes conquêtes.~
+
+//Jaheira sur Bodhi
+
+@85   = ~As-tu une explication sur ce qu'il s'est passé ? Ou tu me prends pour une idiote ?~ [RE_BLANK]
+@86   = ~Oui, je te prends pour une idiote ! Et pour une insupportable harpie, avec ça ! Bodhi, par contre...~
+@87   = ~Je t'en prie, ne pends pas ça trop au sérieux. Souviens-toi que nous avons besoin de Bodhi.~
+@88   = ~Je n'en ai rien à fiche. J'ai passé un si bon moment...~
+@89   = ~Elle ne l'emportera pas au paradis. Mais est-ce vraiment la vérité ?~
+@90   = ~En fait non. J'étais totalement consentant.~
+@91   = ~Suffit. Je ne veux pas entendre un mot de plus.~
+@92   = ~Alors c'est comme ça ? Très bien, tu ne m'entendras plus.~
+@93   = ~Je refuse d'admettre que tu t'accouplerais avec cette monstruosité de ton plein gré. Je... te crois.~
+
+//Jaheira sur Busya
+
+@94   = ~La maîtresse des guildes Busya s'intéresse beaucoup à toi. Vas-tu t'expliquer ?~ [RE_BLANK]
+@95   = ~C'est une femme charmante. Je vais la revoir.~
+@96   = ~Je n'ai pas couché avec elle, si c'est ce que tu sous-entends.~
+@97   = ~Non, et ne m'embête plus.~
+@98   = ~Je me suis promené avec elle, puis nous avons passé la nuit ensemble.~
+@99   = ~Je... vois. Je vous souhaite que des bonnes choses, mais ton destin risque de te faire quitter cette endroit, et vite.~
+@100  = ~Je ne t'avais pas accusé. Je voulais seulement savoir... mais tout va bien, je vois. Oublie cela, <CHARNAME>.~
+@101  = ~C'est peut-être mieux ainsi.~
+
+//Jaheira sur Chanelle
+
+@102  = ~Es-tu vraiment tombé si bas ? Je pensais que tu étais une personne meilleure que cela.~ ~Es-tu vraiment tombée si bas ? Je pensais que tu étais une personne meilleure que cela.~[RE_BLANK]
+@103  = ~Ce n'était qu'un bain. Ce fut plutôt agréable, mais il ne s'est rien produit de déplacé.~
+@104  = ~Mais je le suis ! Je ne lui ai absolument rien fait, crois-moi !~
+@105  = ~Meilleure que quoi ? Elle est devenue femme maintenant, grâce à moi.~
+@106  = ~Tes paroles sont convaincantes, mais je ressens encore un certain malaise. J'espère que nous nous sommes bien compris.~
+@107  = ~Je vois. Je ne t'en reparlerai plus.~
+
+//Jaheira sur Ilona
+
+@108  = ~Eh bien, tes jambes doivent être raides et meurtries maintenant... Tu as fait forte impression à cette fille.~ [RE_BLANK]
+@109  = ~Ilona ? Oui, elle est très gentille.~
+@110  = ~Alors tu as remarqué qu'elle essayait de me faire du pied ?~
+@111  = ~Oh, certainement. Au lit, je suis vraiment un bon coup.~
+@112  = ~Cela m'a déplu, <CHARNAME>. Je pensais que nous étions... oh, ce que je pense n'a aucune importance. Mais il n'est pas prudent de faire tourner la tête d'une jeune fille lorsqu'on n'a rien à lui offrir en retour. Gorion n'aurait pas approuvé cela.~
+@113  = ~Assez. Je ne pensais pas avoir à dire cela un jour, mais je suis heureuse que Gorion ne soit plus là pour assister à tes "exploits".~
+
+//Jaheira sur Sheri
+
+@114  = ~Eh bien, c'était une danse plutôt colorée. J'espère que tu t'es bien amusé.~ [RE_BLANK]
+@115  = ~Jaheira ! Serait-ce de la jalousie, dans ta voix ?~
+@116  = ~Eh bien... Je me suis peut-être un peu emporté. J'espère que tu pourras me pardonner cette petite transgression.~
+@117  = ~Hum... Pardon. Je suis vraiment désolé.~
+@118  = ~Je refuse que tu me gâches cette soirée, Jaheira. Arrête de me harceler.~
+@119  = ~Oui, je me suis bien amusé. Ca me plairait de la revoir.~
+@120  = ~Nullement, <CHARNAME> ! C'est simplement que... je m'inquiète pour toi. Les femmes dans son genre ont souvent des intentions bien dissimulées.~
+@121  = ~Tu ferais mieux de ne plus t'approcher d'elle. Les femmes dans son genre ont souvent des intentions bien dissimulées.~
+@122  = ~Je vois. Je ne partagerai plus jamais mes inquiétudes avec toi, alors.~
+
+//Jaheira sur Solaufein
+
+@123  = ~<CHARNAME>, que s'est-il donc passé entre toi et Solaufein ?~ [RE_BLANK]
+@124  = ~Eh bien nous nous sommes déshabillés, et puis...~
+@125  = ~Solaufein et moi avons couché ensemble, et je dois dire que cela m'a plu.~
+@126  = ~Nous sommes montés et nous y sommes restés quelques temps. Il ne s'est rien passé, vraiment.~
+@127  = ~Inutile d'en dire plus.~
+@128  = ~Et qu'est-ce que cela est supposé signifier ?~
+@129  = ~Eh bien j'ai supposé que Phaere m'apprécie beaucoup. Alors j'ai décidé de lui montrer que j'aime les hommes, de façon à ce qu'elle n'ait plus envie de moi.~
+@130  = ~Je n'aime pas cela, mais je présume que nous n'avons guère le choix.~
+
+//Viconia sur Ada
+
+@131  = ~C'était bien long, <CHARNAME>.~ [RE_BLANK]
+@132  = ~Elle avait beaucoup de choses à dire. Elle voulait me montrer comment utiliser mes compétences d'une manière plus efficace.~
+@133  = ~Il était impossible d'expédier quelque chose d'aussi agréable.~
+@134  = ~A quoi bon ?~
+@135  = ~Pour se distraire, mais cela ne lui a servi à rien.~
+@136  = ~Pour son propre plaisir, je n'en doute pas un seul instant. Mais j'ai reçu autant que j'ai donné.~
+@137  = ~Je ne pensais pas que tu puisses être aussi pitoyable, wael, pas au point d'accepter les caresses d'une femme, prêtresse de Talos, miteuse et rongée par les maladies.~
+@138  = ~Pfff ! Comme si tu coucherais avec une hideuse salope de la surface !~
+@139  = ~Alors ça, je le crois volontiers.~
+@140  = ~Je sais reconnaître des cris de plaisir, wael !~
+@141  = ~Je ne pensais pas que puisses être pitoyable au point d'accepter les caresses d'une femme, prêtresse de Talos, miteuse et rongée par les maladies.~
+
+//Viconia sur Bodhi
+
+@142  = ~Qu'est-ce qu'il vient de se passer entre elle et toi ?~ [RE_BLANK]
+@143  = ~Il semblerait que Bodhi m'apprécie. Et de mon côté, j'apprécie aussi la femme qui est en elle.~
+@144  = ~Je t'en prie, ne prends pas ça au sérieux. N'oublie pas que nous avons besoin de son aide.~
+@145  = ~C'était la meilleure nuit de ma vie.~
+@146  = ~Vraiment ? Comment puis-je être certaine de ta sincérité ?~
+@147  = ~Très bien. J'étais totalement consentant.~
+@148  = ~Dans ce cas, j'espère qu'une fois sur le navire, elle te mordra jusqu'à ce que mort s'en suive, wael !~
+@149  = ~Dans ce cas, pense à utiliser ta tête au lieu de ta libido, crétin ! Elle est beaucoup plus dangereuse que nous tous réunis.~
+@150  = ~Cependant, on dirait bien que tu n'as pas vraiment cherché à résister à son sortilège. Peu importe. J'aurai ma revanche, tôt ou tard.~
+
+//Viconia sur Busya
+
+@151  = ~Alors, elle était comment au lit ? Ou est-ce que la puissante maîtresse des guildes a dit "non" ?~ [RE_BLANK]
+@152  = ~Tu as l'air si amère... Ne t'inquiète pas, il ne s'est rien passé. J'ai passé la nuit à l'auberge, seul dans ma chambre.~
+@153  = ~Viconia, je n'aime pas le ton que tu prends. N'ai-je donc pas le droit d'aller me promener avec une femme ?~
+@154  = ~Elle a dit "oui", et par les dieux, qu'elle était bonne !~
+@155  = ~Ah, mais tais-toi, drow.~
+@156  = ~Alors elle n'a pas eu l'occasion de planter ses griffes. Bien.~
+@157  = ~Pfff !~
+@158  = ~Abruti. Tu ne sais pas encore combien une femme drow peut être cruelle.~
+@159  = ~Continue sur ce ton, jaluk, et tu verras bien. Pour l'instant, bouge de là !~
+
+//Viconia sur Chanelle
+
+@160  = ~Ah, <CHARNAME>, tu as l'air trempé. Tu t'habitues enfin à ton nouveau statut ?~ [RE_BLANK]
+@161  = ~Oui, et c'est plutôt agréable.~
+@162  = ~Je crois bien.~
+@163  = ~De coucher avec des serviteurs dociles ? Oui, certainement.~
+@164  = ~Oh, oui. Il est très agréable d'avoir des serviteurs qui anticipent le moindre de vos désirs... tout en sachant ne pas dépasser leurs bornes. Je suis heureuse que cette souris chétive ne l'ait pas fait.~
+@165  = ~Je vois. Eh bien j'espère qu'elle ne t'a pas déçu, car ce sera bien la seule qui aura à supporter ta virilité défaillante, iblith !~
+
+//Viconia sur Ilona
+
+@166  = ~Tu as discrètement fait du pied à cette fille sous la table, et cela juste sous mon nez... tu as du culot, <CHARNAME>.~ [RE_BLANK]
+@167  = ~Que cela ne se reproduise pas. Nous, les drows, n'avons pas tendance à pardonner... et je n'oublie jamais.~
+
+//Viconia sur Sheri
+
+@168  = ~Je me demandais, devrais-je vous faire écorcher vifs, tous les deux ? Tes ridicules tentatives pour t'introduire sous les jupes de cette rivvil m'irritent au plus haut point.~ [RE_BLANK]
+@169  = ~Danser... quelle coutume idiote. Laisse-moi, mâle.~
+
+//Viconia sur Solaufein
+
+@170  = ~As-tu vraiment désiré ce male ? Qu'as-tu donc fait ?~ [RE_BLANK]
+@171  = ~On s'amusait un peu au lit, avec Solaufein.~
+@172  = ~J'ai couché avec Solaufein. Et ça m'a beaucoup plu.~
+@173  = ~Nous sommes montés à l'étage pour nous relaxer un peu. Il ne s'est rien passé d'autre.~
+@174  = ~Bah, tu me dégoûtes. A moins que ce ne soit l'effet que tu me fais sans ton âme ? Peu importe. Je serai bien mieux sans toi.~
+@175  = ~Un stratagème ? Et qu'est-ce que ça veut dire ?~
+@176  = ~Vraiment ? Bon, je peux au moins comprendre pourquoi tu as fait ça. Quel dommage que nous ne puissions pas nous révéler et l'attaquer... mais tout vient à point à qui sait attendre.~
+
+//Anomen sur Coran
+
+@177  = ~Apparemment, je ne vous conviens qu'imparfaitement, ma dame, si vous vous offrez à un autre si librement. Je ne vous troublerai plus de mes attentions.~
+@178  = ~Ma dame ! Vous et ce voleur... dans ce campement, en ma présence !~ [RE_BLANK]
+@179  = ~Ne le prends pas si mal. Il est simplement meilleur que toi.~
+@180  = ~En ta présence ? Et qu'est-ce que tu veux dire, je te prie ?~
+@181  = ~Anomen, il m'y a forcée, quelque part, je le jure !~
+@182  = ~Je... je me sens si vide, sans mon âme...~
+@183  = ~<CHARNAME>... Je ne peux accepter ceci. Vous voyez certainement que c'est une grave injure à votre honneur ! Son sang doit couler... ou le mien. Il n'y a pas d'autre solution.~
+@184  = ~Anomen ! Honnêtement, j'ai juste passé une nuit entre ses bras. Est-ce une raison de tuer un homme innocent ?~
+@185  = ~Pourrions-nous juste laisser tomber ? J'ai fait une erreur et je promets de ne pas recommencer.~
+@186  = ~Tout est de ma faute, Anomen. Je t'en prie, pardonne-moi.~
+@187  = ~Ma dame, vous... très bien, mais...~
+@188  = ~Non, mes sentiments pour vous sont au-dessus de ces insignifiantes querelles. Oublions le voleur, et poursuivons le mage pervers qui vous a influencée.~
+
+//Anomen sur Desharik
+
+@189  = ~Ma dame, que s'est-il passé entre vous et le Seigneur des Pirates ?~
+@190  = ~Rien. Il m'a interrogée. Je l'ai subi.~
+@191  = ~Nous sommes dans Spellhold. Irenicus est proche. Ce n'est pas le moment d'en discuter.~
+@192  = ~Je n'ai pas envie d'en parler.~
+@193  = ~Il... a usé de moi. C'était la seule façon d'obtenir son aide.~
+@194  = ~Anomen, il m'a obligé à me soumettre à ses désirs. Dois-je vraiment en parler ?~
+@195  = ~Desharik m'a appris ce que c'est d'être une femme.~
+@196  = ~Je vois. Vous êtes une femme à la volonté d'acier.~
+@197  = ~Ah. Très bien, ma dame.~
+@198  = ~Ma dame, vous ne me faites donc pas confiance ?~
+@199  = ~Ce n'est pas une histoire de confiance, Anomen. Son interrogatoire ne fut pas agréable, et je ne souhaite pas en reparler.~
+@200  = ~Nous sommes dans Spellhold, entourés d'ennemis. Ce n'est pas le moment.~
+@201  = ~Anomen, le prix que j'ai payé pour arriver jusqu'ici fut très élevé. Il m'a obligé à coucher avec lui.~
+@202  = ~Quelle importance, maintenant que c'est fini ? Nous sommes arrivés à destination.~
+@203  = ~Non, Anomen, mais je ne pense pas que tu aies envie d'entendre qu'il m'a violée.~
+@204  = ~Ma dame ! Je n'en crois pas mes oreilles ! Que vous puissiez être avec lui de votre plein gré...~
+@205  = ~Cela ne pouvait pas en être autrement. Et nous n'avions pas fait tout ce chemin, supporté toutes ces épreuves, pour laisser Imoen pourrir ici !~
+@206  = ~Je ne pouvais pas m'y dérober, si cela me donnait l'occasion de me venger de l'homme qui m'a torturée.~
+@207  = ~En fait, j'ai adoré ! Son pouvoir, sa violence, son désir animal m'ont excitée davantage que n'importe quel poème chuchoté.~
+@208  = ~C'était un sacrifice nécessaire, et je l'ai mal vécu. Ce souvenir me dégoûte, et je ne veux plus jamais en parler.~
+@209  = ~Ce n'était pas si terrible que cela, si l'on oublie toutes les échardes.~
+@210  = ~J'aurais fait pareil pour te sauver, Anomen.~
+@211  = ~Ma dame ! Je craignais que ce fut arrivé ! Hélas, vous ne me l'avez pas dit suffisamment tôt pour que je puisse vous rendre justice !~
+@212  = ~Anomen, il t'aurait tué sur place. Je le hais pour ce qu'il a fait, mais c'est terminé et nous n'avons plus besoin d'en reparler.~
+@213  = ~Je m'y suis soumise librement, mais à contre coeur. C'était la seule façon de sauver Imoen !~
+@214  = ~Il ne m'a pas violée. Je l'ai laissé user de moi afin que je puisse avoir l'occasion de me venger de l'homme qui m'a torturée et qui a tué mes compagnons.~
+@215  = ~Je ne sais pas ce que c'était, mais ce n'était pas du viol ! Sa domination brutale m'a vraiment excitée !~
+@216  = ~Tu dis cela maintenant, mais tu n'aurais rien fait !~
+@217  = ~Ma dame ! Que voulez-vous dire ?!~
+@218  = ~Je dis qu'il m'a obligé à supporter la plus terrible des humiliations afin que je puisse sauver Imoen et venger mes amis. Ne me pose plus de questions.~
+@219  = ~Parfois, il est nécessaire de sacrifier à la fois l'honneur et la fierté pour arriver à ses fins.~
+@220  = ~Il m'a montré combien cela peut être excitant de coucher avec un homme puissant et dangereux.~
+@221  = ~Je te dis qu'avant qu'il ne déverse sa luxure sur moi, je n'avais jamais connu une telle extase.~
+@222  = ~Votre confiance est tout pour moi !~
+@223  = ~A vrai dire, nous n'avons pas le temps d'en parler.~
+@224  = ~Est-ce que tu veux vraiment entendre comment il m'a obligée à coucher avec lui ?~
+@225  = ~Alors fais-moi confiance lorsque je te dis que je ne veux plus jamais en parler.~
+@226  = ~Anomen, il est parfois nécessaire de faire des sacrifices pour aider ceux qui nous sont chers.~
+@227  = ~Il m'a interrogée. Je ne veux pas que l'on me rappelle ce mauvais souvenir.~
+@228  = ~Ma dame, je tremble de rage d'entendre que ce chien ait ainsi abusé de vous, mais je vois que vous êtes résolue à ne plus en parler. Que vous subissiez une telle chose pour aider quelqu'un, c'est un terrible témoignage de votre ténacité. Je vais respecter votre souhait, et je n'en parlerai plus.~
+@229  = ~Ma dame ! Vous n'avez donc aucune considération pour moi !~
+@230  = ~Ma dame, je regrette que vous voyez les choses ainsi. Je ne vous dérangerai plus.~
+
+//Anomen sur Gaelan
+
+@231  = ~Par la barbe d'Heaum ! Vous avez couché avec cette détestable canaille ?!~ [RE_BLANK]
+@232  = ~Je n'en avais pas envie, Anomen, mais je ferai n'importe quoi pour aider Imoen.~
+@233  = ~J'en frissonne, mais je n'avais pas le choix. Nous avions besoin de son aide.~
+@234  = ~Il m'a trompée ! Il m'a fait croire qu'il pourrait nous aider !~
+@235  = ~Ne pense pas pouvoir me juger, Anomen. J'ai pris du plaisir autant que j'en ai donné.~
+@236  = ~Ma dame ! Je ne m'étais pas rendu compte à quel point vous étiez attachée à votre amie. Il est choquant qu'il vous ait ainsi trompée !~
+@237  = ~Par égard pour vous, je serais prêt à occire ce roublard, mais cela n'aiderait pas votre amie. N'en parlons plus.~
+@238  = ~Ma dame ! L'idée même me rend malade ! Vous aviez vraiment *envie* de lui ?~
+@239  = ~Non, Anomen. J'ai fait ce qu'il fallait pour sauver Imoen.~
+@240  = ~En fait, oui. Et j'ai savouré chaque instant.~
+@241  = ~Il n'est pas aussi répugnant que tu le penses.~
+
+//Anomen sur Hendak
+
+@242  = ~Ma dame, je n'ai presque pas envie de vous le demander, mais... il paraît que cet ancien gladiateur, Hendak, et vous... en fait, c'est-à-dire que...~ [RE_BLANK]
+@243  = ~Que nous sommes amants ? Eh bien, cette rumeur est fausse.~
+@244  = ~J'ai flirté avec lui, c'est vrai. Mais c'est fini, maintenant.~
+@245  = ~Oui, nous avons passé la nuit ensemble. Cela te choque ?~
+@246  = ~Oui, j'ai des sentiments pour lui.~
+@247  = ~Je suis soulagé de vous entendre dire cela, ma dame. Reprenons la route.~
+
+//Anomen sur Ribald
+
+@248  = ~Je vous prie de m'excuser pour cette question indélicate, ma dame, mais j'ai entendu dire que... que le propriétaire du Bazar de l'Aventurier, Ribald Barterman, qu'il avait osé...~ [RE_BLANK]
+@249  = ~Coucher avec moi ? Effectivement.~
+@250  = ~Quoi donc, Anomen ?~
+@251  = ~Je ne vois pas ce que tu veux dire.~
+@252  = ~Comment oses-tu ! Cesse de m'accuser de choses aussi répugnantes !~
+@253  = ~Qu'au lieu de vous demander votre autorisation pour vous faire la cour d'une façon digne et appropriée, il aurait formé une liaison intime avec vous. Ce n'est sans doute qu'un tissu de mensonges, mais...~
+@254  = ~Je ne vois vraiment pas en quoi cela te regarde. Laisse-moi tranquille.~
+@255  = ~Je refuse d'en parler.~
+@256  = ~Ce ne sont pas des mensonges. J'ai couché avec lui.~
+@257  = ~Effectivement, j'ai des sentiments pour Ribald.~
+@258  = ~Oui, c'est sans doute le cas. Reprenons la route.~
+@259  = ~Je vous prie de m'excuser si j'ai outrepassé mes limites, ma dame. Je suis certain que ces bruits qui courent cesseront bientôt, sinon moi, Anomen Delryn, y mettra une fin sanglante !~
+@260  = ~J'aurais vraiment aimé mettre tout cela derrière nous, ma dame, mais je me vois obligé de vous poser la question. Est-ce qu'il s'est passé quelque chose entre Ribald et vous ?~ [RE_BLANK]
+@261  = ~Oui, nous avons couché ensemble. Mais c'est fini, maintenant.~
+@262  = ~Je n'ai vraiment pas envie d'en parler, Anomen.~
+@263  = ~Quelque chose ? Ha ! De multiples choses, oui !~
+@264  = ~Ma dame, je me dois d'insister... j'ai besoin de savoir !~
+@265  = ~Très bien. Nous avons eu une liaison, mais maintenant c'est terminé.~
+@266  = ~Il ne s'est rien passé entre nous ! Rien du tout !~
+@267  = ~Pourquoi me poses-tu la question ? En quoi cela te regarderait ?~
+@268  = ~Laisse-moi tranquille.~
+@269  = ~Ma dame, ceci est vraiment déroutant... Mais je m'égare ; je ne veux pas vous importuner avec ces questions indélicates. Soyez tranquille, un seul mot de vous, et je fracasserai le crâne de ce voyou.~
+@270  = ~Mais si vous pouviez lui parler en ma présence, et y mettre fin, une bonne fois pour toutes, cela me rassurerait de savoir que ces... sombres pensées n'ont aucun fondement, et j'en serais heureux.~
+
+//Anomen sur Saemon
+
+@271  = ~Ce pirate répugnant ! Qu'Irenicus soit maudit, je le déchirerai membre par membre pour ce qu'il a fait !~ [RE_BLANK]
+@272  = ~Une excellente idée, mais je crains qu'il soit difficile de le retrouver. Oubliez cela, Anomen.~
+@273  = ~Il était... vraiment charmant, et je n'ai pas pu résister.~
+@274  = ~J'ai adoré la nuit que j'ai passée avec lui, et je ne regrette rien.~
+@275  = ~Vous, je ne vous blâme en rien, ma dame. Vous êtes si fraîche, si naïve... une fleur des plus fragiles, vraiment... mais ce vagabond va payer pour ses crimes ! Si seulement trouver Irenicus n'était pas si urgent !~
+@276  = ~Je suis désolé pour ce spectacle malséant, ma dame. Continuons.~
+
+//Anomen sur Solaufein
+
+@277  = ~<CHARNAME>... ma dame - vous et ce drow ? Que s'est-il passé ?~ [RE_BLANK]
+@278  = ~C'était juste pour leurrer Phaere. Ne fais pas attention à cela Anomen, ce n'était qu'un stratagème.~
+@279  = ~Je vois. Ce n'est pas l'attitude que j'attendrais de vous dans des circonstances normales, ma dame, mais vu notre situation actuelle... Très bien. Tournons la page et n'en parlons plus.~
+
+//Anomen sur Talak
+
+@280  = ~Ma dame, avez-vous permis à ce drow de coucher avec vous ?!~[RE_BLANK]
+@281  = ~Anomen, je n'avais pas le choix ! Nos vies dépendent de notre déguisement, et cela veut dire agir comme des drows.~
+@282  = ~Je ne voulais pas, mais Phaere m'a forcée à le faire.~
+@283  = ~Oui, et je n'ai jamais connu mieux.~
+@284  = ~Non, Anomen. Il m'a fait un massage, mais j'ai refusé toute autre... attention.~
+@285  = ~Garde ceci entre nous, je t'en prie, mais je l'ai renvoyé avant que quoi que ce soit ne se produise.~
+@286  = ~N'auriez-vous pas pu trouver une excuse ? Vous avez sauté sur l'occasion !~
+@287  = ~Les vrais drows ne refusent pas l'attention d'un esclave de plaisir. Cela ne signifie rien pour eux ! Ils ne sont pas comme nous...~
+@288  = ~J'ai essayé de refuser... ou as-tu oublié comme j'étais réticente à accepter ?~
+@289  = ~Anomen, je ne l'ai pas laissé... faire. Mais je ne pouvais pas non plus refuser d'aller avec lui sans rendre Phaere suspicieuse.~
+@290  = ~Et pourquoi refuserais-je les services d'un amant des plus doués ? C'était bien, Anomen. Très bien.~
+@291  = ~Je l'ai suivi de mon plein gré, c'est vrai, mais je l'ai renvoyé avant même qu'il me touche.~
+@292  = ~Non, ma dame, je n'ai pas oublié votre réticence. Mais... mais étiez-vous aussi réticente quand il s'est offert à vous ?~
+@293  = ~Encore davantage. Je ne l'ai jamais laissé me toucher.~
+@294  = ~Il était aussi dangereux que Phaere. Je ne pouvais pas le laisser me voir autrement que comme une drow. Je t'en prie, ne me rappelle pas ce calvaire.~
+@295  = ~J'étais réticente au début, mais il était tellement doué, je n'ai pas pu m'en empêcher.~
+@296  = ~Non, Anomen, je ne l'étais pas. J'ignorais qu'un homme puisse faire ressentir à une femme ce que j'ai ressenti en couchant avec lui.~
+@297  = ~J'y suis allée avec réticence, et lui ai cédé avec mesure. Il commençait à douter de mon déguisement, et j'ai dû le rendre convaincant.~
+@298  = ~Je vous crois, mon amour. Nous n'en parlerons plus jamais.~
+@299  = ~Vraiment ? Ma dame, vous êtes une merveille ! Vos paroles me réconfortent et me font vous admirer d'autant plus.~
+@300  = ~Ainsi vous voudriez me faire croire que vous vous êtes lovée dans ses bras, gémissant sous ses caresses, parce que vous vouliez être convaincante ?~
+@301  = ~Non ! J'ai détesté chaque minute et je me sens malade à ce souvenir. Mais si je n'avais pas agi comme je l'ai fait, notre déguisement aurait été sans valeur.~
+@302  = ~Non, Anomen, je n'ai pas couché avec lui. Il m'a fait un massage et je lui ai dit que je n'avais pas d'autre usage pour lui.~
+@303  = ~Pour te dire la vérité, je me suis lovée dans ses bras, gémissant sous ses caresses, car c'est un amant doué.~
+@304  = ~Mon amour... Je me suis oublié. J'agis comme si j'étais le seul blessé, mais c'est sûrement vous qui avez été la plus touchée par ce...~
+@305  = ~Mais si vous avez pu supporter quelque chose d'aussi vil, je ne gâcherai pas notre déguisement avec ma brusque colère. N'en parlons plus.~
+@306  = ~Je suis désolé, ma dame, mais je ne peux pas tolérer la facilité avec laquelle vous vous offrez à un autre. Je ne vous troublerai plus de mes attentions, désormais.~
+
+// Version 3
+
+//Aerie sur Isabelle
+
+@307  = ~<CHARNAME>. Qu-que s'est-il passé ?~ [RE_BLANK]
+@308  = ~J'ai... passé la nuit avec une jeune fille. Je l'ai réconfortée, mais pas comme tu l'imagines.~
+@309  = ~Rien du tout. Ne te fais pas de souci pour rien.~
+@310  = ~Aerie, Je suis vraiment désolé. Est-ce que tu t'inquiétais ?~
+@311  = ~Oh, vraiment ? Et pourquoi devrais-je te croire ? Elle était pourtant très mignonne !~
+@312  = ~Très bien ! Toi et moi, c'est fini !~
+@313  = ~Si j'étais... inquiète ?~
+@314  = ~<CHARNAME>, cette fille... tu la connaissais à peine ! Et tu t'es tellement intéressé à elle... tu n'as jamais...~
+@315  = ~Oh, laisse-moi seule ! Je n'ai pas envie de parler à qui que ce soit... Nous discuterons p-plus tard...~
+
+//Jaheira sur Isabelle
+
+@316  = ~Bonjour à toi.~ [RE_BLANK]
+@317  = ~Bonjour, Jaheira.~
+@318  = ~Je ne l'ai pas touchée, Jaheira.~
+@319  = ~Ne me regarde pas comme ça. J'ai essayé de la réconforter. La pauvre chose, elle était toute tremblante !~
+@320  = ~Tu as pris ton temps.~
+@321  = ~Je te crois. Mais que suis-je, que sommes-nous tous supposés penser ?~
+@322  = ~Le moment est mal choisi pour des querelles minables. Mais je ne m'attendais pas à un tel comportement de ta part.~
+@323  = ~Je ne veux pas m'attarder sur ceci. Nous devrions descendre dans les égouts et réaliser la tâche qu'on nous a confiée. Ensuite, nous parlerons... ou pas.~
+
+//Viconia sur Isabelle
+
+@324  = ~Une autre damoiselle en détresse, je vois. Qu'est-ce que je vois en toi, jaluk ? Es-tu réellement différent des autres ?~ [RE_BLANK]
+@325  = ~Viconia, je...~
+@326  = ~Je suis désolé. Mais nous n'avons pas couché ensemble.~
+@327  = ~Je le suis, et tu le sais.~
+@328  = ~Ne t'avise pas de dire quoi que ce soit, <CHARNAME>. Je ne tolèrerai pas tes excuses pleurnichardes en plus de cette indignité.~
+@329  = ~Je n'oublierai pas.~
+@330  = ~J'oublierai peut-être... un jour. Dans les Tréfonds Obscurs, j'ai appris beaucoup de choses sur la vengeance. Avance prudemment, <CHARNAME>.~
+
+//Anomen et charname : scènes de ménage après plusieurs flirts de charname
+
+@331  = ~Ma dame, pardonnez mon impertinence mais je ne peux m'empêcher de remarquer que vous avez l'air de rechercher la compagnie d'autres hommes.~ [RE_BLANK]
+@332  = ~Je suis une personne amicale, Anomen. Rien de plus.~
+@333  = ~Es-tu en, train de m'accuser d'être inconvenante ?~
+@334  = ~De quel droit peux-tu te montrer jaloux ?~
+@335  = ~C'est une distraction agréable.~
+@336  = ~Certes, ma dame, vous êtes d'une nature des plus aimables. Vos paroles me rassurent.~
+@337  = ~Non ma dame, bien que je me demande parfois de quoi vous pouvez bien discuter en privé avec ces étrangers.~
+@338  = ~Nous ne faisons qu'échanger des paroles innocentes. Il n'y a pas de quoi t'inquiéter.~
+@339  = ~Jaloux, Anomen ?~
+@340  = ~Cela ne te regarde pas.~
+@341  = ~Nous parlons très peu, en fait.~
+@342  = ~Ce n'est point de la jalousie... J'aimerais juste savoir...~
+@343  = ~Ce n'est pas grave, ma dame. Je ne voudrais pas vous vexer avec mes questions.~
+@344  = ~Ma dame ! Je croyais que nous avions un accord !~
+@345  = ~C'est le cas, Anomen. Je me suis simplement permis une petite conversation amicale, rien de plus.~
+@346  = ~Nous ne sommes pas mariés, Anomen !~
+@347  = ~C'est le cas, Anomen. Aucune conversation que je pourrais avoir avec un étranger n'y changera rien.~
+@348  = ~Pour rendre la vie plus intéressante, il faut un peu varier les plaisirs.~
+@349  = ~Ma compagnie est-elle donc si ennuyeuse pour que vous vous en lassiez si facilement ?~
+@350  = ~Cela n'a rien à voir, Anomen. C'est juste que j'aime faire de nouvelles connaissances.~
+@351  = ~En fait, oui.~
+@352  = ~Je vois. Je ne vous disputerai pas sur ce sujet, bien que vos paroles me fassent mal. Je ne vous ennuierai plus avec cette histoire.~
+@353  = ~Comment ? Mais, ma dame ! Vous vous êtes absentée si longtemps ! Qu'avez-vous bien pu faire ?~
+@354  = ~Je voulais dire que "nous" ne parlions pas beaucoup. J'ai beaucoup écouté, même si j'ai eu peur qu'il ne finisse jamais de parler.~
+@355  = ~De long regards mélancoliques, des silences remplis de nostalgie, ce genre de choses.~
+@356  = ~Nous avons couché ensemble, Anomen.~
+@357  = ~Non ma dame, ce n'est pas le cas...~
+@358  = ~Je n'évoquerai plus ce sujet.~
+@359  = ~Mais... les actes que vous avez accompli avec lui pourraient-ils être de nature à violer vos voeux de mariage ?~
+@360  = ~Non Anomen, c'est simplement que je trouve ta jalousie déplacée.~
+@361  = ~Peut-être, mais la question n'est pas là. Anomen, un serment est sacré, mais toi et moi ne sommes liés par aucun.~
+@362  = ~Oui Anomen... Je suis désolée. Je ne voulais pas te faire de mal. Je ne pensais pas que les choses iraient si loin. Cela ne se reproduira pas.~
+@363  = ~Qu'est-ce que cela peut bien faire ? Je me suis bien amusée.~
+@364  = ~Varier les plaisirs ?! Ma dame, que voulez-vous donc dire ?~
+@365  = ~Je vois. Je ne vous ennuierai plus avec ma sollicitude.~
+@366  = ~Ma dame, quelque chose me préoccupe. Il y a quelque temps nous avons parlé des égards que vous accordez à d'autres hommes... des entrevues privées. A ce moment-là vous m'avez réaffirmé que vous souhaitiez toujours avoir ma compagnie, mais je n'en suis plus si certain. Vous continuez à accorder des audiences privées à d'autres hommes, et je serais bien naïf de croire que votre comportement est si innocent que cela.~ [RE_BLANK]
+@367  = ~Anomen, ces autres hommes ne comptaient pas pour moi !~
+@368  = ~Mais mon comportement est parfaitement innocent ! Il ne s'est rien passé !~
+@369  = ~Tu as raison Anomen. Je regrette profondément ce que j'ai fait, et le mal que cela t'a causé. Je suis foncièrement désolée.~
+@370  = ~Ta jalousie te fait imaginer des choses.~
+@371  = ~Oh très bien, je vais être franche. Je couche avec d'autres hommes, et j'y prends plaisir.~
+@372  = ~Ma dame, vous avez juré que vous ne vous laisseriez plus jamais aller à pratiquer de sport en chambre avec un autre homme et c'est pourtant ce qui s'est produit, peu de temps après ! Vous n'avez pas tenu parole ! Comment pourrais-je être certain que je représente plus pour vous que ces types auquels vous vous offrez si facilement ?~
+@373  = ~Anomen, à ce moment-là je disais la vérité et je vais te la redire maintenant. Je n'ai pas couché avec un autre homme depuis que je t'ai dit que je ne le ferais plus, même s'il m'est arrivé de parler en privé à d'autres.~
+@374  = ~Mais avec toi c'est différent, Anomen ! Je tiens à toi.~
+@375  = ~Eh bien il va falloir que tu me fasses confiance.~
+@376  = ~Honnêtement Anomen, c'est vraiment trop usant de rester avec toi. Crois-donc ce que tu veux. J'en ai assez de m'efforcer de t'être agréable, cela suffit.~
+@377  = ~C'est facile à dire ! Comment puis-je être certain que je représente plus pour vous que ces types à qui vous vous offrez si facilement ?~
+@378  = ~Mais Anomen, je ne me suis pas donnée à un autre homme, même si j'ai discuté en privé avec d'autres.~
+@379  = ~Vous aviez dit la même chose la première fois que je vous ai interrogée à ce sujet.~
+@380  = ~(soupir) Ma dame, j'ai envie de vous croire.~
+@381  = ~La dernière fois que nous en avons discuté, vous ne m'avez pourtant pas dit que votre conduite avait été si vertueuse que cela. Vous avez admis avoir couché avec d'autres hommes. Dois-je maintenant croire en votre vertu ?~
+@382  = ~Vous me fendez le coeur ! Mais vous dites que vous êtes aussi déchirée que moi par tout cela...~
+@383  = ~Je suis troublé par le fait que vous ayez été si évasive la dernière fois que nous en avons parlé, mais je ne vois aucune autre manière de soulager mon malaise que de croire ce que vous me racontez.~
+@384  = ~Vous avez dit la même chose la dernière fois que nous en avons parlé. Comment puis-je être certain de votre sincérité ?~
+@385  = ~Je ne t'ai jamais menti Anomen, même si la vérité blesse. J'ose espérer que la bonne volonté que je mets à avouer quelque chose de si douloureux te permettra de croire à ce que je suis en train de te dire.~
+@386  = ~J'en ai assez de cette comédie. Si tu ne me crois pas, alors j'en ai marre d'essayer de te convaincre.~
+@387  = ~Ce n'est pas le cas, ma dame. Vu que vous ne faites pas mystère de vos rendez-vous clandestins alors que je ne peux y assister, que dois-je croire au sujet de votre conduite ?~
+@388  = ~Je dois me conduire de manière honorable, même si ce n'est pas votre cas. Je ne vous dérangerai plus.~
+@389  = ~Je devrais croire à ce que vous me dites ? Vous m'en demandez beaucoup.~
+@390  = ~Vous dites cela comme si vous vouliez me réconforter, mais ce n'est pas le cas. Ma dame, je chéris toute l'affection que vous avez pu m'accorder, mais cela me perturbe de penser que vous vous donnez si facilement à des hommes qui ne signifient rien pour vous.~
+@391  = ~Ce n'est pas ce que je voulais dire !~
+@392  = ~Je suppose que cela signifie que je ne vous intéresse plus.~
+@393  = ~Y a-t-il quelque chose que je pourrais dire qui vous rassurerait sur les sentiments que j'éprouve envers vous ?~
+@394  = ~Confiance, ma dame ? Vous prononcez ce mot comme s'il suffisait à excuser toutes vos fautes, mais vous me donnez bien peu d'arguments pour vous croire.~
+@395  = ~J'accorde autant de valeur que toi aux engagements, Anomen, mais je n'ai brisé aucun serment.~
+@396  = ~En quel honneur devrais-je te prouver quoi que ce soit ?~
+@397  = ~N'ai-je pas été honnête envers toi ? Tout ce que je t'ai dit est vrai.~
+@398  = ~Si tu dois être têtu à ce point, alors je n'ai que faire de ta confiance.~
+@399  = ~C'est vrai ma dame, vous ne l'avez pas fait. En consequence je vous cède sur ce point, et je n'évoquerai plus le sujet.~
+@400  = ~Mais si mon affection représente quoi que ce soit pour vous, ne la prenez pas à la légère comme cela, s'il vous plaît.~
+@401  = ~Peut-être suis-je bien naïf de vous faire confiance à ce point, mais c'est pourtant le cas. Si vous me dites que vos actes ont été vertueux alors je vous crois, malgré les apparences.~
+@402  = ~Peut-être suis-je bien naïf de vous faire confiance à ce point, mais c'est pourtant le cas. Je crois que vos regrets sont sincères. Allez, oublions ces histoires.~
+@403  = ~Je... je vous crois, ma dame.~
+@404  = ~Vraiment ? Vous avez couché avec plusieurs hommes, mais vous voudriez que j'estime que ceci est excusable parce que vous n'éprouviez aucun sentiment pour eux ? Ma dame, j'estime que vos faveurs valent bien mieux que cela, et vous ne devriez pas les sous-estimer non plus.~
+@405  = ~Tu as raison, Anomen. J'ai été idiote. Pardonne-moi, s'il te plaît.~
+@406  = ~Ne t'avise pas de me dire à qui ou comment je devrais accorder mes faveurs, Anomen.~
+@407  = ~Il y a une certaine sagesse dans ce que tu as dit. Je le prends à coeur et je méditerai à ce sujet.~
+@408  = ~Mon intérêt, comme vous le dites, n'a pas grand chose à voir avec ces histoires.~
+@409  = ~Ma dame... si vos sentiments envers moi étaient aussi forts que vous le dites, vous n'auriez pas fait tout ce que vous avez fait.~
+@410  = ~Etes-vous en train de dire que vous ne solliciterez plus la compagnie de ces goujats d'étrangers ?~
+@411  = ~Oui.~
+@412  = ~Je ferai ce qui me semblera être le mieux.~
+@413  = ~Qui a dit que ce sont des étrangers ?~
+@414  = ~Anomen, je ne peux rien te promettre.~
+@415  = ~Ma dame, je n'ai pas l'impression que vos regrets soient sincères.~
+@416  = ~Je vous tenais en très haute estime, alors que vous avez permis à d'autres de disposer de votre corps comme une simple putain.~
+@417  = ~Anomen, j'ai fait une grave erreur. je n'avais pas réalisé que mes actes t'affecteraient à ce point. Je n'aurais jamais fait ce que j'ai fait si j'avais su combien cela te ferait mal.~
+@418  = ~Hé, je suis désolée, ça te va comme ça ?~
+@419  = ~Tu vas trop loin, Anomen.~
+@420  = ~Cela commence à devenir lassant.~
+
+//Anomen sur Bjornin
+
+@421  = ~Vous revoilà, ma dame. Ce sire Bjornin est assurément un paladin impressionnant. Je l'ai déjà rencontré, mais brièvement. Il a l'air d'être un personnage important à... d'où est-il déjà ? De toute façon, je pense qu'enduire ses cicatrices d'huile était une bonne action.~ [RE_BLANK]
+@422  = ~Oui, je crois vraiment qu'aider un si héroïque guerrier du bien et de la justice en massant ses... cicatrices est une bonne action. Et logiquement, vu que vous ne pouviez pas le faire dans la pièce principale, vous avez du vous... isoler dans une petite chambre... privée.~
+@423  = ~Je... je suis certain de ne pas avoir à m'inquiéter, mon amour, lorsque vous vous isolez dans une chambre privée avec l'un de mes confrères de l'Ordre.~
+@424  = ~Non, je suis sûr que je n'ai pas à m'inquiéter.~
+
+//Banter Mazzy-Valygar
+
+@425  = ~Valygar, avez-vous un instant à m'accorder ?~ [RE_BLANK]
+@426  = ~Bien sûr, Mazzy. Qu'y a-t-il ?~
+@427  = ~Je me fais du souci pour vous, mon ami. Pardonnez-moi si je me mêle de ce qui ne me regarde pas, mais ne serait-il pas plus raisonnable de laisser <CHARNAME> tranquille ? Elle a déjà beaucoup de soucis, après tout.~
+@428  = ~Mazzy, vous allez trop loin.~
+@429  = ~Je sais ! Mais écoutez-moi. Qui d'autre vous dira la vérité ? <CHARNAME> est une honnête femme, et elle semble être réellement inquiète pour vous, comme nous le sommes tous, mais nous savons tous les deux que tout ceci ne vous fera aucun bien, ni à l'un ni à l'autre !~
+@430  = ~Je vous remercie pour votre sollicitude, Mazzy, mais je suis capable de prendre des décisions seul.~
+@431  = ~(soupir) Est-ce que vous réfléchirez au moins à ce que je vous ai dit ?~
+@432  = ~J'y songerai, mais je ne vous promets rien.~
+@433  = ~Merci, mon ami. Vous m'êtes tous les deux chers, et je... je ne voudrais pas vous perdre.~
+
+//Banter Anomen-Valygar
+
+@434  = ~J'ai remarqué que vous passiez pas mal de temps avec notre chef.~ [RE_BLANK]
+@435  = ~Dois-je m'expliquer auprès de vous ?~
+@436  = ~Bien sûr que non. Vous êtes un homme adulte.~
+@437  = ~Alors pourquoi poser la question ? ... Ah. Vous aussi, vous cherchez à obtenir les faveurs de la dame, je vois.~
+@438  = ~Elle me fait honneur en m'offrant son amitié, et je ne permettrai pas que qui ce soit la compromette.~
+@439  = ~Que voulez-vous que je fasse, alors ?~
+@440  = ~Retirez-vous avec votre honneur intact, tant qu'il est encore temps.~
+@441  = ~Ah. Mais c'est bien là le problème, n'est-ce pas ?~
+
+//Banter Anomen-Valygar suite
+
+@442  = ~Alors.~ [RE_BLANK]
+@443  = ~Alors quoi ?~
+@444  = ~Vous êtes toujours en train de courtiser la dame, je vois.~
+@445  = ~Eh bien, vous aussi. Mais...~
+@446  = ~Mais ?~
+@447  = ~Tout ceci sera bientôt fini, d'une façon ou d'une autre. Vous avez raison, Anomen : je n'aurais pas dû me donner la peine.~
+@448  = ~Vous... ? Comment osez-vous vous jouer ainsi de ses sentiments ?!~
+@449  = ~Je m'en serais abstenu si cela avait été possible. Mais je n'ai pas le choix.~

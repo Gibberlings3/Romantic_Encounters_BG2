@@ -1,0 +1,29 @@
+IF
+  HPPercentGT("B!LARAN",89)
+  HPPercentGT("Anomen",89)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    ActionOverride("B!LARAN",EquipMostDamagingMelee())
+    ActionOverride("B!LARAN",Attack("Anomen"))
+    ActionOverride("Anomen",Attack("B!LARAN"))
+    Wait(5)
+END
+
+IF
+  HPPercentLT("B!LARAN",90)
+THEN
+  RESPONSE #100
+  CutSceneId(Player1)
+  SetGlobal("B!RE_AnomenWon","GLOBAL",1)
+  ActionOverride("Anomen",StartDialogueNoSet(Player1))
+END
+
+IF
+  HPPercentLT("Anomen",90)
+THEN
+  RESPONSE #100
+  CutSceneId(Player1)
+  SetGlobal("B!RE_LaranWon","GLOBAL",1)
+  ActionOverride("Anomen",StartDialogueNoSet(Player1))
+END

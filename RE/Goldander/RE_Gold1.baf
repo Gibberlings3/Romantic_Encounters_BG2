@@ -1,0 +1,27 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+Wait(1)
+FadeToColor([20.0],0)
+SetGlobal("RE_Goldander","GLOBAL",2)
+SetGlobal("RE_GoldanderFlirt","GLOBAL",1)
+Wait(1)
+ActionOverride("UDSVIR03",JumpToPoint([1572.707]))
+ActionOverride("UDSVIR03",Face(3))
+Wait(1)
+JumpToPoint([1540.723])
+Face(10)
+ActionOverride(Player2,JumpToPoint([2042.984]))
+ActionOverride(Player3,JumpToPoint([2012.954]))
+ActionOverride(Player4,JumpToPoint([2042.954]))
+ActionOverride(Player5,JumpToPoint([2012.924]))
+ActionOverride(Player6,JumpToPoint([2042.924]))
+MultiPlayerSync()
+Wait(1)
+FadeFromColor([20.0],0)
+MoveViewObject(Player1,INSTANT)
+Wait(1)
+ActionOverride("UDSVIR03",StartDialogueNoSet(Player1))
+END

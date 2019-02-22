@@ -1,0 +1,19 @@
+IF
+Global("RE_BusyaSpawned","GLOBAL",0)
+Global("RE_BusyaMeet","GLOBAL",1)
+Gender(Player1,MALE)
+THEN
+RESPONSE #100
+SetGlobal("RE_BusyaTalked","GLOBAL",1)
+SetGlobal("RE_BusyaSpawned","GLOBAL",1)
+RealSetGlobalTimer("RE_BusyaTimer","GLOBAL",10)
+END
+
+IF
+Global("RE_BusyaSpawned","GLOBAL",1)
+RealGlobalTimerExpired("RE_BusyaTimer","GLOBAL")
+THEN
+RESPONSE #100
+CreateCreature("TRHMER01",[702.493],0)
+SetGlobal("RE_BusyaSpawned","GLOBAL",2)
+END

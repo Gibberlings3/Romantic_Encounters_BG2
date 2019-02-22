@@ -1,0 +1,8 @@
+IF
+AreaCheck("AR0704")
+Global("B!LaranExists","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("B!LaranExists","GLOBAL",1)
+CreateCreature("B!LARAN",[674.498],3)
+END

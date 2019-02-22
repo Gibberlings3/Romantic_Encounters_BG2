@@ -1,0 +1,9 @@
+IF
+AreaCheck("AR0709")
+Global("RE_ChandraExists","GLOBAL",0)
+Gender(Player1,MALE)
+THEN
+RESPONSE #100
+CreateCreature("RE_Chand",[280.543],0)
+SetGlobal("RE_ChandraExists","GLOBAL",1)
+END

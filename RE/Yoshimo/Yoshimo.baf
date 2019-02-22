@@ -1,0 +1,17 @@
+// Timer set
+IF
+Global("RE_YoshimoTalk","GLOBAL",0)
+InParty(Myself)
+GlobalGT("Chapter","GLOBAL",%bg2_chapter_1%)
+Gender(Player1,FEMALE)
+OR(4) 
+Race(Player1,ELF)
+Race(Player1,HALF_ELF)
+Race(Player1,HUMAN)
+Race(Player1,HALFLING)
+THEN
+RESPONSE #100
+SetGlobal("RE_YoshimoTalk","GLOBAL",1)
+RealSetGlobalTimer("RE_YoshimoTimer","GLOBAL",100)
+SetGlobalTimer("RE_YoshimoStartTimer","GLOBAL",ONE_DAY)
+END

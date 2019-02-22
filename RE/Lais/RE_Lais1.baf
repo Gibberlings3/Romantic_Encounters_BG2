@@ -1,0 +1,16 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+Wait(1)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride("RE_Lais",JumpToPoint([1692.3519]))
+JumpToPoint([1707.3538])
+Wait(1)
+FadeFromColor([20.0],0)
+MoveViewObject(Player1,INSTANT)
+Wait(1)
+ActionOverride("RE_Lais",StartDialogueNoSet(Player1))
+END

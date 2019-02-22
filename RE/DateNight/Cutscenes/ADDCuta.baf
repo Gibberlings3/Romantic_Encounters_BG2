@@ -1,0 +1,17 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+Wait(1)
+FadeToColor([20.0],0)
+Wait(1)
+CreateCreature("ADPatron",[501.527],5)
+CreateCreature("ADHolm",[405.472],13)
+MoveViewObject(Player1,INSTANT)
+MultiPlayerSync()
+Wait(1)
+FadeFromColor([20.0],0)
+Wait(1)
+ActionOverride("ADWaiter",StartDialogueNoSet(Player1))
+END

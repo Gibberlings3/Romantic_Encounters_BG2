@@ -1,0 +1,35 @@
+IF
+InParty(Myself)
+AreaCheck("AR0700")
+Global("RE_RibaldRomanceActive","GLOBAL",1)
+Global("RE_JaheiraCurious","GLOBAL",0)
+THEN RESPONSE #100
+RealSetGlobalTimer("RE_JaheiraCuriousTimer","GLOBAL",1800)
+SetGlobal("RE_JaheiraCurious","GLOBAL",1)
+END
+
+IF
+InParty(Myself)
+See(Player1)
+AreaCheck("AR0700")
+CombatCounter(0)
+!See([ENEMY])
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+RealGlobalTimerExpired("RE_JaheiraCurious","GLOBAL")
+Global("RE_JaheiraCurious","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("RE_JaheiraCurious","GLOBAL",2)
+END
+
+IF
+InParty(Myself)
+See(Player1)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+Global("RE_JaheiraCurious","GLOBAL",2)
+THEN
+RESPONSE #100
+StartDialogueNoSet(Player1)
+END

@@ -1,0 +1,12 @@
+//AR0903 
+
+IF
+	Gender(Player1,FEMALE)
+	!Alignment(Player1,MASK_EVIL)
+	ReputationGT(Player1, 14)
+	Global("C#_REBjorninExists","GLOBAL",0)
+THEN 
+  RESPONSE #100
+	CreateCreature("C#BJORNI",[1170.1578],8)
+	SetGlobal("C#_REBjorninExists","GLOBAL",1)
+END

@@ -1,0 +1,20 @@
+IF
+InParty(Myself)
+See(Player1)
+GlobalGT("BeginChallenge3","GLOBAL",0)
+Global("RE_Sarevok","GLOBAL",0)
+AreaCheck("AR4500")
+Gender(Player1,FEMALE)
+Alignment(Player1,MASK_GOOD)
+OR(3)
+Race(Player1,ELF)
+Race(Player1,HALF_ELF)
+Race(Player1,HUMAN)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("RE_Sarevok","GLOBAL",1)
+RealSetGlobalTimer("RE_DreamTimer","GLOBAL",100)
+StartDialogueNoSet(Player1)
+END

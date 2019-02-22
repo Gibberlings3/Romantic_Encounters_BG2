@@ -1,0 +1,20 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+StorePartyLocations()
+Wait(1)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride("Bodhi",MoveBetweenAreas("AR0803",[1726.193],3))
+LeaveAreaLUAPanic("AR0803","",[1703.217],10)
+LeaveAreaLUA("AR0803","",[1703.217],10)
+MultiPlayerSync()
+Explore()
+Wait(1)
+FadeFromColor([20.0],0)
+MoveViewObject(Player1,INSTANT)
+Wait(1)
+ActionOverride("Bodhi",StartDialogueNoSet(Player1))
+END

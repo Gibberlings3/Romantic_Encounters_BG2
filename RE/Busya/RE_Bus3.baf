@@ -1,0 +1,18 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+ActionOverride("TRHMER01",DestroySelf())
+SetGlobal("RE_BusyaTalked","GLOBAL",10)
+Rest()
+ActionOverride(Player2,Rest())
+ActionOverride(Player3,Rest())
+ActionOverride(Player4,Rest())
+ActionOverride(Player5,Rest())
+ActionOverride(Player6,Rest())
+ActionOverride(Player2,Rest())
+StartMovie("RESTINN")
+MoveViewObject(Player1,INSTANT)
+EndCutSceneMode()
+END

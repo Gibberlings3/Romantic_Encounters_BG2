@@ -1,0 +1,10 @@
+// A line over D'yana's head to attract PC's attention
+IF
+Global("ADDyanaOffer","GLOBAL",1)
+Global("ADDyanaOfferTalk","LOCALS",0)
+See([PC])
+THEN
+RESPONSE #100
+DisplayStringHead(Myself,@888)
+SetGlobal("ADDyanaOfferTalk","LOCALS",1)
+END

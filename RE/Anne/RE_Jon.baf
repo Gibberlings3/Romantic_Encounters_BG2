@@ -1,0 +1,7 @@
+IF
+NumTimesTalkedTo(0)
+See(Player1)
+THEN
+RESPONSE #100
+Dialogue(Player1)
+END

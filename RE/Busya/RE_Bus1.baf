@@ -1,0 +1,17 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+Wait(1)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride("TRHMER01",JumpToPoint([1708.2523]))
+JumpToPoint([1739.2513])
+MultiPlayerSync()
+Wait(1)
+FadeFromColor([20.0],0)
+MoveViewObject(Player1,INSTANT)
+Wait(1)
+ActionOverride("TRHMER01",StartDialogueNoSet(Player1))
+END

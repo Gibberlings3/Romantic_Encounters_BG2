@@ -1,0 +1,6 @@
+IF
+Global("RE_GarrenMove","GLOBAL",3)
+THEN
+RESPONSE #100
+StartDialogueNoSet(Player1)
+END

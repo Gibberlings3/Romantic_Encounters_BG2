@@ -1,0 +1,14 @@
+// At rest
+IF
+!RealGlobalTimerNotExpired("RE_DreamTimer","GLOBAL")
+Global("RE_ValygarToB","GLOBAL",17)
+InParty(Myself)
+!AreaType(DUNGEON)
+Global("Chapter","GLOBAL",%bg2_chapter_9%)
+!StateCheck(Player1,CD_STATE_NOTVALID) 
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("RE_ValygarToB","GLOBAL",18)
+StartDialogueNoSet(Player1)
+END

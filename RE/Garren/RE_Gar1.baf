@@ -1,0 +1,20 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+StorePartyLocations()
+Wait(1)
+FadeToColor([20.0],0)
+Wait(1)
+DayNight(DUSK_END)
+ActionOverride("garren",MoveBetweenAreas("AR1200",[1072.3007],3))
+LeaveAreaLUAPanic("AR1200","",[1040.3023],10)
+LeaveAreaLUA("AR1200","",[1040.3023],10)
+MultiPlayerSync()
+Wait(1)
+FadeFromColor([20.0],0)
+MoveViewObject(Player1,INSTANT)
+Wait(1)
+ActionOverride("garren",StartDialogueNoSet(Player1))
+END

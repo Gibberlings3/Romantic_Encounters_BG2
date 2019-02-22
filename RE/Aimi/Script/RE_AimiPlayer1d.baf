@@ -1,0 +1,10 @@
+IF
+!RealGlobalTimerNotExpired("RE_DreamTimer","GLOBAL")
+AreaCheck("AR2010")
+Global("RE_AimiVisit","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("RE_AimiVisit","GLOBAL",2)
+MoveViewObject(Player1,INSTANT)
+ActionOverride(Player1,StartDialog("player1",Player1))
+END

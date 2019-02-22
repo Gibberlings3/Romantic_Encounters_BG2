@@ -1,0 +1,10 @@
+IF
+  Global("B!RE_MessengerSpawn","GLOBAL",1)
+  See(Player1)
+  CombatCounter(0)
+  !See([ENEMY])
+THEN
+  RESPONSE #100
+    MoveToObject(Player1)
+    StartDialogueNoSet(Player1)
+END

@@ -1,0 +1,8 @@
+IF
+Global("RE_DryadSpawned","GLOBAL",0)
+THEN
+RESPONSE #100
+CreateCreature("RE_Dryad",[2450.586],0)
+SetGlobal("RE_DryadSpawned","GLOBAL",1)
+Continue()
+END

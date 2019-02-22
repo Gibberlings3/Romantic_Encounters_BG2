@@ -1,0 +1,17 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+FadeToColor([20.0],0)
+ActionOverride("REAimi",DestroySelf())
+Wait(1)
+RestorePartyLocations()
+Wait(1)
+RealSetGlobalTimer("RE_DreamTimer","GLOBAL",100)
+MultiPlayerSync()
+Wait(1)
+FadeFromColor([20.0],0)
+EndCutSceneMode()
+RestParty()
+END

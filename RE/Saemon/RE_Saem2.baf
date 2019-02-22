@@ -1,0 +1,18 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+Wait(1)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride("ppsaem3",MoveBetweenAreas("AR1600",[2949.2504],8))
+Wait(1)
+RestorePartyLocations()
+MultiPlayerSync()
+Wait(1)
+FadeFromColor([20.0],0)
+MoveViewObject(Player1,INSTANT)
+Wait(1)
+ActionOverride("ppsaem3",StartDialogueNoSet(Player1))
+END

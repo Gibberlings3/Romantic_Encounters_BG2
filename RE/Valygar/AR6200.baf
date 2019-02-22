@@ -1,0 +1,11 @@
+IF
+Global("StartEndBios","AR6200",1)
+InParty("Valygar")
+Global("PlayerChoseEssence","GLOBAL",0)
+Global("RE_ValygarEscape","GLOBAL",1)
+Global("ValygarBio","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("ValygarBio","GLOBAL",1)
+TextScreen("RE_Val")
+END

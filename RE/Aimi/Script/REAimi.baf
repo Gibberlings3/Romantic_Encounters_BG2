@@ -1,0 +1,26 @@
+IF
+  Global("RE_TalkedToAimi","GLOBAL",0)
+  !Global("loganjob2","GLOBAL",2)
+  Global("RE_MetPC1","GLOBAL",0)
+  See(Player1)
+THEN
+  RESPONSE #100
+    Dialogue(Player1)
+END
+
+IF
+  Global("RE_TalkedToAimi","GLOBAL",0)
+  Global("loganjob2","GLOBAL",2)
+  See(Player1)
+THEN
+  RESPONSE #100
+    Dialogue(Player1)
+END
+
+IF
+  !AreaCheck("ARRE03")
+THEN
+  RESPONSE #100
+    RandomWalk()
+END
+  

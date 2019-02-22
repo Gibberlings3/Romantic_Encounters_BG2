@@ -1,0 +1,759 @@
+/*dialogue 1 - première rencontre ; si Charname est de sexe masculin, Sheri et lui se tournent autour*/
+@0    = ~Sheri D'Avignon, chanteuse et harpiste d'Eauprofonde. Quoi donc pour vous plaire en cette soirée ? Un chant, peut-être ?~ [RE_che01]
+@1    = ~(Ses yeux verts d'émeraude détaillent votre visage puis s'attardent sur votre corps, évaluant vos charmes. Son regard n'en défaille pas pour autant.)~
+@2    = ~J'aimerais bien un chant, mais un seul et ce sera tout.~
+@3    = ~J'adorerais que vous me chantiez quelque chose. Nous pourrions éventuellement aller dans un endroit... un peu plus intime ? Ainsi, j'aurais tout le loisir de me concentrer sur vous, et sur vous seule.~
+@4    = ~Vraiment, j'adorerais vous entendre chanter. Si votre voix se rapporte à votre beauté, toute la nuit durant vous me retiendrez.~
+@5    = ~On devrait peut-être se passer des bavardages. Vous êtez incroyablement belle, vous savez !~
+@6    = ~Votre voix est magnifique, mais vos yeux... je pourrais me noyer dans ce regard !~
+@7    = ~Vous.~
+@8    = ~Je vous prie de cesser de me regarder comme vous le faites. Je ne suis pas intéressé.~
+@9    = ~Un chant, peut-être, ou alors, une ballade ? Ma harpe et ma voix sont au service de votre plaisir. L'audience de ce soir semble se complaire dans des oeuvres plus licencieuses...~ [RE_che02]
+@10   = ~Et peut-être que demain, je chanterai pour vous, et seulement pour vous... qui sait ?~
+@11   = ~Est-ce que, par hasard, vous prévoyez de louer une chambre pour la nuit ? Je suis certaine que l'établissement vous apportera entière satisfaction.~
+
+/*Aérie parle*/
+@12   = ~Oh, oui, s'il vous plait !~
+@13   = ~<CHARNAME>, la dernière fois qu'elle a chanté, c'était magnifique, mais j'en ai rougi écarlate.~
+/*Anomen parle*/
+@14   = ~Pensez-vous vraiment qu'il soit approprié de l'écouter, <CHARNAME> ?~
+/*Edwin parle*/
+@15   = ~Ces jeux puérils nous font perdre notre temps, <CHARNAME>. Finissons-en avec elle. (Par contre, elle s'est vêtue de la couleur supérieure. J'aimerais savoir si elle est à vendre. Une voix de soprano telle que la sienne pousserait de charmants petits cris.)~
+/*Haer'Dalis parle*/
+@16   = ~Oh, nous le devons absolument. J'ai tellement de choses à apprendre ! Sheri, peut-être que nous pourrions nous arranger pour organiser un... échange, si je puis dire ?~
+@17   = ~Je suis époustouflé devant cette clarté, cette beauté, ces contrastes, ces tons... et ce ne sont là que tes lèvres, mon ardente oiselle. Il me reste encore ta voix à décrire !~
+/*Keldorn parle*/
+@18   = ~Nous pouvons nous permettre un brin de détente, et cela serait bénéfique pour le moral, d'ailleurs. Mais, <CHARNAME>, ne pensez-vous pas que la quatrième fois serait la fois de trop ?~
+/*Jaheira parle*/
+@19   = ~Ses chants sont très agréables à écouter, <CHRNAME>. Mais nous devrions nous en retourner à nos affaires. Ne perdons plus notre temps ici.~
+/*Minsc parle*/
+@20   = ~Bouh aime la jolie chanson...~
+@21   = ~Je ne comprends pas. <CHARNAME>, pourquoi est-ce que tout le monde rit ?~
+/*Viconia parle*/
+@22   = ~Fais la taire, jaluk. Nous n'avons pas besoin qu'une coureuse habillée de rouge nous miaule aux oreilles.~
+@23   = ~Par les dieux, va-t-elle se taire ? Moi, au moins, je peux chanter une chanson *vraiment* lascive. "Dans la Fosse aux Araignées j'ai déchiré sa chair, Pour entendre ses hurlements...~
+/*Korgan parle, en réponse à Viconia*/
+@24   = ~Arrête-là tes miaulements, sombre garce. Laisse chanter la donzelle en rouge.~
+/*Yoshimo parle*/
+@25   = ~J'aimerais bien écouter une chanson.~
+@26   = ~J'aimerais bien écouter un autre chant !~
+@27   = ~<CHARNAME>, tu dois absolument me présenter à de cette fleur gracieuse. J'aimerais entendre sa voix encore une fois.~
+@28   = ~On dirait bien que tu t'es mis à beaucoup apprécier l'art des Chants Paillards, <CHARNAME>...~
+@29   = ~Les mots me manquent. Un autre chant, bien évidemment.~
+/*fin des interventions des membres du groupe*/
+
+@30   = ~Alors, qu'est-ce que ça sera ?~
+@31   = ~Merci bien, mais peut-être une autre fois.~
+@32   = ~Oui, s'il vous plaît. Choisissez donc ce que vous nous chanterez.~
+@33   = ~Vous pourriez nous chanter quelque chose de sympa à écouter ?~
+@34   = ~Et pourquoi pas un chant rigolo ?~
+@35   = ~Quelque chose de romantique.~
+@36   = ~N'importe quoi, pourvu qu'il y soit question de bain !~
+@37   = ~J'aimerais écouter un chant calme, lent et beau.~
+@38   = ~Quelque chose de joyeux et de vivant, s'il vous plaît.~
+@39   = ~Une chanson espiègle et malicieuse, je vous prie.~
+@40   = ~Quelque chose qui saura chatouiller mon esprit et mes oreilles, je vous prie.~
+
+
+/*réponse à @33 : "J'ai promis à mon amour" -- chanson des Compagnons de la Chanson, d'après "The Riddle Song", berceuse traditionnelle des premiers colons américains*/
+@41   = ~J'ai promis à mon amour
+Une pêche sans noyau,
+J'ai promis à mon amour
+Un coq sans bec ni ergot,
+J'ai promis un enfant sage
+Qu'on n'entendrait pas pleurer,
+Et un beau livre d'images
+Qui jamais ne finirait...~
+@42   = ~Mais où trouverai-je un jour
+Une pêche sans noyau ?
+Mais où trouverai-je un jour
+Un coq sans bec ni ergot ?
+Où trouver un enfant sage
+Qu'on n'entendrait pas pleurer ?
+Et un beau livre d'image
+Qui jamais ne finirait ?~
+@43   = ~Une pêche encore en fleur,
+Elle n'a pas de noyau,
+Un enfant jamais ne pleure
+Lorsqu'il dort dans son berceau,
+Et le coq en sa coquille,
+Il n'est même pas poussin.
+Le garçon aime la fille,
+Notre histoire n'a pas de fin...~
+@44   = ~OH ! Vous voulez dire... ohhhh ! (rougit)~
+
+
+/*réponse à @34 : variation humoristique de "J'ai promis à mon amour"*/
+@45   = ~J'ai donné à mon amour
+Une pêche sans noyau,
+J'ai donné à mon amour
+Un coq sans bec ni ergot,
+Un livre infini d'images,
+Et aussi un enfant sage,
+Mais il en a pris ombrage,
+Et il m'a dit sans ambage :~
+@46   = ~Ta pêche fut fort bien aimée,
+Car pour moi le coeur fait loi.
+Ton coq fut fort apprécié,
+Je lui ai donné un toit.
+Le livre m'a passionné,
+Mais pour l'enfant néanmoins,
+Dans le dos, tu me l'as fait,
+Sans avertissement aucun !~
+
+
+/*réponse à @35 : "Les yeux d'Elsa" -- poème de Louis Aragon*/
+@47   = ~Tes yeux sont si profonds qu'en me penchant pour boire
+J'ai vu tous les soleils venir se mirer,
+S'y jeter à mourir tous les désespérés ;
+Tes yeux sont si profonds que j'y perds la mémoire.~
+@48   = ~A l'ombre des oiseaux, c'est l'océan troublé,
+Puis le beau temps soudain se lève et tes yeux changent,
+L'été taille la nue au tablier des anges ;
+Le ciel n'est jamais bleu comme il l'est sur les blés.~
+@49   = ~Les vents chassent en vain les chagrins de l'azur,
+Tes yeux plus clairs que lorsqu'une larme y luit,
+Tes yeux rendent jaloux le ciel d'après la pluie ;
+Le verre n'est jamais si bleu qu'à sa brisure.~
+@50   = ~Mère des Sept Douleurs, ô lumière mouillée,
+Sept glaives ont percé le prisme des couleurs,
+Le jour est plus poignant qui point entre les pleurs,
+L'iris troué de noir, plus bleu d'être endeuillé.~
+@51   = ~Tes yeux dans le malheur ouvrent la double brêche
+Par où se reproduit le miracle des Rois,
+Lorsque le coeur battant, ils virent tous les trois
+Le manteau de Marie accroché dans la crèche.~
+@52   = ~Une bouche suffit au mois de Mai des mots
+Pour toutes les chansons et pour tous les hélas,
+Trop peu d'un firmament pour des millions d'astres ;
+Ils leur fallait tes yeux et leurs secrets gémeaux.~
+@53   = ~L'enfant accaparé par les belles images
+Ecarquille les siens moins démesurément ;
+Quand tu fais les grands yeux, je ne sais si tu mens,
+On dirait que l'averse ouvre des fleurs sauvages.~
+@54   = ~Cachent-ils des éclairs dans cette lavande où
+Des insectes défont leurs amours violentes ?
+Je suis pris au filet des étoiles filantes,
+Comme un marin qui meurt en mer en plein mois d'août.~
+@55   = ~Il advint qu'un beau soir, l'univers se brisa
+Sur des récifs que les naufrageurs enflammèrent.
+Moi, je voyais briller au-dessus de la mer
+Les yeux d'Elsa, les yeux d'Elsa, les yeux d'Elsa.~
+
+
+/*réponse à @36 : "Dans l'eau de la claire fontaine" -- chanson de Georges Brassens*/
+@56   = ~Dans l'eau de la claire fontaine,
+Elle se baignait toute nue ;
+Une saute de vent soudaine
+Jeta ses habits dans les nues.~
+@57   = ~En détresse elle me fit signe,
+Pour la vêtir, d'aller chercher
+Des monceaux de feuille de vigne,
+Fleurs de lis ou fleurs d'oranger.~
+@58   = ~Avec des pétales de roses,
+Un bout de corsage lui fis.
+La belle n'était pas bien grosse,
+Une seule rose a suffi.~
+@59   = ~Avec la pampe de la vigne,
+Un bout de cotillon lui fis.
+Mais la belle était si petite,
+Qu'une seule feuille a suffi.~
+@60   = ~Elle me tendit ses bras, ses lèvres,
+Comme pour me remercier. 
+Je les pris avec tant de fièvre
+Qu'elle fut toute déshabillée.~
+@61   = ~Le jeu dut plaire à l'ingénue,
+Car, à la fontaine souvent,
+Elle s'alla baigner toute nue,
+Priant les dieux qu'il fît du vent,
+Du vent...~
+
+
+/*réponse à @37 : "Parfum Exotique" -- poème de Baudelaire, tiré des Fleurs du Mal*/
+@62   = ~Quand les deux yeux fermés, en un soir chaud d'automne,
+Je respire l'odeur de ton sein chaleureux,
+Je vois se dérouler des rivages heureux
+Qu'éblouissent les feux d'un soleil monotone ;
+Un île paresseuse où la nature donne
+Des arbres singuliers et des fruits savoureux ;
+Des hommes dont le corps est mince et vigoureux,
+Et des femmes dont l'oeil par sa franchise étonne.~
+@63   = ~Guidé par ton odeur vers de charmants climats,
+Je vois un port rempli de voiles et de mâts
+Encor tout fatigués par la vague marine,
+Pendant que le parfum des verts tamariniers,
+Qui circule dans l'air et m'enfile la narine,
+Se mêle dans mon âme au chant des mariniers.~
+@64   = ~Je t'adore à l'égal de la voûte nocturne,
+Ô vase de tristesse, ô grande taciturne,
+Et t'aime d'autant plus, belle, que tu me fuis,
+Et que tu me parais, ornement de mes nuits,
+Plus ironiquement accumuler les lieues
+Qui séparent mes bras des immensités bleues.
+Je m'avance à l'attaque, et je grimpe aux assauts,
+Comme après un cadavre un choeur de vermisseaux,
+Et je chéris, ô bête implacable et cruelle !
+Jusqu'à cette froideur par où tu m'es plus belle !~
+@65   = ~Tu mettrais l'univers entier dans ta ruelle,
+Femme impure ! L'ennui rend ton âme cruelle.
+Pour exercer tes dents à ce jeu singulier,
+Il te faut chaque jour un coeur au râtelier.
+Tes yeux, illuminés ainsi que des boutiques,
+Et des ifs flamboyants dans les fêtes publiques,
+Usent insolemment d'un pouvoir emprunté,
+Sans connaître jamais la loi de leur beauté.~
+@66   = ~Machine aveugle et sourde, en cruauté féconde !
+Salutaire instrument, buveur du sang du monde,
+Coment n'as-tu pas honte et comment n'as-tu pas
+Devant tous les miroir vu pâlir tes appas ?
+La grandeur de ce mal où tu te crois savante
+Ne t'a donc jamais fait reculer d'épouvante ?
+Quand la nature, grande en ses desseins cachés,
+De toi se sert, ô femme, ô reine des péchés,
+De toi, vil animal, pour pétrir un génie ?
+Ô fangeuse grandeur ! Sublime ignominie !~
+
+
+/*réponse à @38 : "Embrasse-les tous" -- chanson de Georges Brassens*/
+@67   = ~Tu n'es pas de celles qui meurent où elles s'attachent,
+Tu frottes ta joue à toutes les moustaches,
+Faut s'lever de bon matin pour voir un ingénu
+Qui n't'ai pas connu.
+Entrée libre à n'importe qui dans ta ronde,
+Coeur d'artichaut, tu donnes une feuille à tout l'monde.
+Jamais, de mémoire d'homme, moulin n'avait été
+Autant fréquenté.~
+@68   = ~De Pierre à Paul, en passant par Jules et Félicien,
+Embrasse-les tous,
+Embrasse-les tous,
+Dieu reconnaîtra le sien !
+Passe-les tous par tes armes,
+Passe-les tous par tes charmes,
+Jusqu'à c'que l'un d'eux, les bras en croix,
+Tourne de l'oeil dans tes bras.~
+@69   = ~En attendant le baiser qui fera mouche,
+Le baiser qu'on garde pour la bonne bouche,
+En attendant de trouver parmi tous ces galants
+Le vrai merle blanc,
+En attendant qu'le p'tit bonheur ne t'apporte
+Celui derrière qui tu condamneras ta porte
+En marquand dessus "Fermé jusqu'à la fin des jours
+Pour cause d'amour..."~
+@70   = ~Des grands aux p'tits en allant jusqu'aux Lilliputiens,
+Embrasse-les tous,
+Embrasse-les tous,
+Dieu reconnaîtra le sien !
+Jusqu'à ce qu'amour s'en suive,
+Qu'à son coeur une plaie vive,
+Le plus touché d'entre nous
+Demande grâce à genoux.~
+@71   = ~Alors toutes tes fredaines,
+Guilledous et prétendaines,
+Tes écarts, tes grands écarts,
+Te seront pardonnés, car
+Les filles, quand ça dit "je t'aime",
+C'est comme un second baptême ;
+Ca leur donne un coeur tout neuf,
+Comme au sortir de son oeuf.~
+
+
+/*réponse à @39 : "Polissonerie" -- poème de Voltaire*/
+@72   = ~- Je cherche un petit bois touffu,
+Que vous portez, Aminthe,
+Qui couvre, s'il n'est pas tondu
+Un gentil labyrinthe.
+Tous les mois, on voit quelques fleurs
+Colorer le rivage ;
+Laissez-moi verser quelques pleurs
+Dans ce joli bocage.~
+@73   = ~- Allez, monsieur, porter vos pleurs
+Sur un autre rivage ;
+Vous pourriez bien gâter les fleurs
+De mon joli bocage ;
+Car, si vous pleuriez tout de bon,
+Des pleurs comme les vôtres
+Pourraient, dans une autre saison,
+M'en faire verser d'autres.~
+@74   = ~- Quoi ! Vous craignez l'évènement
+De l'amoureux mystère ;
+Vous ne savez donc pas comment
+On agit à Cythère ;
+L'amant, modérant sa raison,
+Dans cette aimable guerre,
+Sait bien arroser le gazon
+Sans imbiber la terre.
+
+- Je voudrais bien, mon cher amant,
+Hasarder pour vous plaire ;
+Mais dans ce fortuné moment,
+L'on ne se connait guère.
+L'amour maîtrisant vos désirs,
+Vous ne seriez plus maître
+De retrancher de nos plaisirs
+Ce qui vous donna l'être.~
+
+
+/*réponse à @40 : "Première soirée" -- poème de Rimbaud*/
+@75   = ~Elle était fort déshabillée,
+Et de grands arbres indiscrets
+Aux vitres jetaient leur feuillée,
+Malinement, tout près, tout près.
+Assise sur ma grande chaise,
+Mi-nue, elle joignait les mains.
+Sur le plancher frissonnaient d'aise
+Ses petits pieds si fins, si fins.~
+@76   = ~Je regardai, couleur de cire,
+Un petit rayon buissonnier
+Papillonner dans son sourire
+Et sur son sein - mouche ou rosier.
+Je baisai ses fines chevilles.
+Elle eût un doux rire brutal
+Qui s'égrenait en claires trilles,
+Un joli rire de cristal.~
+@77   = ~Les petits pieds sous sa chemise
+Se sauvèrent : 'Veux-tu en finir !'
+La première audace permise,
+Le rire feignait de punir.
+Pauvrets palpitants sous ma lèvre,
+Je baisai doucement ses yeux :
+Elle jeta sa tête mièvre
+En arrière : 'Oh ! C'est encor mieux !~
+@78   = ~Monsieur, j'ai deux mots à te dire...'
+Je lui jetai le reste au sein
+Dans un baiser, qui la fit rire
+D'un bon rire qui voulait bien...
+Elle était fort déshabillée,
+Et de grands arbres indiscrets
+Aux vitres jetaient leur feuillée,
+Malinement, tous près, tout près.~
+
+
+@79   = ~Juste un chant ? (Elle vous lance un petit sourire pincé.) Peut-être une autre fois.~
+@80   = ~Non ? (Elle vous lance un petit sourire pincé.) Bien sûr.~
+@81   = ~Ah, voyons voir. (Elle vous lance un petit sourire pincé.) Cela fera huit-cent soixante-douze.~
+@82   = ~...pièces d'or ? J'ai dû mal comprendre... J'ai cru que vous étiez une barde, et non une représentante de la Guilde des Courtisanes.~
+@83   = ~...fois que vous avez entendu cette réplique ? Evidemment. Elle n'en est pas moins vraie.~
+@84   = ~Je vous demande pardon. Je ne suis pas barde. Je parle avec maladresse. Tout ce que je peux vous dire, c'est que votre beauté m'embrase.~
+@85   = ~Je vous demande pardon. Je suis peut-être barde, tout comme vous, mais lorsque je fais face à votre beauté, j'en perds mon latin. Tout ce que je peux vous dire, c'est que vous embrasez mon âme.~
+@86   = ~Vous savez quoi, j'ai un peu soif, finalement. On se reverra plus tard.~
+@87   = ~Peut-être me reverrez-vous demain. Ou peut-être pas.~
+@88   = ~(Son rire vous rappelle le tintement d'une cloche.)~
+@89   = ~Vous avez la langue bien pendue. Mais les compliments ne sont pas le seul moyen de faire montre de son appréciation. Voyons voir... une ballade romantique, peut-être ? Ou une complainte héroïque, alors ? Comment choisirons-nous ?~
+@90   = ~A pile ou face. Ce jeu a toujours fait partie de ma vie. (Vous lancez une pièce sur la table.)~
+@91   = ~Je vais vous laisser choisir.~
+@92   = ~La ballade.~
+@93   = ~Une complainte héroïque, je vous prie.~
+@94   = ~Je veux quelque chose d'explosif, telle votre chevelure de flamme. Ou un chant qui conte la voûte étoilée, tels vos extraordinaires yeux d'émeraude. Ou bien alors qui parle de l'océan, tel le bleu royal de votre robe ?~
+@95   = ~Ahh, bien, bien. Vous êtes très direct dans vos décisions. (Elle tourne la tête sur le côté, et jette un regard sur la table, ses yeux s'attardant sur un sou.)~
+@96   = ~Peut-être préféreriez-vous laisser ce choix à la faveur d'une pièce ? Pile, une ballade, face, une complainte.~
+@97   = ~Pile ou face a toujours fait partie de ma vie. Allez-y, lancez-la pour moi.~
+@98   = ~Non je préfèrerais que vous choisissiez pour moi.~
+@99   = ~Je choisis la romance. En votre honneur.~
+@100  = ~Je préfère la complainte, s'il vous plaît.~
+@101  = ~(Ses lèvres de rubis s'ouvrent, dévoilant une dentition aussi parfaite et aussi blanche qu'une perle. Sa joue trahit l'ombre d'un empourprement.)~
+@102  = ~Seigneur, je devrais vous jouer un chant audacieux, telles vos paroles. (Elle tourne la tête sur le côté, et jette un regard sur la table, ses yeux s'attardant sur un sou.)~
+@103  = ~Chantez. Tout ce qui sortira de vos lèvres fera fondre mon coeur.~
+@104  = ~Ca commence à devenir long. Vous savez quoi, peut-être qu'on se reverra demain. Il me faut un verre.~
+@105  = ~Va pour la ballade...~
+@106  = ~Ahh... trop tard. La prochaine fois, peut-être ? Et maintenant...~
+@107  = ~J'ai promis à mon amour
+Une pêche sans noyau,
+J'ai promis à mon amour
+Un coq sans bec ni ergot,
+J'ai promis un enfant sage
+Qu'on n'entendrait pas pleurer,
+Et un beau livre d'images
+Qui jamais ne finirait...~
+@108  = ~Mais où trouverai-je un jour
+Une pêche sans noyau ?
+Mais où trouverai-je un jour
+Un coq sans bec ni ergot ?
+Où trouver un enfant sage
+Qu'on n'entendrait pas pleurer ?
+Et un beau livre d'image
+Qui jamais ne finirait ?~
+@109  = ~(Alors qu'elle chante, vous percevez ses yeux d'émeraude danser à la lueur des chandelles, envoûté que vous êtes par la musique et par sa beauté.)~
+@110  = ~(Alors qu'elle chante, vous vous attarder sur ses mouvements de gorge et d'épaule, et plus particulièrement sur ses courbes agréables, pareilles à des chutes d'eau au sommet d'une colline verdoyante.)~
+@111  = ~(Alors qu'elle chante, vous la regardez et écoutez attentivement.)~
+@112  = ~(Alors qu'elle chante, vous jonglez nonchalamment avec la pièce tout en regardant le plafond, avachi dans votre chaise.)~
+@113  = ~(Alors qu'elle chante, vous balayez la pièce du regard pour apprécier les autres femmes présentes, jonglant doucement avec la pièce.)~
+@114  = ~(Sa voix s'éteint doucement. Elle s'arrête avant d'entamer le couplet final, alors qu'un rougissement enflamme son décolleté et remonte jusqu'à ses joues. Vous suivez l'empourprement du regard jusqu'à ce que vos yeux croisent les siens. Ils apparaissent embrumés, les paupières à moitié fermées.)~
+@115  = ~Je vois que j'ai toute votre attention. Peut-être passerons-nous aux vers plus grivois ?~
+@116  = ~Je devrais peut-être vous chanter autre chose. Pouvez-vous me rappeler votre nom ?~
+@117  = ~Les noms importent peu. Tout ce qui compte, c'est l'instant présent.~
+@118  = ~<CHARNAME>.~
+@119  = ~Ma douce barde, prononcez un nom de ces douces lèvres, et je le ferai mien... aussi longtemps que vous le prononcerez.~
+@120  = ~Ah, mais pourtant, je sais que vous n'en faites pas un secret. Votre nom n'est pas complètement inconnu des bardes d'Eauprofonde et de la Porte de Baldur. Et votre apparence est quelque peu.. difficile à oublier.~
+@121  = ~Mais je garderai votre secret, si vous le dissimulez pour quelque raison que ce soit.~
+@122  = ~(Sa voix s'éteint doucement. Elle s'arrête avant d'entamer le couplet final, alors qu'un rougissement de colère enflamme son décolleté et remonte jusqu'à ses joues. Vous suivez l'empourprement du regard jusqu'à ce que vos yeux croisent les siens. Ils apparaissent embrumés, les paupières à moitié fermées.)~
+@123  = ~Je vois que je n'ai pas su capter toute votre attention. Peut-être passerons-nous aux vers plus satiriques ?~
+@124  = ~Ta pêche vidée du noyau
+Me laissa tout à fait froid.
+J'ai pris ton stupide oiseau,
+Je lui ai donné un toit.
+Le livre fut fort barbant,
+Mais pour l'enfant cependant,
+Dans le dos, tu me l'as fait,
+Sans bague au doigt me passer !~
+@125  = ~Peu importe. Vous pouvez me rappeler votre nom ?~
+@126  = ~Eh bien, je vois que vous avez le sens de l'humour, au moins. On ne m'a pas fait d'avances plus grossières de toute la soirée.~
+@127  = ~Et est-ce que ça a fonctionné, au moins ?~
+@128  = ~Hé, qu'est-ce que vous vouliez que je dise ? Je suis un peu en-dehors de mon élément. Au moins, c'était toujours mieux que de dire : "Moi, <CHARNAME>. Toi, Sheri. Nous au lit maintenant."~
+@129  = ~C'est votre travail de susciter mon intérêt, barde.~
+@130  = ~Vous avez de la répartie. Mais il y a d'autres moyens pour faire montre de son appréciation.~
+@131  = ~Tels que...~
+@132  = ~Eh bien, maintenant que vous le mentionnez, j'aurais une ou deux suggestions.~
+@133  = ~Hmmm... Il va falloir que j'y pense.~
+@134  = ~Certes, mais vous êtes quand même... très très en beauté.~
+@135  = ~(L'admirer, béat d'admiration.)~
+@136  = ~Vous avez le droit de penser ce que vous voulez, tout comme moi.~
+@137  = ~Eh bien, <CHARNAME>, vous êtes sans doute quelqu'un de... de fascinant, mais je ne perdrai pas mon temps avec quelqu'un que je n'intéresse pas. Peut-être que la petite brune au bar vous serait de plus agréable compagnie ? J'ai entendu dire qu'elle était toute disponible, pour qui dispose d'or en suffisance.~
+@138  = ~Vous m'avez mal comprise, mon bel oiseau. Je ne pouvais vous voir chanter. Il n'aurait pas été correct de vous interrompre avec mes pensées.~
+@139  = ~Peut-être qu'elle le sera, en effet. Je vous prie de m'excuser.~
+@140  = ~Oh, alors comme ça, je vous fascine ?~
+@141  = ~(Ses yeux se rétrécissent et son regard se durcit. Elle penche la tête tel un oiseau étudiant un ver particulièrement hideux.)~
+@142  = ~Je n'apprécie pas cette inférence.~
+@143  = ~Qui inférait ? Musiciens, acteurs, amuseurs, courtisanes ; leur unique tâche en ce bas-monde est de plaire à l'audience, non ?~
+@144  = ~La farce était peut-être de mauvais goût. Je n'escomptais guère vous faire offense... Il m'est simplement difficile de parler à quelqu'un à la beauté aussi irrésistible.~
+@145  = ~J'ai peur que ce soit vous qui ait fait inférence... vous avez commencé à parler chiffres. J'aurais triplé votre prix juste pour vous entendre chanter.~
+@146  = ~(D'un geste vif, elle bascule en avant et attrape la pièce en l'air. Sa longue chevelure de flamme frôle votre joue, et sa douce fragrance envahit vos sens.)~
+@147  = ~Une pièce pour vos pensées, messire, ou alors celle-ci me revient, pour ma performance que vous vous êtes fait une joie d'ignorer ?~ ~Une pièce pour vos pensées, ma dame, ou alors celle-ci me revient, pour ma performance que vous vous êtes fait une joie d'ignorer ?~
+@148  = ~Peut-être nous reverrons-nous ici, <CHARNAME>.~
+@149  = ~(Son regard s'attarde sur vous, et elle se tourne vers la pièce commune. La musique qui s'échappe de sa harpe virevolte au hasard au travers de la foule.)~
+@150  = ~Vous pouvez en être sûre.~
+@151  = ~Pas si je vous retrouve avant.~
+@152  = ~(Vous la regardez silencieusement tout en pensant très fort à une douche glacée.)~
+@153  = ~(Vous vous creusez la tête, essayant de vous souvenir du mot de passe des chambres de la Guilde des Courtisanes.)~
+@154  = ~(Vous vous penchez et la voyez traverser la foule au hasard d'un pas aérien, telle la mélodie d'un caprice.)~
+
+
+
+/*dialogue 2 - le jour suivant*/
+@155  = ~(La douce voix de soprano de Sheri s'élève, accompagnée par le son de sa harpe.)~
+@156  = ~'Tes yeux sont si profonds qu'en me penchant pour boire
+J'ai vu tous les soleils venir se mirer,
+S'y jeter à mourir tous les désespérés ;
+Tes yeux sont si profonds que j'y perds la mémoire.~
+@157  = ~A l'ombre des oiseaux, c'est l'océan troublé,
+Puis le beau temps soudain se lève et tes yeux changent,
+L'été taille la nue au tablier des anges ;
+Le ciel n'est jamais bleu comme il l'est sur les blés...'~
+@158  = ~Alors, vous êtes de retour ? J'ai écrit un poème en votre honneur.~
+@159  = ~Enfin, ça parle peut-être un peu de vous. Mais ce poème est pour moi seule, bien qu'il vous concerne. Je dirais que c'est un chant romantique.~
+@160  = ~Je n'ai pas encore décidé de s'il s'agit d'une ballade romantique, d'une farce ou d'une satire. J'opterai probablement pour la satire.~
+@161  = ~Je n'en suis pas sûre.~
+@162  = ~Ahh, je n'ai même pas besoin de l'entendre. Vos yeux me suffisent.~
+@163  = ~Hmmm... On dirait que vous faites plutôt dans les chants paillards. Je pourrais peut-être vous fournir quelque inspiration ?~
+@164  = ~J'irai peut-être me chercher quelque chose au bar plus tard. Pour le moment, je préfère rester ici. Je vous en prie, continuez la chanson. J'aimerais entendre le son de votre exceptionnelle voix.~
+@165  = ~Nous avons peut-être commencé du mauvais pied, vous et moi. Pourrions-nous repartir de zéro ?~
+@166  = ~Vous avez vraiment été une peste avec moi, la dernière fois que nous nous sommes parlés. J'espère que vous saurez m'amuser un peu mieux, cette fois.~
+@167  = ~J'ai cru sentir une connexion entre nous deux, la dernière fois que nous nous sommes parlés. Bien que je languisse de ne vous entendre chanter, je préfèrerais que vous m'accordiez cette danse.~
+@168  = ~Peut-être. Ou peut-être que non. Vous pourriez m'inspirer une comédie, ou peut-être une oeuvre dont le titre serait : "La séduction pour les nuls"...~
+@169  = ~(Vous portez la main à votre poitrine en une gestuelle dramatique, mimant un coup de flèche dans le coeur.) Ahh, je suis touché ! Seule une danse en compagnie d'une jolie barde me sauvera la vie...~
+@170  = ~Dansez-vous aussi bien que vous maniez le verbe et la rime ? Allons, nous devrions vérifier. Accordez-moi cette danse !~
+@171  = ~Vous êtes un poil susceptible, je me trompe ? Vous savez que je ne suis pas obligé de rester ici à subir vos quolibets. Je pourrai avoir n'importe quelle femme dans cette pièce. Mais c'est vous que j'ai choisie.~
+@172  = ~<CHARNAME>, vous êtes incorrigible !~
+@173  = ~Je parie que vous faites le coup à toutes les autres femmes.~
+@174  = ~Je vais m'épargner l'humiliation d'une réponse. Il n'y a pas d'autre femme, seulement vous. Que diriez-vous d'une danse ?~
+@175  = ~Mais, bien entendu. Et je suis modeste, avec ça. N'hésitez pas à me demander. Voudriez-vous danser ?~
+@176  = ~Ma mère m'a toujours dit que le chemin le plus court vers le coeur d'une femme passait par le rire, alors que celui qui menait au coeur d'un homme se situait en-dessous de plusieurs centimètres d'acier sur la poitrine. Mais là encore, je n'ai inventé cette fable que pour vous faire montre de mon bel esprit, car jamais je n'ai connu ma mère. Une danse ?~
+@177  = ~Eh bien, on dit souvent que les meilleurs sont mariés, qu'ils sont déjà pris ou encore qu'ils préfèrent la compagnie d'autres hommes... On dirait bien que vous avez eu de la chance !~
+@178  = ~Eh bien, si à un moment donné vous vous lassez de tous ces chants et de toutes ces danses, n'hésitez pas à venir me voir. Vous me trouverez aisément, je reste ici. Et je pourrais bien apprécier votre compagnie.~
+@179  = ~Eh bien, <CHARNAME>...~
+@180  = ~Peut-être que je le ferai. Mais j'en doute fort. Vous êtes bien trop rapide pour moi.~
+@181  = ~Ca n'arrivera que dans vos rêves.~
+@182  = ~Eh bien... soit. Nous allons danser.~
+@183  = ~(Vous conduisez Sheri sur la piste de danse. Les premières notes d'une valse bien connue commencent à sortir d'une guitare.)~
+@184  = ~(Elle se fond dans vos bras, fiévreuse, vibrante, face à vous, les yeux dans les yeux.)~
+@185  = ~(Elle se tient toujours sur ses gardes dans vos bras, tendue et réservée, le regard légèrement fuyant.)~
+@186  = ~(Alors que vous bougez de concert sur la piste de danse, son nez se pose doucement sous votre menton, sa joue contre votre épaule, et sa chevelure se déverse en cascade sur votre poitrine.)~
+@187  = ~(Elle se tient correctement, comme les formalités l'exigent, et son corps se tient à bonne distance du vôtre. La raideur formelle demandée par la danse est accentuée par la position de sa tête : elle la tourne de telle sorte que vous ne voyez que son profil, et vous regarde seulement du coin de l'oeil.)~
+@188  = ~(Ses hanches suivent vos mouvements avec grâce. Vous pouvez sentir les battements de son coeur s'accélérer.)~
+@189  = ~(La danse prend fin...)~
+@190  = ~(La valse se termine, mais l'orchestre entame une musique au tempo plus rapide. Vous lui faites une révérence, l'invitant à continuer.)~
+@191  = ~Me feriez-vous l'honneur d'une seconde danse, ou préféreriez-vous vous reposer ?~
+@192  = ~Vous dansiez très bien. Nous devrions peut-être tenter un style différent, non ?~
+@193  = ~Vous dansiez très bien. Malgré votre froideur et votre raideur. Nous devrions peut-être tenter un style de danse différent, pour instiller une étincelle de vie en vous.~
+@194  = ~(Son rire résonne, cristallin, et elle vous lance un regard brillant par-dessus son épaule, alors qu'elle vous mène plus avant sur la piste de danse.)~
+@195  = ~(Le joyeux madrigal qui s'élève dans les airs incite les gens à danser en rangs face-à-face ; les couples tournoient et virevoltent, se font et se défont au gré du tempo. Au travers de la piste, vous pouvez la voir rire, vibrante d'énergie.)~
+@196  = ~(La soirée arrive peu à peu à son terme. Danse après danse, elle se rapproche de sa conclusion.)~
+@197  = ~(Finalement, vous vous écroulez tous les deux dans un petit renforcement, au coin de la salle. Il y a suffisamment de place pour vous asseoir genoux contre genoux, et boire comme les assoiffés que vous êtes.)~
+@198  = ~(Sheri, haletante, essaie de se rafraîchir en utilisant sa main comme d'un éventail, et en secouant légèrement sa robe, la remontant ce faisant jusqu'à ses genoux.)~
+@199  = ~(Se pencher sur la table et essayer de lui voler un baiser.)~
+@200  = ~Vous êtes le feu et l'émeraude, votre voix argentée, mon désir le plus cher.~
+@201  = ~Je n'avais pas dansé ainsi depuis des années. Je me suis peut-être fait mal, si ça se trouve !~
+@202  = ~(Sheri se penche elle aussi sur la table. Ses lèvres rencontrent les vôtres, et les pressent avec force.)~
+@203  = ~(Elle se radoucissent alors que vous répliquez. Sa chaleur et son souffle haletant s'inscrivent dans vos sens.)~
+@204  = ~(Sa langue se redresse pour goûter votre lèvre supérieure. Soudainement, votre baiser devient plus profond.)~
+@205  = ~(Lorsque vous cherchez à respirer, elle vous rattrape de ses dents, prolongeant le baiser jusqu'à ce que vous soyez tous sur le point de suffoquer.)~
+@206  = ~Voilà qui était fort agréable.~
+@207  = ~Mes jambes me font souffrir. Les masserez-vous pour moi ?~
+@208  = ~Ahh, vous devez avoir mal aux jambes. Voulez-vous que je vous les masse ?~
+@209  = ~Sheri, ne préféreriez-vous pas monter à l'étage, et continuer tout ceci dans un endroit plus intime ?~
+@210  = ~Bonne nuit, Sheri. Je ne peux rester ici, à moitié saoûl de votre beauté. Je reste dans les parages. Vous me trouverez aisément, si vous vouliez venir me rendre visite dans ma suite.~
+@211  = ~Ahh, <CHARNAME>...~
+@212  = ~(Ses yeux pétillent à la lueur des bougies. Elle se penche sur la petite table pour déposer sur vos lèvres un doux baiser.)~
+@213  = ~Il serait bien fâcheux que toutes ces danses vous aient blessé.~
+@214  = ~Laissez-moi vous aider...~
+@215  = ~Sheri, ce n'est pas tout à fait ma jambe, ça...~
+@216  = ~Oh ! Oui, je me sens bien mieux. Laissez-moi vous aider à mon tour !~
+@217  = ~Un petit peu plus haut, s'il vous plaît, je crois que la crampe est un peu plus haut.~
+@218  = ~(Vous déplacez votre main en-dessous de la table, et atteignez sa cuisse, mais ses mains vous arrêtent, piégeant la vôtre dans les tissus de sa robe.)~
+@219  = ~(Elle se mord la lèvre, et sa poitrine s'empourpre.)~
+@220  = ~(Elle remonte doucement votre main sous ses jupes. Elle commence à masser sa jambe avec vos doigts.)~
+@221  = ~On dirait bien qu'il y a quelques tensions à évacuer de ce côté-ci, <CHARNAME>.~
+@222  = ~J'en veux plus, Sheri... Je vous désire.~
+@223  = ~(Vous massez doucement l'intérieur de sa cuisse, qui vous paraît au toucher telle de la soie électrique. Vous déplacez vos doigts tout doucement, recherchant sa chaleur corporelle.)~
+@224  = ~(Vous avancez votre main rapidement, et reposez vos doigts sur sa féminité.)~
+@225  = ~(Elle met ses deux mains sous la table. Elle vous caresse et vous séduit, ses doigts défont votre ceinture.)~
+@226  = ~(Lorsqu'elle ouvre le paquet, ses joues prennent la teinte de ses cheveux roux. Bientôt, tout ce que vous pouvez distinguer, c'est le rouge de sa peau, le vert de ses yeux et le bleu de sa robe.)~
+@227  = ~(Elle vous prend délicatement la main sous la table, et la pose sur sa cuisse dénudée, puis la piège sous le tissu de ses jupes. Elle commence à masser sa jambe avec vos doigts.)~
+@228  = ~J'ai l'impression qu'il y a quelques tensions à évacuer pour nous deux, <CHARNAME>.~
+@229  = ~Il paraît que tout vient à point à qui sait attendre. Et je ne me fais pas assez confiance pour vous résister dans un endroit où nous ne serions que tous les deux.~
+@230  = ~(Elle se penche et vous embrasse goulûment, ses mains vous massant de la façon la plus agréable.)~
+@231  = ~Oooh... attention ! Doucement...~
+@232  = ~(Ses baisers embrasent votre cou tandis que ses mains, sous la table, sont dévouées à votre seul plaisir.)~
+@233  = ~(Vous sentez son pouls pulser dans sa gorge, puis, assez rapidement, dans d'autres endroits de son corps.)~
+@234  = ~Mmmmmmmmh...~
+@235  = ~(Elle se saisit fermement de votre main entre ses cuisses. Vous vous rendez compte que vous approchez dangereusement de l'extase.)~
+@236  = ~(Tout à coup, confuse, rouge telle une pivoine et à bout de souffle, Sheri se dégage rapidement de votre étreinte.)~
+@237  = ~(Elle recule précipitamment et arrange sa robe. Ce faisant, ses cheveux lui cachent le visage.)~
+@238  = ~C'est très agréable. Doucement, s'il vous plaît... OH !~
+@239  = ~(Elle se recule légèrement, et vous sentez ses cuisses s'écarter, s'ouvrant à vos avances.)~
+@240  = ~(Elle réfléchit attentivement, puis fronce les sourcils.)~
+@241  = ~Je ne pense pas, non. Il est bien peu probable que vous me soyez plus agréable.~
+@242  = ~Je vous ai peut-être jugé trop vite. Très bien, recommençons de zéro.~
+@243  = ~J'ai entendu beaucoup de bonnes choses, au sujet de votre réputation... Soit. J'aimerais beaucoup que nous recommençions de zéro.~
+@244  = ~C'est vous qui y perdez au change, bel oiseau. Je suis un amant remarquable.~
+@245  = ~Moi aussi, j'ai jugé trop vite.~
+@246  = ~Ca me plairait beaucoup, à moi aussi.~
+@247  = ~Tout ce blabla, et vous n'êtes toujours pas en train de réchauffer ma couche. N'avez-vous rien de plus intéressant à faire de ces jolies lèvres rouges ?~
+@248  = ~Laissez tomber. Il y a plein d'autres filles, dans le coin, et la plupart d'entre elles seront bien mois suffisantes que vous.~
+@249  = ~Une danse, peut-être ? Je pense que cela serait la manière la plus agréable de recommencer notre conversation.~
+@250  = ~(Elle se lève et s'avance en direction de la piste de danse.)~
+@251  = ~(Petit à petit, elle se détend dans vos bras, fiévreuse, vibrante, face à vous, les yeux dans les yeux.)~
+@252  = ~Non... toujours trop froide. Et si on montait à l'étage se réchauffer tous les deux ?~
+@253  = ~Sheri, je vous présente mes excuses, mais je suis vraiment fatigué. Je vais me coucher. Je reste dans les parages, donc vous pourrez me retrouver aisément. Et votre compagnie serait appréciée.~
+@254  = ~J'ai un truc à vous dire, <CHARNAME>, et ce n'est pas pour vous souhaiter "Joyeux Anniversaire."~
+@255  = ~*Enfin* vous parlez de ce qui m'intéresse ! Je serai ravi de vous rendre ce service.~
+@256  = ~Eh oui, membre de la Guilde des Courtisanes. Je le savais.~
+@257  = ~Nous ne devrions pas nous traiter de la sorte. Je plaisantais. Il m'apparaît clair que cela ne vous a pas amusée. Je suis désolé... pourrions-nous recommencer à zéro ?~
+@258  = ~Je croyais que les filles préféraient les mauvais garçons...~
+@259  = ~Certaines "filles" n'apprécient guère les "mauvais garçons", <CHARNAME>. En fait, la plupart d'entre elles les trouvent primaires, ennuyeux et lamentables. De plus, je suis une femme, non une fille.~
+@260  = ~Je ne comprends pas pourquoi vous continuez à me fasciner autant.~
+@261  = ~J'ignore pourquoi j'ai douté de votre réputation. Je me figurais sans doute que vous n'étiez pas aussi mauvais que ce que les rumeurs disent sur vous.~
+@262  = ~J'ignore pourquoi j'ai douté de votre réputation. Il y a plusieurs sortes d'histoire à votre sujet, qui se contredisent toutes.~
+@263  = ~Vous avez bien meilleure réputation que la personne qui me fait face en ce moment. Est-ce que c'est moi, ou toutes les femmes vous traitent de la même manière ?~
+@264  = ~Je suis désolé, Sheri. J'aimerais que vous m'accordiez une autre chance, si vous le voulez bien.~
+@265  = ~Au moins, je vous ai fait forte impression.~
+@266  = ~Si vous me trouvez si intéressant que ça, allez à l'étage. Je peux vous parler de ma vie. Et vous pourrez explorer mon corps de tout votre soûl.~
+@267  = ~Allez, fillette. Vous me désirez, et vous le savez très bien. Vous venez à peine de le dire.~
+@268  = ~Ecoutez, je ne suis pas très doué avec les femmes. Apparemment, ça n'a pas l'air de très bien marcher entre nous, en ce moment. Pourrions-nous recommencer à zéro, s'il vous plaît ?~
+@269  = ~Il advint qu'un beau soir, l'univers se brisa
+Sur des récifs que les naufrageurs enflammèrent.
+Moi, je voyais briller au-dessus de la mer
+Les yeux d'Elsa, les yeux d'Elsa, les yeux d'Elsa.~
+@270  = ~Il n'y a qu'un problème avec cette chanson : personne ici ne s'appelle Elsa. Et en plus, je n'ai pas vraiment écouté les paroles. J'étais trop occupé à admirer vos propres yeux.~
+@271  = ~C'était magnifique. J'ai aimé l'utilisation mélodique que vous avez faite de la disposition strophique des alexandrins en rimes embrassées. Je crois. J'étais en train de regarder votre gorge.~
+@272  = ~C'était magnifique. J'ai aimé la façon dont vous avez attaqué la mélodie, en la mettant en duel face au son de votre harpe. Je crois. J'étais surtout en train de regarder vos yeux.~
+@273  = ~C'était magnifique. J'ai aimé la façon dont vous avez chanté la mélodie, en la récitant tel un enchantement. Je crois. J'étais surtout en train de regarder vos yeux.~
+@274  = ~C'était magnifique. Votre voix est un cadeau des dieux, tout comme votre beauté. Je pense que j'étais distrait. J'étais surtout en train de regarder vos yeux.~
+@275  = ~C'était magnifique. Je serais tenté d'abandonner mon Ordre, et de suivre vos yeux, qui sont au moins aussi magnifiques que ceux de votre chanson. Vos yeux m'hypnotisent.~
+@276  = ~C'était magnifique. Je n'ai jamais rien entendu de plus beau. Je pense que j'étais distrait. J'étais surtout en train de regarder vos yeux.~
+@277  = ~Oui, très joli.~
+@278  = ~(Un sourcil fin se lève, et elle repousse sa crinière rouge vibrante, remontant le menton et vous regardant de haut.)~
+@279  = ~Vous ne regardez pas ma gorge...~
+@280  = ~En fait, vos yeux sont posés un peu plus bas que ça.~
+@281  = ~Eh bien, j'y serais arrivé à un moment ou à un autre.~
+@282  = ~Je sais. Il y a tellement de plus belles choses à regarder.~
+@283  = ~Toutes mes excuses, ma dame. J'ai été distrait.~
+@284  = ~Vous n'êtes pas en train de regarder mes yeux...~
+@285  = ~En fait, vos yeux sont posés bien plus bas que ça.~
+@286  = ~Par le Souffle Fétide d'Umberlie, de toute ma vie jamais je n'ai rencontré un abruti aussi méprisant que vous !~
+@287  = ~Ne m'adressez plus la parole, <CHARNAME>. Mon contrat stipule que je dois chanter ici, mais il ne m'oblige pas à me montrer plaisante envers les gens tels que vous.~
+@288  = ~Non, <CHARNAME>. Mon contrat stipule que je dois chanter ici, mais il ne m'oblige pas à me montrer plaisante envers les gens tels que vous.~
+@289  = ~Peut-être une autre chanson pour vos oreilles ?~
+@290  = ~Peut-être.~
+@291  = ~Peut-être autre chose ?~
+@292  = ~Je peux vous donner bien plus que mes oreilles, Sheri.~
+@293  = ~Peut-être que tout ce que je veux, ce sont vos oreilles. Vous savez, nous autres, les bardes, apprécions un public enthousiaste.~
+@294  = ~Alors soit.~
+@295  = ~A quoi pensez-vous ?~
+@296  = ~Un public ? J'ai une idée en tête qui ne nécessite aucun public. Même si j'ai entendu parler d'endroits où une telle chose était possible.~
+@297  = ~(Elle vous lance un regard intense, et un rictus se dessine sur son visage. Elle se saisit rapidement de votre verre, le boit d'un trait et le dépose sur la table. Puis elle vous prend par le bras, vous attirant en direction de la piste de danse.)~
+@298  = ~Mais qu'est-ce que je fais ! C'est beaucoup trop rapide... Je... Je ne peux pas faire ça ! (Elle court en direction de la porte. Sa robe produit un bruissement alors qu'elle attrape sa harpe.)~
+@299  = ~(rires) Oh non, <CHARNAME>, je réserve mes faveurs à un public, et non à une personne seule, merci bien. Et le public doit être plus que simplement enjoué.~
+@300  = ~Et pour votre impertinence, vous devez danser avec moi. Tenez, je vous l'ordonne !~
+@301  = ~Ma dame, j'ai bien peur de ne pas pouvoir. Je ne sais pas danser. Mais si vous vous lassez de tous ces chants et de toutes ces danses, n'hésitez pas à revenir me voir. Je reste dans les parages, vous me retrouverez aisément. Et votre compagnie sera fort appréciée.~
+@302  = ~A vos ordres.~
+@303  = ~Quoi, et gâcher tout cet alcool ?~
+
+
+
+/*dialogue 3 - Sheri et Charname passent la nuit ensemble*/
+@304  = ~Comme vous voudrez, <CHARNAME>. Je ne suis pas ici pour m'imposer à vous. Je pars tout de suite.~
+@305  = ~(Elle ramasse ses vêtements et sa harpe, puis quitte votre chambre, laissant derrière elle une odeur de roses.)~
+@306  = ~(Sheri se glisse dans votre chambre, laissant pénétrer un peu de lumière dans la pièce. Elle referme rapidement la porte et se pelotonne contre elle.)~
+@307  = ~(Elle s'arrête un moment, pour voir si vous l'avez remarquée.)~
+@308  = ~(Ne pas bouger et faire semblant de dormir.)~
+@309  = ~(La regarder se mouvoir gracieusement et silencieusement à travers vos yeux à demi-fermés.)~
+@310  = ~(Se tourner vers elle et baisser vos draps jusqu'à la taille.)~
+@311  = ~Hé, qu'est-ce que vous faites ici ?~
+@312  = ~J'ai attendu des heures, Sheri. Ne préféreriez-vous pas venir ici et vous mettre à l'aise ?~
+@313  = ~(Vous la perdez de vue un moment, mais soudainement, Sheri apparaît au-dessus de vous, sur le lit, traçant de ses yeux le contour de vos formes sous les draps.)~
+@314  = ~(Elle se rapproche doucement de vous, délaçant le corsage de ses robes.)~
+@315  = ~(S'étirer, comme si vous étiez en train de dormir.)~
+@316  = ~Êtes-vous réelle, où suis-je en train d'halluciner ? Que faites-vous ici, Sheri ?~
+@317  = ~J'ai attendu des heures, ma dame. Ne préféreriez-vous pas venir ici et vous mettre à l'aise ?~
+@318  = ~Votre propre chambre ne vous suffisait plus, à ce que je vois.~
+@319  = ~(Sa main se meut prestement et en silence alors qu'elle retire sa harpe et la dépose à côté de votre lit.)~
+@320  = ~(S'étirer, comme si vous étiez en train de dormir, laissant un bras pendre légèrement sur le côté du lit.)~
+@321  = ~Sheri ?~
+@322  = ~Vous avez l'ascendant sur moi, Sheri. Je n'ai nulle arme à ma portée, si ce n'est ma grâce naturelle.~
+@323  = ~C'est un jeu vieux comme le monde, <CHARNAME>... Je n'ai peut-être pas beaucoup l'expérience des chambres à coucher, mais je sais comment me glisser à l'intérieur d'une pièce sans me faire remarquer. Vous êtes réveillé.~
+@324  = ~J'en ai bien l'intention, <CHARNAME>.~
+@325  = ~Et j'ai aussi l'intention de vous mettre à l'aise aussi.~
+@326  = ~Et je sais exactement comment faire.~
+@327  = ~Je ne sais pas ce que je fais ici, <CHARNAME>.~
+@328  = ~Ou plutôt, je sais exactement ce que je fais, mais pas pourquoi je le fais.~
+@329  = ~D'après vous, qu'est-ce que je fais, <CHARNAME> ?~
+@330  = ~(Un rire chaleureux réchauffe le calme de la nuit. Ardente de désir, les dents étincelantes de Sheri reflètent la lueur de la lune.)~
+@331  = ~Je suis désolée de vous avoir quitté aussi brutalement. La situation devenait un peu trop... intense, pour moi. Mais maintenant, je suis là.~
+@332  = ~Cette situation est dangereuse pour moi, <CHARNAME>... mais vous êtes telle une mélodie qui tourne en boucle dans ma tête, et qui va toujours crescendo sans jamais se conclure.~
+@333  = ~Je dois résoudre cette cadence, ou sinon vous hanterez mes pensées à jamais.~
+@334  = ~(Sa chevelure de flamme se fond dans le reflet de la lune, ardente et dansante, comme si elle était vraiment en feu.)~
+@335  = ~Vous êtes magnifique. Venez ici, que je puisse vous montrer toute l'étendue de mon désir.~
+@336  = ~(S'asseoir sur le lit, les draps vous descendant jusqu'à la taille, et laisser vos jambes pendre sur le côté du lit.)~
+@337  = ~Sheri, je croyais que vous aviez dit que...~
+@338  = ~(Se rapprocher d'elle.)~
+@339  = ~Venez à moi.~
+@340  = ~Sheri, nous ne devrions pas faire ça.~
+@341  = ~(Sheri s'allonge à vos côtés. Ses doigts attrappent légèrement votre menton, attirant vos lèvres aux siennes.)~
+@342  = ~(Ses douces lèvres aux couleurs de rubis se pressent contre les vôtres. Sa saveur envahit vos sens.)~
+@343  = ~(Atteindre sa poitrine de vos mains, et défaire le corsage de ses robes.)~
+@344  = ~(Lui retourner ses baisers, et descendre jusqu'à sa gorge pour l'y embrasser, sentant son pouls battre la chamade.)~
+@345  = ~(Atteindre sa taille et défaire les attaches de sa robe.)~
+@346  = ~(Elle dépose un doux baiser sur vos lèvres pour vous faire taire, puis elle se redresse légèrement.)~
+@347  = ~Je sais très bien ce que j'ai dit, <CHARNAME>... et j'ai changé d'avis.~
+@348  = ~Et moi donc. Sheri, vous devriez partir immédiatement.~
+@349  = ~Je me réjouis de l'entendre.~
+@350  = ~Eh bien, dans ce cas, je me plie à votre volonté. Comment puis-je vous servir, ma dame ?~
+@351  = ~(Elle rit légèrement en même temps qu'elle vous embrasse, et se saisit de vos deux mains pour vous maintenir.)~
+@352  = ~(Baignée par la nuit, elle rit légèrement, et se saisit de vos deux mains pour vous maintenir.)~
+@353  = ~(Maintenant une légère distance entre vous, elle se saisit de vos deux poignets d'une seule main, et pose délicatement son doigt sur vos lèvres.)~
+@354  = ~Chut.~
+@355  = ~Regardez.~
+@356  = ~(Sheri bouge doucement, délaçant délicatement le corsage de sa blouse. La soie se défait et tombe lentement.)~
+@357  = ~(Sa poitrine se dévoile, révélant ses seins en forme de demi-lunes riantes. Ses tétons pointent timidement au travers du vêtement de soie. Vous remarquez la finesse de son abdomen tendu.)~
+@358  = ~(Sa main se fait hésitante.)~
+@359  = ~Dois-je m'arrêter ?~
+@360  = ~Par les dieux, non. (L'attraper par la taille et la rapprocher de vous, en pleine excitation.)~
+@361  = ~(Se pencher plus avant vers elle et déposer vos baisers sur son cou, puis sur ses seins.)~
+@362  = ~(L'attraper subitement et avec force par les épaules, et la faire se baisser sur vous.)~
+@363  = ~(L'attraper par la taille et défaire les attaches de ses jupes.)~
+@364  = ~Le pouvez-vous seulement ?~
+@365  = ~Oui, arrêtez-vous. J'en suis certain.~
+@366  = ~Sheri, vous devriez partir, maintenant. Il y a déjà quelqu'un dans ma vie.~
+@367  = ~Je ne peux pas m'arrêter. Je vous veux avec moi cette nuit. Je veux vous appartenir, même si ce n'est que pour un moment.~
+@368  = ~(Son vêtement de soie tombe de ses épaules, révélant sa fière poitrine. Il tombe jusqu'à ses côtes, côtoyant ses bras alors qu'elle détaille votre visage et vous rapproche de ses seins tel un enfant.)~
+@369  = ~Me laisserez-vous vous chanter une berceuse ?~
+@370  = ~Oh... à moins que vous ne préfériez un chant quelque peu différent... Oh oui...~
+@371  = ~Oh, oui !~
+@372  = ~Je veux que vous soyez mienne sur l'heure.~
+@373  = ~S'il vous plaît, Sheri... c'est beaucoup trop. Je ne peux faire cela. Partez.~
+@374  = ~(Déposer un baiser sur chacun de ses tétons.)~
+@375  = ~(Sheri émet des petits grognement de plaisirs alors que vous couvrez ses lèvres d'ardents baisers. Elle agrippe de ses deux mains l'arrière de votre tête.)~
+@376  = ~(La faible lueur de la lune confine son visage dans l'ombre, mais répand quelques gouttes laiteuses sur son nombril, alors qu'elle le dévoile.)~
+@377  = ~(La dernière des attaches de sa robe tombe au sol. Vous continuer à la toucher et à l'embrasser de vos lèvres sur tout son corps.)~
+@378  = ~(Rouler sur le lit pour vous positionner au-dessus de Sheri.)~
+@379  = ~(Vous affaler sur le lit, laissant Sheri au-dessus de vous.)~
+@380  = ~Sheri, c'est votre dernière chance de partir. J'insiste pour que vous vous en alliez.~
+@381  = ~Ahhh... qu'avons-nous ici.~
+@382  = ~(Sheri embrasse votre nuque, sa chevelure de rubis dévalant votre poitrine et se déversant sur les oreillers.)~
+@383  = ~(Elle éloigne légèrement son corps du vôtre un moment, laissant un court espace entre vous deux.)~
+@384  = ~(Elle approche sa main, puis la laisse courir sur votre corps. Elle vous guide. Lentement, elle cambre son corps, et ses petits cris illuminent ses lèvres closes à la pâle clarté de la lune.)~
+@385  = ~(Elle renverse la tête en arrière, dévoilant toute sa gorge, ses doigts dans ses cheveux, tout en chantant la joie que lui inspire votre présence.)~
+@386  = ~Quelle douceur... cette chaleur...~
+@387  = ~(Les petits cris de plaisir de Sheri se rapprochent de votre oreille alors qu'elle se rabat sur vous. Vous la couvrez de baisers et de caresses, enroulés dans les draps.)~
+@388  = ~(Elle se presse contre vous, passionnée, fiévreuse, exaltée.)~
+@389  = ~Viens...~
+@390  = ~(Vous donnez de grands coups de reins, ce qui la fait couiner de plaisir. Vous vous trouvez empli d'une énergie nouvelle.)~
+@391  = ~...Encore...~
+@392  = ~Par les dieux, OUI...~
+@393  = ~(Vos deux énergies se fondent en une seule, atteignant le plaisir mutuel entre les draps de satin. Vous chantez les mélodies de la vie et du renouveau, du feu et de la beauté.)~
+@394  = ~(soupir)~
+
+
+
+/*dialogue 4 - conversation post-coïtale*/
+@395  = ~(Sheri, un regard indéchiffrable posé sur le visage, roule sur vous, tirant à elle les draps pour se couvrir quelque peu. Ou du moins, se couvrir tant qu'elle peut. Elle vous étudie du regard, sa main écartant inconsciemment sa chevelure de votre poitrine.)~
+@396  = ~Voilà qui était... inspirant. Inspiré. (Sheri s'étire lascivement dans ses draps. Elle cambre son dos, laissant apparaître un petit téton rose qui pointe dans votre direction.) Je pourrais très bien rester comme ça pendant très, très longtemps.~
+@397  = ~(Elle vous regarde d'un air interrogateur.)~
+@398  = ~Bien, où en étions-nous... J'ai l'impression que ma dame souhaite une revanche...~
+@399  = ~Eh bien, c'était intéressant.~
+@400  = ~Bien, où en étions-nous ?~
+@401  = ~(Sheri se glisse hors du lit, entraînant avec elle les draps. Elle ramasse tous les vêtements. Tout à coup, vous vous rendez compte que votre bourse a disparu.)~
+@402  = ~L'argent... Tout ce que tu voulais, c'était me voler mon or ?~
+@403  = ~Je me moque de l'argent, ou des vêtements... Reste au lit avec moi, Sheri.~
+@404  = ~J'ai tué des hommes et des femmes pour moindre offense que me voler mon or, Sheri.~
+@405  = ~(Elle se retourne aussitôt, tête la première, les yeux brûlants d'une intense férocité à la lueur de la lune.)~
+@406  = ~Je ne sais vraiment pas pourquoi je suis venue ici.~
+@407  = ~(Elle récupère ses propres vêtements dans la pile et ramasse votre bourse d'or de là où elle était tombée.)~
+@408  = ~Je n'en avais pas après ton or, mais après des informations. Et tu continues de défier ma compréhension.~
+@409  = ~Je brûle pour toi, <CHARNAME>, mais d'un feu mortel. Son pouvoir pourrait me consumer telle une mite qui s'approche trop près d'une flamme. Je ferais mieux de partir tant que je suis encore maîtresse de moi-même, capable de mes propres décisions.~
+@410  = ~(Elle sort promptement de la pièce. La lanterne du couloir de l'auberge brille fortement et accentue ses contours alors qu'elle s'en va.)~
+@411  = ~(La porte se ferme sans un bruit, vous laissant seul dans votre lit avec les souvenirs de cette soirée.)~
+@412  = ~Il me semble que nous étions en train de débattre des limites de l'endurance humaine, messire. Et peut-être devrions-nous passer de la théorie à la pratique ?~
+@413  = ~(D'une main, elle joue négligemment avec l'une de ses mèches aux couleurs de rubis, s'en servant comme d'un pinceau qui vient vous chatouiller le cou et la clavicule. Sa deuxième main joue avec d'autres parties de votre corps qui ne laissent aucun doute quant à ses intentions.)~
+@414  = ~Assassin ! L'on t'a envoyée ici pour me tuer à coups de luxure !~
+@415  = ~A tes ordres, ma dame barde. Un deuxième couplet ?~
+@416  = ~Je préfèrerais remettre ceci à un peu plus tard... Mais pour patienter, j'aimerais te distraire. Mon chant laisse à désirer, mais ces lèvres peuvent faire bien d'autre choses...~
+@417  = ~(Les rires essoufflés de Sheri résonnent alors que vous remettez le couvert, baignés par la lumière de la lune.)~
+@418  = ~Oh, <CHARNAME>... Et dire que j'espérais une simple chanson, je n'osais croire à une symphonie ! J'ai hâte que tu me montres toutes les sonates dont tu es capable !~
+
+
+
+/*dialogue 5 - la conclusion*/
+@419  = ~Te voilà de retour, à l'endroit-même de ta conquête !~ [RE_che03]
+@420  = ~(Elle arbore un sourire joyeux à votre encontre, mais qui est ombragé par un voile de tristesse.)~
+@421  = ~(Elle arbore un rictus ambivalent à votre encontre, qui plus est terni par un voile de tristesse.)~
+@422  = ~Tu as obtenu de moi bien plus qu'un simple chant, et je ne regrette en rien l'expérience... Mais la flamme que tu es brûle d'un feu ténébreux et par trop intense pour moi.~
+@423  = ~Es-tu ici pour un autre chant ?~
+@424  = ~J'avais envie de m'attarder quelque peu ici avec toi, Sheri...~
+@425  = ~Mon coeur ne désire que toi, Sheri. Seule la mort m'emportera si je ne peux être avec toi.~
+@426  = ~Nous avons passé une nuit merveilleuse. Que penserais-tu d'une revanche ?~
+@427  = ~Non, je suis juste venu boire un verre. Tu travailles toujours ici ?~
+@428  = ~Tu cherchais des informations. Ce qui veut dire que j'avais raison, finalement : tu me manipulais depuis le début ! Tu as gagné mon respect pour ça.~
+@429  = ~Tu cherchais des informations. Ce qui veut dire que j'avais raison, finalement : tu me manipulais depuis le début ! Je devrais te tuer pour ça.~
+@430  = ~(Ses yeux chatoient d'une colère d'où se distingue une empreinte de désir passé, puis elle soupire et se détourne de vous.)~
+@431  = ~Oui, <CHARNAME>. Je suis toujours dans le coin, mais plus pour longtemps. J'ignore totalement ce qui me fascine chez toi, mais c'est une émotion dangereuse et destructrice que je ressens. Jamais plus de cette vie je ne boirai à ta coupe.~
+@432  = ~Peu importe. Je n'étais qu'un flirt passager, hein ? Ca me va.~
+@433  = ~Danger ou pas, c'était extraordinaire. Cette expérience n'était-elle pas suffisamment forte pour que tu écartes l'idée-même de recommencer ?~
+@434  = ~Je n'arrive pas à te sortir de mon esprit, Sheri. Monte avec moi, et recommençons ce petit jeu de bras de fer entre nous.~
+@435  = ~Pensais-tu que j'ignorais ta vraie nature, <CHARNAME> ? Je suis peut-être jeune, mais mes sources possèdent la sagesse de l'âge. Tu as une destinée, et je ne saurais en faire partie.~
+@436  = ~Par ailleurs, j'ai mes propres problèmes à régler.~
+@437  = ~Tu es un homme très séduisant, <CHARNAME>, et j'ai aimé ta compagnie... vraiment, vraiment beaucoup.~
+@438  = ~(Elle se lève abruptement, glissant sa harpe sous son épaule d'un mouvement gracieux qui envoie son parfum vers vous.)~
+@439  = ~Mon mécène m'a demandé de revenir à Eauprofonde. Là-bas, je devrai prendre sous mon aile une jeune fille, pour l'aider à trouver son chemin dans la vie.~
+@440  = ~Attends, Sheri... reste avec moi. Tu es tout ce que mon coeur désire !~
+@441  = ~Ainsi soit-il, va retrouver ton mécène, alors. Mais tu pourrais t'amuser beaucoup plus avec moi, sur les routes.~
+@442  = ~Ce fut donc une brève affaire, une unique nuit de passion... et c'est tout ?~
+@443  = ~Soit. Les complications, ce n'est pas mon truc, de toute façon.~
+@444  = ~Sheri, tu me brises le coeur. S'il te plaît, reviens sur ta décision.~
+@445  = ~(Elle fait une pause, pensive, et se retourne subitement vers vous.)~
+@446  = ~Il paraît que ta vie a été touchée par la balance divine... alors demandons aux dieux. Ils ont composé pour nous une mélodie puissante, mais également dissonnante et agressive. Décidons de cela à pile ou face. Notre histoire sera-t-elle un simple chant, ou une symphonie ?~
+@447  = ~Il paraît que ta vie a été touchée par la balance divine... alors demandons aux dieux. Ils ont composé pour nous une belle mélodie, vivante et magnifique. Décidons de cela à pile ou face. Notre histoire sera-t-elle un simple chant, ou une symphonie ?~
+@448  = ~Ha ! Dans ce cas, tu as déjà perdu : ma pièce tombe toujours sur la tranche ! (Vous lancez rapidement une pièce dans les airs, avant qu'elle ne change d'avis.)~
+@449  = ~Je refuse de m'en remettre à un jeu de pile ou face... Je ne suis pas un jouet auquel on joue, puis que l'on abandonne.~
+@450  = ~Pars ou reste, cela importe peu. Les dieux te ramèneront à moi.~
+@451  = ~Si j'avais le choix, je ne risquerais pas un tel trésor aux affres de hasard, mais ta volonté me tient en esclave. Je vais lancer ma pièce. (Vous jetez une pièce en l'air.)~
+@452  = ~M'as-tu donc mal compris ? Je me suis bien amusé, mais maintenant, je n'ai plus besoin de toi.~
+@453  = ~(La pièce tourne paresseusement en l'air, et vous la regardez retomber comme si le temps s'écoulait au ralenti.)~
+@454  = ~Non... (Sa main s'en saisit et la dérobe à votre regard... voilà un sou que vous ne reverrez jamais.)~
+@455  = ~(Au seuil de la porte de l'auberge, elle reste un court moment sans bouger, puis tourne la tête, sa chevelure de rubis retombant en cascade contre la porte. Elle fronce des sourcils...)~
+@456  = ~Qui a dit que c'était à toi de lancer la pièce ?~
+@457  = ~Je choisis la simple chanson !~
+@458  = ~Ah, mais nous sommes tous des jouets, manipulés par les dieux, les idiots, les amants et les fous. Je vais lancer la pièce. (Elle jette une pièce en l'air.)~
+@459  = ~Non... (Sa main s'en saisit et la dérobe à votre regard...)~
+@460  = ~(Au seuil de la porte de l'auberge, elle reste un court moment sans bouger, puis tourne la tête, sa chevelure de feu retombant en cascade contre la porte. Elle fronce des sourcils...)~
+@461  = ~Je t'ai déjà oublié, <CHARNAME>.~

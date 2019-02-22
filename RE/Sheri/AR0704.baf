@@ -1,0 +1,8 @@
+IF
+AreaCheck("AR0704")
+Global("RE_SheriExists","GLOBAL",0)
+THEN
+RESPONSE #100
+CreateCreature("RE_Sheri",[404.766],7)
+SetGlobal("RE_SheriExists","GLOBAL",1)
+END

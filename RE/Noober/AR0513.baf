@@ -1,0 +1,8 @@
+IF
+Global("RE_NoobSpawned","GLOBAL",0)
+Gender(Player1,FEMALE)
+THEN
+RESPONSE #100
+CreateCreature("RE_Noob",[515.475],0)
+SetGlobal("RE_NoobSpawned","GLOBAL",1)
+END

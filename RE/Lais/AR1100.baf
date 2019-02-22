@@ -1,0 +1,21 @@
+IF
+Global("RE_LaisSpawned2","GLOBAL",0)
+Global("RE_LaisTalked","GLOBAL",2)
+TimeOfDay(NIGHT)
+THEN
+RESPONSE #100
+CreateCreature("RE_Lais",[4113.2992],0)
+SetGlobal("RE_LaisSpawned2","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("RE_LaisSpawned2","GLOBAL",1)
+Global("RE_LaisTalked","GLOBAL",2)
+!TimeOfDay(NIGHT)
+THEN
+RESPONSE #100
+ActionOverride("RE_Lais",DestroySelf())
+SetGlobal("RE_LaisSpawned2","GLOBAL",0)
+Continue()
+END

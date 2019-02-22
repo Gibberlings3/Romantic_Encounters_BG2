@@ -1,0 +1,10 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+Wait(1)
+ActionOverride("Mekrath",ForceSpell(Myself,WIZARD_PROTECTION_FROM_PETRIFICATION)
+Wait(3)
+ActionOverride("Mekrath",StartDialogueNoSet(Player1))
+END

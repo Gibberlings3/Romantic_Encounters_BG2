@@ -1,0 +1,12 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+SetGlobal("RE_AnneTeleport","GLOBAL",3)
+ActionOverride("RE_Carl",DestroySelf())
+ActionOverride("RE_Carl1",DestroySelf())
+ActionOverride("RE_Carl2",DestroySelf())
+Wait(2)
+ActionOverride("RE_Anne",StartDialogueNoSet(Player1))
+END

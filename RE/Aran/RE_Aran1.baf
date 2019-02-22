@@ -1,0 +1,23 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+StorePartyLocations()
+Wait(1)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride("Aran",JumpToPoint([4408.2123]))
+JumpToPoint([4339.2113])
+ActionOverride(Player2,JumpToPoint([1120.1800]))
+ActionOverride(Player3,JumpToPoint([1100.1820]))
+ActionOverride(Player4,JumpToPoint([1120.1820]))
+ActionOverride(Player5,JumpToPoint([1100.1800]))
+ActionOverride(Player6,JumpToPoint([1140.1800]))
+MultiPlayerSync()
+Wait(1)
+FadeFromColor([20.0],0)
+MoveViewObject(Player1,INSTANT)
+Wait(1)
+ActionOverride("Aran",StartDialogueNoSet(Player1))
+END

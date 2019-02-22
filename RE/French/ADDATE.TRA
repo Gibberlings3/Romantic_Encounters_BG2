@@ -1,0 +1,342 @@
+@0    = ~J'ai une offre pour quiconque veut l'entendre ! Soutenez le Fond pour l'Orphelinat d'Athkatla ! Sauvez les enfants ! Huit cents pièces d'or pour la Nuit des Roses de la Fraternité Laïque Sunite ! Ga-agnez le coeur de votre aimé ! Sau-auvez votre mariage ! Venez seul, venez tous !~
+@1    = ~Oh, bonjour ! Ne voudriez-vous pas aider à sauver les enfants ?~
+@2    = ~Mais si, bien sûr. Que puis-je faire ?~
+@3    = ~Avez-vous parlé d'une "Nuit des Roses" ?~
+@4    = ~*soupir* Si, si, plongez la main dans la bourse et prenez ce dont vous avez besoin.~
+@5    = ~Attendez. Vous... voulez vraiment m'écouter ? Oh, merci !~
+@6    = ~Oh non, ça ne marche pas comme ça ! Permettez-moi de vous expliquer...~
+@7    = ~La Fraternité Laïque Sunite lève des fonds pour équiper les orphelinats d'Athkatla de nouveaux lits et lavabos ! Pour la somme raisonnable de huit cents pièces d'or, nous vous offrons à vous et à... l'objet de votre affection une nuit d'enchantement ! Personne ne peut y résister !~
+@8    = ~Vous avez sous-estimé mes pouvoirs de résistance. Adieu.~
+@9    = ~Je voudrais savoir ce que comprend cette "nuit d'enchantement" avant de décider si huit cents pièces d'or est "raisonnable".~
+@10   = ~Mais bien sûr, quelle idée délicieuse !~
+@11   = ~Ce n'est pas vraiment mon style... mais c'est une cause valable...~
+@12   = ~Très bien, j'écoute.~
+@13   = ~D'abord, la célèbre devineresse Kait Shea vous prédira votre futur sentimental.~
+@14   = ~Intéressant.~
+@15   = ~Oh, pitié.~
+@16   = ~Continuez.~
+@17   = ~Ensuite, un dîner somptueux à la Biche Dorée, le quatrième club le plus sélect d'Athkatla !~
+@18   = ~Ce serait beaucoup plus convainquant si vous ne passiez pas votre temps à jeter des coups d'oeil à votre parchemin.~
+@19   = ~"Le quatrième" ?~
+@20   = ~Où Holmar Serensen, barde de renommée mondiale, jouera pour vous après le souper !~
+@21   = ~De renommée mondiale ? Je n'ai jamais entendu parler de lui.~
+@22   = ~Vraiment ! Sorensen ! Ça en vaudrait la peine rien que pour ça.~
+@23   = ~Enfin, le meilleur pour la fin, un feu d'artifice formidable, ici sur la promenade du temple ! Bon, en réalité, c'est le Grand Rite des Tempêtes des Talosiens. Ils ne permettent pas aux étrangers d'y assister. Mais le dôme du Temple du Talos s'illumine de manière magnifique. Nous nous cacherons par là, et ils ne se rendront compte de rien. Probablement.~
+@24   = ~Allons, <CHARNAME>, c'est pour une bonne cause ! Fais-le ! Fais-le ! Fais-le !~
+@25   = ~Bon, si tu fais ce truc, tu pourras m'trouver demain matin à la Couronne de Cuivre, dans une flaque de bile et les entrailles de couards. Juste pour que tu saches.~
+@26   = ~Vraiment, <CHARNAME>, avons-nous le temps pour de telles frivolités ? Cela dit... la naïveté est plutôt touchante. Mais donnez donc l'argent à cette fille et partons.~
+@27   = ~Oh... <CHARNAME>, on peut, on peut ?~
+@28   = ~Je ne suis sûrement pas en train de rougir. C'est la lumière qui se reflète sur le canal.~
+@29   = ~Pourquoi me regardes-tu, jaluk ? Qu'imagines-tu que j'en pense ?~
+@30   = ~<CHARNAME> ? <CHARNAME>, nous allons le faire, et tu vas sourire, et me traiter comme un gentilhomme, et me donner un baiser sur la joue à la fin de la nuit. Capté ?~
+@31   = ~(Eh bien... si tu insistes.)~
+@32   = ~(Si tu insistes, mais nous n'avons pas l'argent nécessaire. Peut-être reviendrons-nous quand nous l'aurons.)~
+@33   = ~(Pas les Neuf Enfers, pas question. Ôte-moi ce sourire de ton visage.)~
+@34   = ~Alors, qu'en dites-vous ?~
+@35   = ~Eh bien, volontiers ! Voici votre argent.~
+@36   = ~Je me sens plutôt ridicule, mais cela en vaut la peine. Je vais accepter votre offre.~
+@37   = ~Non merci. Peut-être une autre fois.~
+@38   = ~Je voudrais accepter, mais j'ai peur de ne pas avoir... d'objet de mon affection en ce moment.~
+@39   = ~J'ai bien peur de ne pas avoir cette somme. Je reviendrai peut-être quand ce sera le cas.~
+@40   = ~J'aimerais encore mieux acheter la Sphère Planaire. Dégagez.~
+@41   = ~Vraiment ? Vous ne plaisantez pas ? Alors... merci, merci beaucoup ! Vous ne le regretterez pas.~
+@42   = ~J'ai quelques questions à propos du style d'aventure captivante que vous aimeriez...~
+@43   = ~Bon, d'abord, pour le dîner, préférez-vous... un repas consistant, du terroir ? Quelque chose de raffiné ? Ou, pour cinquante pièces d'or de plus, le chef peut préparer quelque chose de vraiment unique.~
+@44   = ~De la bonne cuisine simple nous conviendra au mieux.~
+@45   = ~Essayons quelque chose de raffiné.~
+@46   = ~Le meilleur sinon rien. "Quelque chose d'unique", voilà.~
+@47   = ~Merveilleux. A présent, voudriez-vous qu'Holmar Sorensen vous joue une chanson entraînante ? Ou peut-être quelque chose de triste et grave ?~
+@48   = ~Une chanson joyeuse, s'il vous plaît.~
+@49   = ~Une chanson triste, s'il vous plaît.~
+@50   = ~Très bien. Nous en avons presque fini. Maintenant... (Psst, pour les moins... charismatiques, nous proposons une copie du traité classique de la séduction de <LADYLORD> Maxus Tuck à un prix réduit de vingt pièces d'or. Comme ça vous aurez quelque chose à dire, vous savez, pendant les feux d'artifice.)~
+@51   = ~(Merci, mais ça ne sera pas nécessaire.)~
+@52   = ~(Prudence est mère de Sûreté. Je vais le prendre.)~
+@53   = ~(Enfin, <PRO_SIRMAAM>, il y a un final secret. Nous allons engager des acteurs professionnels pour vous attaquer après les feux d'artifice, afin que vous puissiez les mettre en déroute et avoir l'air héroïque. Mais, puisque vous l'êtes déjà, peut-être n'en voulez-vous pas. Nous ne le ferons pas si vous ne le voulez pas.)~
+@54   = ~(Si, si, faites-le, ça sera drôle.)~
+@55   = ~(Vous avez raison. Il ne vaut mieux pas.)~
+@56   = ~Tout est réglé ! Vraiment, merci beaucoup... Imaginez juste tous ces orphelins endormis dans leurs beaux lits douillets... (et moi qui ne me fais pas passer un savon quand je rentre devant la Mère Supérieure les mains vides)...~
+@57   = ~*ahum* Dame Sunie, projette les rayons de ton éclat sur ces jeunes amants devant nous. Bénis leur union depuis ta réserve de joie, de grâce et d'affection !~
+@58   = ~Bonsoir à vous, je suis Kait Shea, autrefois du Village de Gullykin, et Liseuse des Signes. Dieux, je n'ai jamais vu de duo aussi séduisant. Voulez-vous connaître votre destinée, alors ?~
+@59   = ~Oh, oui, s'il vous plait ! (C'est tellement excitant.)~
+@60   = ~Bien sûr, sorcière, régale-nous de ton charlatanisme à deux sous.~
+@61   = ~Ceci est des plus... inconvenant. Je n'ai guère envie que ma soirée débute par de la sorcellerie impie. Mais continuez.~
+@62   = ~Mais bien sûr, ma bonne dame. Je serais heureuse d'observer votre art.~
+@63   = ~Laissez-moi deviner... Vous voyez la ruiiiiiine ! Et la mort ! Et le danger !~
+@64   = ~Alors je vais lire les os.~
+@65   = ~O-Os... ? (Oh, beurk.)~
+@66   = ~Ah... Oui...~
+@67   = ~Se pourrait-il... ?~
+@68   = ~<CHARNAME>... Une aura de mystère vous entoure tous deux. Je n'en ai jamais vu de pareille. Votre destinée est traversée de nombreux fils. Pourtant je peux tous les voir clairement.~
+@69   = ~Vous rencontrerez de nombreuses difficultés et tribulations. Il viendra un temps où vous douterez même de votre amour. Vous aurez alors l'impression que toute la Création gémit à vos côtés.~
+@70   = ~Pourtant persévérez, persévérez jusqu'au bout... Croyez l'un en l'autre... Ecoutez et apprenez... et un éclat tel qu'on en a jamais vu émergera. On parlera de cet éclat pendant bien des années ensuite. Vous trouverez le bonheur, mais il ne vous trouvera pas.~
+@71   = ~Merci, Kait Shea.~
+@72   = ~C'est plutôt... générique.~
+@73   = ~Ça je n'en sais rien. Peut-on réessayer ?~
+@74   = ~Oh, super.~
+@75   = ~Oubliez un peu notre couple, qu'en est-il de MOI ?~
+@76   = ~Les Signes ont parlé, <PRO_LADYLORD>.~
+@77   = ~J'espère que c'était, heu, instructif. Et romantique. Enfin, suivez-moi jusqu'à la Biche Dorée ! Le personnel de salle vous a préparé votre souper enchanté !~
+@78   = ~Je suis désolé de vous avoir fait attendre, ma dame, messire. Je vous apporte votre premier plat, une soupe d'orge aux légumes de saison.~ [RE_BLANK]
+@79   = ~Ah... merci ?~
+@80   = ~<CHARNAME>, petit cachotier ! Comment savais-tu que c'était ma préférée ?~
+@81   = ~Hum.~
+@82   = ~Permettez-moi de vous présenter le second plat : ragoût de boeuf épais à la racine de Gul sembienne. Laissé à mariner pendant la nuit, bien sûr, pour un goût plus puissant.~
+@83   = ~(<CHARNAME>, est-ce vraiment... un endroit de qualité ? Cela a l'air tellement... eh bien... non, tout va bien, en fait ! C'est très bien. Je veux dire merveilleux. Oui.)~
+@84   = ~Merci. Ah... vous le préparez bien, le parfum est vraiment renversant. Transmettez mes félicitations au chef.~
+@85   = ~Merci, mon brave. Voici une pièce de cuivre pour vos efforts.~
+@86   = ~Qu'est-ce que c'est que ce brouet répugnant ? Jaluk, tu sais que je ne supporte que la nourriture la plus basique de ce que vous, surfacins, appelez cuisine. Tu peux avoir ma part, je n'ai pas faim. ~
+@87   = ~Ooooh ! Encore ! Je pourrais manger six marmites de ce truc !~
+@88   = ~Et, pour terminer, la pièce de résistance... un autre... plat de ragoût ? Ah... oui, excusez-moi, on dirait que notre cuisine n'a pas l'habitude de gérer des demandes telles que la vôtre. Mes excuses.~
+@89   = ~*gloups* Je pense... J'ai eu mon content, maintenant. Vous pouvez avoir le mien, <CHARNAME>.~
+@90   = ~Pas besoin de vous excuser, c'est tout à fait à mon goût.~
+@91   = ~Ça me satisfait plutôt. <CHARNAME>, si tu réalises que ton appétit te fait défaut, je serai heureuse de te prêter main forte.~
+@92   = ~Des excuses, hein ? Vous feriez mieux de réchauffer une troisième marmite ! Pas vrai, <CHARNAME> ?~
+@93   = ~Vermisseau, comment oses-tu nous insulter, <CHARNAME> et moi, de la sorte ? Je pense que je vais te donner une leçon que tu n'oublieras pas de sitôt !~
+@94   = ~Je suis vraiment désolé de vous avoir fait attendre, ma Dame, Messire. Je vous apporte votre premier plat, un consommé subtil de moules thayennes et de champignons Oreille de Lamie. Si vous me permettez un petit conseil, permettez-lui de reposer un moment et profitez de l'arôme.~ [RE_BLANK]
+@95   = ~Oh... eh bien ! Je n'ai jamais rien senti de tel ! Oh, c'est délicieux ! (Non, je ne dois pas être grossière. Contrôle-toi, Aerie.)~
+@96   = ~Etait-ce vraiment nécessaire, <CHARNAME> ?... Peu importe, l'arôme est, il est vrai, agréable. "Bon appétit"... comme on dit.~
+@97   = ~Permettez-moi de vous présenter le second plat : perdrix pressée sous la brique, farcie aux échalotes transmutées et garnie d'une poussière de fromage de chèvre rashémi.~
+@98   = ~Oh dieux ! Oh... <CHARNAME> !~
+@99   = ~Le fromage aurait-il moins de saveur s'il ne provenait d'une chèvre de Rashéménie ? Et pourquoi presser une volaille sous une brique ?~
+@100  = ~Merci, brave homme. Voici une pièce d'argent pour vos efforts.~
+@101  = ~Et pour terminer, la pièce de résistance... Sanglier et Truffes de Sembie, servis dans une Carapace d'Ankheg, sur une assiette saupoudrée de particules d'or. Profitez bien.~
+@102  = ~Oh, <CHARNAME>, vous me traitez comme une princesse ! C'est le repas le plus merveilleux que j'ai jamais pris. Merci... vraiment.~
+@103  = ~*soupir* Oui, oui. Bon, un bon repas, quoi qu'il en soit.~
+@104  = ~Un repas plutôt décent. Je vais prendre bonne note de cet établissement.~
+@105  = ~Et pour terminer la pièce de résistance... un cerf sauvage entier, rôti à la broche ! Amenez-le par ici, les gars, attention sur votre droite...~
+@106  = ~Un... entier ? Oh... <CHARNAME>, je crois que je vais être ma... non ça va... vraiment... p-p-pardon, excusez-moi !~
+@107  = ~Un symbole du triomphe de l'homme sur la nature, je suppose ? Je ne peux pas dire que je sois impressionnée. <CHARNAME>, tu peux avoir ma part.~
+@108  = ~Un repas plutôt réussi. Je vais prendre bonne note de cet établissement.~
+@109  = ~(Je vous demande pardon, messire... J'ai pris connaissance, si on peut dire, de l'héritage unique de votre compagne. Ne vous en faites pas, mes lèvres sont scellées. Enfin, voici votre souper...)~ [RE_BLANK]
+@110  = ~Désolé de vous avoir fait attendre, Ma Dame, Messire. Je vous apporte votre premier plat, une assiette de criquets rupestres fricassés, avec un assaisonnement de champignons épicés.~
+@111  = ~A quoi jouez-vous ! Vous... vous... *renifle*... vous préparez ce plat remarquablement. Mes compliments à vos esclaves de cuisine.~
+@112  = ~Permettez-moi de vous présenter le second plat : poisson de grotte aveugle, rôti sur la flamme, en croûte de lichen jaune.~
+@113  = ~Mmm, oui, succulent... Je n'en ai pas goûté de pareil depuis des années ! Oubliez-moi ces convenances, apportez tout ce que vous avez préparé !~
+@114  = ~Et pour terminer, la pièce de résistance... Poisson ballon souterrain cru. Préparé correctement, je vous le promets. Mais s'il devait se révéler fatal... notre établissement est bien assuré contre les dommages.~
+@115  = ~<CHARNAME> ? As-tu... révélé mon héritage drow et demandé qu'on prépare ce repas ? En risquant ta réputation, et que je sois à nouveau emmenée par des fanatiques meurtriers ? Tout cela pour me fournir cette pale moquerie de la vraie cuisine drow, dans un geste minable et condescendant digne seulement d'un eunuque dans ton genre... ?~
+@116  = ~Je trouve ça des plus séduisants. Attends-toi à une récompense, plus tard.~
+@117  = ~Mesdames et messieurs ! Je vous prie de diriger votre attention vers notre scène où, dans un moment, l'incroyablement talentueux Holmar Sorensen va ensorceler vos oreillers de son génie mélodique !~ [RE_BLANK]
+@118  = ~Oh allons, assez de cela. Je suis ici pour jouer un air, c'est tout.~
+@119  = ~Mais bien sûr, messire. Je me retire.~
+@120  = ~J'ai le plaisir de dédicacer cette ballade — si on peut l'appeler ainsi — au vaillant <CHARNAME> et à sa partenaire...~ ~J'ai le plaisir de dédicacer cette ballade — si on peut l'appeler ainsi — à la vaillante <CHARNAME> et à son partenaire...~
+@121  = ~Ben voyons !~
+@122  = ~Oh, arrêtez, vous me faites rougir !~
+@123  = ~La couleur de mes joues n'est due qu'à la lumière des bougies ! Je ne relèverai aucune insinuation.~
+@124  = ~Oh... vraiment, est-ce nécessaire ?~
+@125  = ~Ceci promet d'être amusant. Je me réfère soit à l'événement improbable qui voudrait que ce musicien soit talentueux. Ou au chaos que je vais semer dans le cas contraire.~
+@126  = ~(Hé, tout le monde nous regarde !) Ah, <CHARNAME>, comme c'est romantique ! Tu es beaucoup plus attentionné que mes sept derniers amants !~
+@127  = ~Ah...~
+@128  = ~Non, le coeur je ne puis troquer
+Pas plus qu'un vrai baiser m'offrir
+Mais je ne puis construire un foyer
+Pour mon amour, de regards, de soupirs
+Pour le Cormyr je suis parti alors
+Où les jeunes et les braves ont de l'avenir
+Et j'y ai gagné une bourse d'argent et d'or
+D'or et d'argent !~
+@129  = ~Désormais, je marche sur la route
+Et les buissons sont en fleurs
+Les bosquets bruissent de fées
+Et la terre dégage son humide senteur
+Mais ces délices ne sont rien pour moi
+Sauf qu'ils évoquent à mon esprit
+Les blancs bras de mon amour
+Et son allure si douce et jolie
+Si douce et jolie !~
+@130  = ~Oh, avoir un foyer est chose merveilleuse
+Encore plus belle au printemps
+Et y retourner sur la route,
+Des sous en poche, épatant
+Je suis heureux et satisfait
+Mille lieues encore, peu m'importe !
+Car je sais, comme je sais que je serai un jour poussière,
+Que j'aboutirai à sa porte,
+A sa porte !~
+@131  = ~Je voudrais te faire plaisir, mais ce thème ne m'intéresse pas. La renaissance de la nature n'est-elle rien d'autre que le décor tape-à-l'oeil des fantaisies d'un jeune crétin amoureux ? Il verra comme les tubercules sont romantiques quand il devra les planter pour survivre.~
+@132  = ~*renifle* Quelle jolie chanson. Comme je voudrais que le printemps arrive... Je veux dire un vrai Printemps, et un jour comme celui-là. Penses-tu que cela arrivera jamais, <CHARNAME> ?~
+@133  = ~Je suppose que c'était... passable. Mais pour quelques sous, nous aurions pu payer un orphelin pour torturer un chat dans une impasse crasseuse et nous régaler de ses hurlements.~
+@134  = ~Oh, un air ridicule, mais bien interprété cela dit. J'aurais préféré quelque chose de plus embrasant, peut-être une épopée pleine de bravoure... mes excuses, <CHARNAME>, je ne veux pas gâcher la soirée. Mais la "terre humide", hum.~
+@135  = ~Merci. Merci. Je serai à la taverne du Berceau de Verdure toute la semaine.~
+@136  = ~C'est un charmant bouffon, un charmant bouffon, qui se tient là, et pince son luth,
+Pour tisser son chant de chagrin,
+Un charmant bouffon qui reste pour murmurer
+" Je m'en vais, je serai pas là demain."~
+@137  = ~Il est chose heureuse, chose heureuse, que les mots qui accueillent un ami
+Ou un air bien joué pendant qu'on se délasse,
+Mais quand il est l'heure de partir,
+C'est le silence qui trouve sa place.~
+@138  = ~Qu'est-ce que ça veut dire, que ça veut dire, demande le vent du nord,
+A la terre nue je réponds,
+La chose heureuse est vaine, partie,
+C'est moi le charmant bouffon.~
+@139  = ~Il est certain, vraiment certain, tandis qu'il chante ici,
+Les pieds du bouffon fuient toute estime,
+Quand l'air s'arrête, rattrapez-le si vous le pouvez,
+Il ne se retournera pas, 
+En sage qu'il est.~
+@140  = ~... Je connais cet air. Je l'ai rarement entendu aussi bien joué. Bravo ! Dis-moi, <CHARNAME>... En comprends-tu le sens ? Ah, excuse-moi pour cette question étrange. Bien sûr que oui. A ce stade.~
+@141  = ~* renifle*... *sanglote*... C'était m-magnifique mais... mais... ! Je ne m-me sens pas bien...~
+@142  = ~Hum. Je dois avouer que je ne m'attendais pas à quelque chose... d'aussi bon. Cette chanson était l'une des favorites de mon père, vous savez. Durant sa jeunesse, bien sûr, il ne chante quasi plus jamais désormais. C'est étrange que je puisse trouver du plaisir à y songer. Excusez-moi un instant, <CHARNAME>... Oh, ce n'était rien, un peu de cendre de la bougie.~
+@143  = ~Je voudrais pouvoir trouver du plaisir dans cette souffrance imaginaire. Mais pourquoi ta race gémit et pleure-t-elle tant sur ces thèmes ? C'est presque comme si vous aimiez ça ! Et puis vous trouvez que ma race est perverse.~
+@144  = ~Je parie que tu sais ce que cela fait, <CHARNAME>. Mais... c'est réconfortant, quelque part, non ? Je veux dire... de savoir que tu n'es pas le seul à avoir jamais ressenti cela.~
+@145  = ~Que sommes-nous censés apprécier là-dedans ? Là-bas, dans leur tour d'obsidienne, les Talosiens célèbrent leur culte hérétique, tout en priant pour la destruction de cette cité, sans aucun doute, avec un spectacle de magie bon marché.~
+@146  = ~Oh, laissez-vous embraser, Anomen ! C'est joli, non ?~
+@147  = ~Je comprends ce que vous voulez dire, mais essayons d'oublier cela et profitons du spectacle.~
+@148  = ~Eh bien, voilà qui a gâché tout le plaisir de cette soirée.~
+@149  = ~Mesurez vos paroles, mon amour : je partage leur culte hérétique et c'est un rite important pour nous.~
+@150  = ~Ouais, "embraser"... Ne suis-je qu'un faire-valoir pour vos bons mots ?~
+@151  = ~Je fais... de mon mieux.~
+@152  = ~Oui, bien sûr. J'essaie de l'oublier.~
+@153  = ~<CHARNAME>, je... dois avouer que quoi qu'il en soit, je me suis bien amusé. Vous voyez, c'est tellement... rare que je puisse profiter de mon temps, comme ça, sans songer à mes soucis, en compagnie d'une dame que... j'estime. En fait, je, hum, crois que je n'ai jamais fait ceci auparavant. Vu comme je suis, vous savez, occupé avec mes devoirs envers l'Ordre.~
+@154  = ~J'en suis heureuse, Anomen. J'en suis heureuse moi aussi.~
+@155  = ~Et je ne pourrais rêver d'un amant plus vaillant pour m'escorter. Vous êtes en train de réaliser un de mes rêves, Anomen. Je voudrais vous avoir à jamais à mes côtés.~
+@156  = ~Ha ! Vous étiez vraiment sans espoir avant que je ne me pointe. Un pauvre écuyer solitaire, trimant comme un esclave sur ses études. Oh, Anomen, ne pleurez pas !~
+@157  = ~(Consulter le traité classique de Dame Maxus Tuck sur la manière de séduire les hommes.)~
+@158  = ~(Ne rien dire.)~
+@159  = ~Heu... oui. C'est vrai.~
+@160  = ~Vous mettez tout ceci en mots bien mieux que moi. Cela va sonner étrange, ma dame, mais... merci. Du fond du coeur. Je n'ai pas l'habitude qu'on... prenne soin de moi. Mais vous avez orchestré tout ceci à mon bénéfice, n'est-ce pas ? Même vos mots, juste maintenant. Et je vous remercie.~
+@161  = ~Bah, je vais vous permettre de vous moquer de moi. Cela ne pourra atténuer le... plaisir de votre compagnie.~
+@162  = ~...~
+@163  = ~Je dois l'admettre, ces Talosiens comprennent quelque chose au pouvoir du spectacle. Je peux l'apprécier même si j'en trouve la source vile. Peut-être le Temple de Heaum pourrait-il également considérer... non, non, ce serait de la vanité. Honte sur moi pour avoir eu ce genre de pensées. Je vais, comme vous le suggérez, profiter du spectacle.~
+@164  = ~<CHARNAME>, regardez, regardez ! Attendez, non, regardez par là ! Oh, c'est mieux que n'importe quel spectacle de cirque. Et dire que ce sont les suivants d'un dieu maléfique qui produisent une telle beauté.~
+@165  = ~Je suis heureux que vous vous amusiez.~ 
+@166  = ~Non, regardez là à droite ! Vite ou vous allez le manquer !~
+@167  = ~*bâille* Je regarde, je regarde.~
+@168  = ~Je suis l'un des leurs, vous savez. C'est un rite important pour moi aussi.~
+@169  = ~Je p-pense que je devrais dire quelque chose... mais que puis-je dire ? Je n'aurais jamais pensé, quand je vous ai rencontré, que nous serions un jour... ensemble comme ceci. Je pensais qu'un tel bonheur n'était destiné qu'à d'autres créatures, plus chanceuses. M-mais vous devez penser que je suis stupide. Comme si tout ceci m'était destiné, juste à moi.~
+@170  = ~Non, pas du tout.~
+@171  = ~Pas stupide, Aerie. Ne voyez-vous pas ? Tout ceci est pour vous. Nous avons tous ces moments quand nous pensons que toutes les créations n'existent que pour nous, et nous seuls. Profitez-en.~
+@172  = ~Aerie, ne pouvons-nous pas profiter de cette conversation en silence ?~
+@173  = ~(Consulter le traité classique du Seigneur Maxus Tuck sur la manière de séduire les femmes.)~
+@174  = ~Vous êtes juste en train de me dire ce que vous pensez que je veux entendre.~
+@175  = ~Pour moi... ? Et pour vous, <CHARNAME>, car je n'aurais pas ceci, je n'aurais rien du tout, sans vous. Que se passerait-il si vous et moi étions les dernières personnes en vie ? Je peux l'imaginer... juste maintenant.~
+@176  = ~Vous vous moquez de moi, n'est-ce pas ? Parfois, c'est difficile à dire.~
+@177  = ~Je me demande si les Talosiens mesurent combien ceci est beau. Peut-être pas. Mais tous les gens sont comme ça, n'est-ce pas ? Ils ne parviennent pas à voir la beauté qui les entoure, même à l'intérieur d'eux-mêmes. Et s'ils en étaient capables, ne cesseraient-ils pas de se battre pour plutôt s'aimer... ? Et voilà, je suis repartie.~
+@178  = ~Eh bien, nous avons fait notre part pour aider les pauvres orphelins d'Athkatla. Je pense qu'une simple donation aurait suffi. Et pourtant... je dois admettre que je me suis amusée, un peu. Oui, oui, j'apprécie toujours ta compagnie, mais tu vois ce que je veux dire. Cela me rappelle des temps révolus depuis longtemps... depuis très longtemps.~
+@179  = ~Je suis désolé, vraiment, si ceci ramène des souvenirs douloureux, Jaheira.~
+@180  = ~Oh, arrête de me faire me sentir jeune.~
+@181  = ~Tu veux dire, avec quelqu'un d'autre ?~
+@182  = ~Ouais, ouais.~
+@183  = ~Ah, <CHARNAME>, ne me traite pas comme une enfant. Nous savons très bien, tous deux, ce qui s'est produit. Si j'étais chagrinée, crois-moi, tu le saurais... C'était une blague.~
+@184  = ~Mais tu es assez âgé pour avoir ce genre de souvenirs aussi, <CHARNAME>. Pas de cette nature. Mais tu comprends ce que signifie la perte, et la douleur amère qui va avec.~
+@185  = ~Tu es bien moins romantique que moi ! Et voilà que j'avais peur de "ruiner l'instant", comme on dit.~
+@186  = ~N'aie pas peur. Mes pensées sont ici, en ce moment, avec toi. Je ne voulais pas paraître déprimée... non, plutôt le contraire. Parce que, tu vois, rien n'est jamais vraiment perdu. Et pendant un moment agréable, quand on a connu la même joie auparavant, c'est comme si on se tenait hors du temps... Vois-tu ce que je veux dire ?~
+@187  = ~Eh bien... pas vraiment. Désolé.~
+@188  = ~Peut-être ? Oui.~
+@189  = ~Je crois, Jaheira. Le passé est toujours avec nous. Mais ne pas le voir comme un poids, mais plutôt comme quelque chose de riche et de vivant... comme tu le fais... J'aimerais que tu m'enseignes cette sagesse.~
+@190  = ~Hé. Ne te morigène pas. Laisse ces pensées cryptiques aux gens trop sérieux, comme moi.~
+@191  = ~Le souhait de gagner en sagesse est sagesse en soi. Je ne me trompais pas à ton sujet, <CHARNAME>. Tu es doté d'une grande sagesse et profondeur de caractère. Et je ne voudrais partager ce moment avec personne d'autre que toi.~
+@192  = ~Quel est donc ce livre que tu regardais ? Arrête de chipoter, donne-le moi immédiatement... Seigneur Maxus... traité sur... Au nom de Silvanus ! Je ne sais pas si je dois rire ou te frapper ! Non, je vais rire. De bon coeur. Ah, <CHARNAME>.~
+@193  = ~C'est étrange, non, que l'homme célèbre la beauté de la nature plutôt que de se contenter de l'admirer ? Ce "Rituel des Tempêtes"... un véritable orage un soir d'été serait tout aussi beau. Peut-être me suis-je toujours rendue dans la nature parce que je trouve les gens pénibles à comprendre.~
+@194  = ~Shar, donne-moi la force ! Combien de temps encore devrai-je me farcir ces bavardages ? Cela dit... le travail de ce dieu humain, Talos, rend bien à travers l'eau. Il faut croire que la lumière émanait des cadavres brûlants de waels. Quel dommage que nous ne puissions prendre part au rituel, hein ?~
+@195  = ~C'était vraiment une erreur, n'est-ce pas ?~
+@196  = ~Tu vis parmi les humains depuis si longtemps. Ne peux-tu prendre aucun plaisir dans ceci ?~
+@197  = ~Dames et seigneurs, je vous présente Viconia de Vir.~
+@198  = ~Hé. J'aimerais bien, vu que je sers Talos. Mais le rituel n'est accessible qu'aux adhérents de ce temple.~
+@199  = ~Oh, je n'ai pas dit ça. Qu'est-ce que je trouve à apprécier à la surface, de toute façon ? Une distraction futile vaut bien l'autre.~
+@200  = ~Fais attention, jaluk. Ton esprit est si sec que tu pourrais mourir de soif.~
+@201  = ~Tu n'es bon à rien, alors ?~
+@202  = ~Tu me pardonneras si je parais... déprimée et que j'appuie la tête contre le mur, à présent. Tout ceci me rappelle simplement l'existence lamentable que je mène. Comment pourrais-je être heureuse, exactement ? Les Drows considèrent comme acquis que le plaisir de l'un signifie la douleur de l'autre. Comment pourrais-je prendre part à la célébration d'un "amour" que je ne comprends pas... même si je le voulais ?~
+@203  = ~Je... ne suis pas certain de savoir quoi te répondre.~
+@204  = ~Tous les humains ne savent pas non plus ce que signifie l'amour. Parfois nous le célébrons pour nous rassurer sur le fait qu'il existe... même si nous ne pouvons le ressentir. Mais je te rendrai heureuse, Viconia. Qui se soucie de ce que pense le monde ?~
+@205  = ~Ne t'inquiète pas, Viconia. Personne ne s'attend à ce que tu ressentes quoi que ce soit.~
+@206  = ~Oui, oui. Ne te fais pas tant de soucis.~
+@207  = ~Une jolie répartie... Je ne m'attendais pas à moins venant de toi. Peut-être devrais-je poser la tête sur ton épaule, plutôt ?~
+@208  = ~Epargne-moi, <CHARNAME>. Je t'ai vu empocher ce livre, près de la prêtresse. Mais... merci pour le souci, j'imagine.~
+@209  = ~Peut-être que ce qui me manque dans la vie de drow, c'est savoir ce qu'on attend de moi. Il faut être fort pour survivre, c'est aussi vrai pour ton espèce que pour la nôtre. Mais il faut davantage de force pour se définir un dessein que pour le mettre en pratique.~
+@210  = ~Ces émotions, la joie, la tristesse, me font me sentir faible. Et même un moment de bonheur... comme celui-ci... s'efface juste au moment où nous en prenons conscience. Je suis fatiguée, je n'ai rien d'autre à dire.~
+@211  = ~Hé, hé. Ha-ha-ha. Désolée, je ne peux pas m'en remettre. N'avons-nous pas joué à ceci... il y a longtemps ? Mari et femme. Nous n'avions aucune idée de ce que cela signifiait. J'imagine que je ne sais toujours pas. C'est si joli, cela dit. Ça me donne presque envie de vénérer Talos.~
+@212  = ~Je me souviens que tu faisais une femme plutôt acariâtre. Je suis heureux que nous ayons dépassé cette époque.~
+@213  = ~Oh, oublions le passé, le présent, le futur, et soyons heureux.~
+@214  = ~Je suis heureux que tu t'amuses. Je me sens encore plus stupide que je le craignais.~
+@215  = ~Il n'est pas trop tard pour te vouer au service du Dieu des Tempêtes.~
+@216  = ~Oh, allons, c'était un bon entraînement.~
+@217  = ~Ouais. Faisons cela.~
+@218  = ~Tu en as l'air, aussi ! Tu es plus rouge que ce vieux Winthrop à une dégustation de vin.~
+@219  = ~Et il n'est pas trop tard pour te teindre les cheveux en rose, mais est-ce que tu vas m'écouter ? Oh, non.~
+@220  = ~<CHARNAME>, puis-je te poser une question stupide de petite fille ? Penses-tu que je vais faire ceci pour de vrai, un jour ? Mais tu vas juste me dire oui, oui, parce que je suis quelqu'un de formidable. Tu sais que j'ai de bonnes raisons de m'inquiéter. Mais j'aimerais bien. Avec la bonne personne.~
+@221  = ~Cette "bonne personne" devra passer un examen très strict auprès de moi avant que je la laisse approcher de toi.~
+@222  = ~Bien sûr, Imoen. Tu auras droit à un chevalier flamboyant sur son cheval blanc. Un prince couronné, peut-être ?~
+@223  = ~Bien... J'ai peur de ne rien pouvoir promettre.~
+@224  = ~Héhéhé ! Je peux l'imaginer, oui.~
+@225  = ~Ce n'est pas matière à plaisanter, tu sais. Je ne suis plus aussi jeune qu'autrefois.~
+@226  = ~Ouais. Je pensais bien que tu dirais ça.~
+@227  = ~Et qu'en est-il de toi, grand frère ? Tu penses à te poser avec quelqu'un ? Est-ce que je peux vivre dans ta maison, et jouer la vieille fille dans le grenier, et apprendre à tes enfants à crocheter les serrures ? Si... si je vis assez longtemps. Désolée, c'est sorti tout seul. Tu me connais. Mademoiselle Je-Parle-Trop.~
+@228  = ~Quel joli spectacle.~
+@229  = ~Profanateurs ! Comment osez-vous observer secrètement le Grand Rite des Tempêtes !~
+@230  = ~Ils doivent mourir pour cette insolence ! Venez, mes frères !~
+@231  = ~Ne nous emballons pas. Peut-être pourraient-ils être capturés et torturés modérément.~
+@232  = ~Ceci, ah, conclut le spectacle... Tout le monde, fuyez !~
+@233  = ~(Vous finissez par marcher le long d'une allée, dans les Taudis.)~
+@234  = ~Etes-vous s-sûr que c'est le bon chemin ? C'est plutôt effrayant. Peut-être devrions-nous faire demi-tour.~
+@235  = ~On dirait que nous nous sommes pas mal éloignés de nos compagnons. Tu n'as pas l'intention (hé) de profiter de moi, j'espère ?~
+@236  = ~Je vois, tu as l'intention de me traîner dans un bouge de mauvaise réputation et là, me ravir. Voilà qui me plaît davantage, mon mrann d'ssinss. Continue.~
+@237  = ~<CHARNAME>, que faisons-nous dans les taudis ? Nous as-tu perdus, de nouveau ? Hé, j'ai appris que Volo compilait un dictionnaire, je lui ai envoyé un dessin de ton visage pour son entrée sur "cas désespéré".~
+@238  = ~Salut, mon pote. C'est une jolie fille que tu as à ton bras. Ce serait dommage qu'il t'arrive quelque chose et qu'elle se retrouve toute seule.~
+@239  = ~Recule ! Personne ne se moque de moi et y survit !~
+@240  = ~Tu ne poseras pas la main sur elle. Je la défendrai de ma vie, au besoin.~
+@241  = ~C'est de l'argent que tu veux ? Ne lui fais pas de mal.~
+@242  = ~(Salvanas !? C'est toi sous ce capuchon ?)~
+@243  = ~On fait le dur, hein ? Très bientôt, tu proféreras ces menaces à travers une paille !~
+@244  = ~Comme si une quelconque somme d'or pouvait soutenir la comparaison avec la beauté de ton amie. Maintenant, livre-la moi !~
+@245  = ~Je n'ai nulle connaissance de cet elfe séduisant et viril que tu mentionnes. Maintenant, passe-moi la fille !~
+@246  = ~Voyons voir, maintenant. Si ces hommes sont des crapules ordinaires, qui ont l'intention de m'emporter loin de toi, la chose logique à faire serait de les tuer sur-le-champ.~
+@247  = ~Si, par contre, ce sont des acteurs de mauvaise qualité, engagés pour cette petite farce dans une tentative pathétique de flatter ta virilité... Je suppose que je devrais les laisser filer. Même si je pourrais les tuer quand même, juste pour le plaisir.~
+@248  = ~Hmm ?~
+@249  = ~Hum... heu... Filez, les gars !~
+@250  = ~C'est bien ce que je pensais.~
+@251  = ~Je ne le répéterai pas deux fois !~
+@252  = ~(Faire semblant de le jeter à terre.)~
+@253  = ~(Le jeter à terre.)~
+@254  = ~(Le pulvériser.)~
+@255  = ~Je n'ai nulle intention de vous blesser. Vous pouvez prendre tout ce que j'ai de valeur si vous nous laissez tranquilles.~
+@256  = ~Ahh ! Il est trop fort ! Fuyez, les gars !~
+@257  = ~Oww ! Aïe, ooh, mon dos... il est (ouf) trop fort, fuyez, les gars ! Attendez, non, aidez-moi d'abord !~
+@258  = ~Ow ! Aïe ! Non, arrêtez de me frapper, s'il vous plaît ! Oh, pitié, je me rends ! Je me ren-en-ends !~
+@259  = ~Enfer ! Je ne peux pas supporter de contempler un homme aussi décent et miséricordieux, cela brûle mon coeur noir ! Partons d'ici.~
+@260  = ~Malédiction !~
+@261  = ~Est-ce que ça va, Aerie ?~
+@262  = ~Nul besoin d'avoir peur, mon amour, ils sont partis.~
+@263  = ~C'est ça, courez ! Et dites aux Neuf Enfers que c'est <CHARNAME> qui vous envoie !~
+@264  = ~Ce n'était, hum, pas du tout crédible, si ?~
+@265  = ~Est-ce que ça va, Jaheira ?~
+@266  = ~Est-ce que ça va, Imoen ?~
+@267  = ~Nul besoin d'avoir peur, ils sont partis.~
+@268  = ~<CHARNAME>, j'ai eu si peur ! Je veux dire, pour vous, bien sûr, qui êtes si têtu. Mais, oh, v-vous avez été magnifique.~
+@269  = ~Qu'est-ce que vous voulez dire ?~
+@270  = ~<CHARNAME>. Regarde-moi dans les yeux. Est-ce que tu crois vraiment que je me suis fait avoir ? Bien, je peux voir que non. J'aurais révisé mon opinion concernant tes capacités de jugement, sinon. C'était mignon de ta part, mignon mais stupide. Mais mignon.~
+@271  = ~Argh, sauve-moi, <CHARNAME> ! Ha-ha, ha, ha, ha-a !~
+@272  = ~<CHARNAME>, vous avez certainement été en Amn assez longtemps pour vous rendre compte que ceci n'est pas le *tousse* quartier le plus aisé qu'il soit. Nous devrions le quitter le plus vite possible, sinon qui sait ce qui pourrait...~
+@273  = ~Ho, les amis ! Cet humain mâle costaud ferait une belle addition à mon harem. Saisissez-vous de lui !~
+@274  = ~Vous ne poserez pas la main sur lui. Je le défendrai de ma vie, si nécessaire.~
+@275  = ~Est-ce de l'or que vous voulez ? Ne lui faites pas de mal.~
+@276  = ~(Salvanas !? Tu es... déguisé en femme ?)~
+@277  = ~Comme si une quelconque somme d'or pouvait soutenir la comparaison avec la beauté de ton escorte. A présent, livre-le moi !~
+@278  = ~(Psst). Je n'ai aucune connaissance de l'elfe séduisant et viril que tu mentionnes. A présent, livre-moi ce beau morceau.~
+@279  = ~Comment oses-tu menacer ma Dame <CHARNAME>. Je n'aime pas frapper les femmes, mais dans le cas d'une garce aussi rustre, je vais faire une exception. Prends ça !~
+@280  = ~Attrapez-la, Anomen !~
+@281  = ~Oh, Anomen, j'ai peur ! Ne les laissez pas me faire du mal !~
+@282  = ~Je pense que vous feriez mieux de me laisser gérer ceci.~
+@283  = ~Reculez, mon cher, et laissez une vraie femme gérer ceci.~
+@284  = ~Malédiction, à présent que je regarde sa musculature, nous ne pourrons jamais le vaincre ! Fuyez !~
+@285  = ~Ma dame, bien que je... respecte votre habileté au combat, je ne peux vraiment pas permettre que...~
+@286  = ~Oh vraiment, vous êtes tellement têtu ! J'ai dit : laissez-moi gérer ça !~
+@287  = ~Mais elle a insulté mon honneur !~
+@288  = ~Qu'en est-il de *mon* honneur, Anomen ? Je n'ai pas besoin que vous me protégiez !~
+@289  = ~Ma dame, vous devriez vraiment gagner en bon sens !~
+@290  = ~Ooh, ne prétendez pas me faire la leçon... !~
+@291  = ~*déglutit* Ceci devient trop chaud pour nous, les gars. Filons...~ 
+@292  = ~Ah, une soirée plaisante, indéniablement, mais je suis fatigué. Peut-être que la vie d'aventurier nous convient davantage. Durant cette courte période en votre compagnie, j'ai l'impression de m'être déshabitué aux voies de la société civilisée. Devrions-nous rejoindre nos compagnons ?~
+@293  = ~Ma dame, je ne m'attendais pas... à ce que nous puissions nous amuser de manière aussi innocente. Je me suis bien amusé. J'espère que vous pouvez en dire autant. Donnez-moi votre main ? Je prolongerais volontiers cet instant... mais le devoir nous appelle. Rejoignons nos compagnons.~
+@294  = ~<CHARNAME>, je n'ai jamais rencontré de dame d'aussi grande qualité que vous. Je n'accorderais pas la moindre valeur à une débutante d'Athkatla couverte de bijoux, à côté de vous... Cette soirée est la plus belle de ma vie, je pense. J'espère que vous pouvez en dire de même. Donnez-moi vos lèvres. Oh... profiter de ce goût jusqu'à la fin des temps... Hélas, le devoir nous appelle. J'imagine que nous devrions rejoindre nos compagnons. Je chérirai ce souvenir.~  
+@295  = ~*bâille* Baever, je suis si fatiguée... Non, <CHARNAME>, j'ai passé un merveilleux moment. Vraiment. Je suis simplement si, si fatiguée. On peut rentrer, non ? Je veux dire : allons-y ?~
+@296  = ~J'ai... passé un merveilleux moment, <CHARNAME>. Merci. J'espère que nous pourrons refaire ceci une autre fois... quand les choses seront réglées. Car elles finiront par l'être, non ? Nous avons toute une vie de moments semblables devant nous. Cela ne fait pas de mal d'espérer, n'est-ce pas ? Mais je... *bâille* je suis un peu fatiguée. Rejoignons les autres.~
+@297  = ~<CHARNAME>, <CHARNAME>, c'était la nuit la plus heureuse de ma vie ! J'ai l'impression que je pourrais danser et chanter et... oh, mettez-vos bras autour de moi, laissez-moi vous sentir. Vous ne me lâcherez jamais, n'est-ce pas ? Cela en valait la peine, toutes les é-épreuves et la souffrance... juste pour ce moment. Je suis si heureuse d'être en vie ! Je suis si heureuse d'être avec vous.~
+@298  = ~C'était une escapade modérément amusante. Mais je suis lasse, et je ne veux rien d'autre qu'une nuit de repos. Rentrons, <CHARNAME>.~
+@299  = ~Ah, mon mrann d'ssinss, tu es vraiment, comme disent les gens, "plein de surprises". Je n'aurais jamais imaginé qu'une soirée de coutumes humaines idiotes se révélerait aussi... stimulante. Une fois encore, je suis piégée comme une grenouille dans la trajectoire d'un serpent par ta virilité. Mais ne sois pas trop impatient. L'anticipation de la récompense à laquelle je pense pour toi... doit être savourée, lentement et longuement.~
+@300  = ~J'essaie d'être charitable avec toi, mais tu dois admettre que ce n'était pas l'une de tes meilleures idées. Non, je me suis amusée. Il semble que cela soit toujours le cas en ta compagnie. Viens, donne-moi la main, et rejoignons les autres. Qui sait ce que nous apportera demain.~
+@301  = ~Mes... attentes étaient faibles, donc avouer que tu les as dépassées ne veut pas dire grand chose. Mais ce serait commettre injustice que de ne donner aucune voix à mon coeur. Tu m'as rendue heureuse, <CHARNAME>, plus heureuse que je ne l'ai été depuis un certain temps. Et pour ça, je te remercie. Mais nous devons rentrer. Qui sait ce que nous apportera demain.~
+@302  = ~<CHARNAME>, j'ai... du mal à trouver mes mots. Non, si tu détectes de l'humidité dans mon regard, ce n'est pas que tu m'aies insultée. Je dois te remercier. En tant qu'ami, en tant... qu'amant, quoi qu'il existe entre nous. Pendant un instant, je suis retournée à un moment plus heureux de ma vie.~
+@303  = ~Mais ce n'était pas lié à des mots ou à un divertissement léger. C'était toi, et la profondeur de ton esprit. Je ressens un... lien avec toi au-delà de ce que j'aurais pu imaginer... et je suis très très reconnaissante que nous nous soyons trouvés. Enlace-moi. Voilà. Restons... simplement comme ça un petit moment. Un petit moment de plus.~
+@304  = ~Bon... ben voilà, j'imagine. Sympa, hein ? Mais je dois dire, <CHARNAME>, que je ne suis plus aussi inquiète pour le lot de ta future fiancée, à présent. Tu sais comment traiter une dame. Et tu n'as même pas bavé sur toi-même une seule fois.~
+@305  = ~Hé, tiens-toi là pendant une seconde. A présent, tourne la tête et ferme les yeux, et tu auras une grosse surprise. J'avais l'intention de le faire sur la *joue*, espère de pervers, ne me regarde pas comme ça ! Ferme ces yeux, bon sang ! Voilà. Au moins, maintenant, tu ne pourras pas dire que tu es mort sans avoir été embrassé par une jolie fille. Allez, toi, en route.~

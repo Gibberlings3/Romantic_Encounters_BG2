@@ -1,0 +1,15 @@
+// D'yana appears near the Temple of Helm
+IF
+Global("ADDyanaOffer","GLOBAL",0)
+OR(5)
+InParty("Imoen2")
+Global("AerieRomanceActive","GLOBAL",2)
+Global("JaheiraRomanceActive","GLOBAL",2)
+Global("ViconiaRomanceActive","GLOBAL",2)
+Global("AnomenRomanceActive","GLOBAL",2)
+THEN
+RESPONSE #100
+CreateCreature("ADDyana",[1874.947],3)
+SetGlobal("ADDyanaOffer","GLOBAL",1)
+Continue()
+END

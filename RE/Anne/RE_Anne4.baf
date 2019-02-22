@@ -1,0 +1,24 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride("RE_Anne",MoveBetweenAreas("AR0400",[2369.2481],0))
+Wait(1)
+SetGlobal("RE_AnneSaved","GLOBAL",1)
+LeaveAreaLUAPanic("AR0400","",[2341.2536],6)
+LeaveAreaLUA("AR0400","",[2341.2536],6)
+ActionOverride(Player2,LeaveAreaLUA("AR0400","",[2363.2524],6))
+ActionOverride(Player3,LeaveAreaLUA("AR0400","",[2399.2504],6))
+ActionOverride(Player4,LeaveAreaLUA("AR0400","",[2329.2580],6))
+ActionOverride(Player5,LeaveAreaLUA("AR0400","",[2372.2558],6))
+ActionOverride(Player6,LeaveAreaLUA("AR0400","",[2406.2541],6))
+MultiPlayerSync()
+Explore()
+Wait(1)
+FadeFromColor([20.0],0)
+Wait(1)
+ActionOverride("RE_Jon",StartDialogueNoSet(Player1))
+END

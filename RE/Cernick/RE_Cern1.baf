@@ -1,0 +1,16 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+FadeToColor([20.0],0)
+Wait(1)
+CreateCreature("KPCAPT02",[1350.730],3)
+Wait(1)
+JumpToPoint([1370.750])
+Wait(1)
+FadeFromColor([20.0],0)
+MoveViewObject(Player1,INSTANT)
+Wait(1)
+ActionOverride("KPCAPT02",StartDialogueNoSet(Player1))
+END

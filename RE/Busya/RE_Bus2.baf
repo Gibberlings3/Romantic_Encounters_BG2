@@ -1,0 +1,19 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+Wait(1)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride("TRHMER01",MoveBetweenAreas("AR2010",[826.533],3))
+LeaveAreaLUAPanic("AR2010","",[803.557],10)
+LeaveAreaLUA("AR2010","",[803.557],10)
+MultiPlayerSync()
+Explore()
+Wait(1)
+FadeFromColor([20.0],0)
+MoveViewObject(Player1,INSTANT)
+Wait(1)
+ActionOverride("TRHMER01",StartDialogueNoSet(Player1))
+END

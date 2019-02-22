@@ -1,0 +1,25 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+Wait(1)
+ActionOverride("Viconia",ForceSpell(Myself,WIZARD_SPIRIT_ARMOR))
+Wait(1)
+CreateVisualEffectObject("SPROTECT","ADSKELET")
+Wait(3)
+CreateCreature("ADSKELET",[559.578],4)
+PlaySound("SKELW01")
+Wait(3)
+FadeToColor([20.0],0)
+Wait(2)
+CreateCreature("ADPatron",[501.527],5)
+CreateCreature("ADHolm",[405.472],13)
+ActionOverride("ADSKELET",DestroySelf())
+MoveViewObject(Player1,INSTANT)
+MultiPlayerSync()
+Wait(2)
+FadeFromColor([20.0],0)
+Wait(1)
+ActionOverride("ADWaiter",StartDialogueNoSet(Player1))
+END

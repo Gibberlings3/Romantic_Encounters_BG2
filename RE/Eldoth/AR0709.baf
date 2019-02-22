@@ -1,0 +1,8 @@
+IF
+AreaCheck("AR0709")
+Global("RE_EldothExists","GLOBAL",0)
+THEN
+RESPONSE #100
+CreateCreature("RE_Eld",[459.492],0)
+SetGlobal("RE_EldothExists","GLOBAL",1)
+END

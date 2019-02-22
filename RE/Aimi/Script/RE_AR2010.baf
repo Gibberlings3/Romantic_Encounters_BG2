@@ -1,0 +1,8 @@
+IF
+AreaCheck("AR2010")
+Global("REAimiExists","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("REAimiExists","GLOBAL",1)
+CreateCreature("REAimi",[360.455],12)
+END

@@ -1,0 +1,20 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+Wait(1)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride(Player2,JumpToPoint([555.870]))
+ActionOverride(Player3,JumpToPoint([565.835]))
+ActionOverride(Player4,JumpToPoint([555.835]))
+ActionOverride(Player5,JumpToPoint([565.875]))
+ActionOverride(Player6,JumpToPoint([625.860]))
+MultiPlayerSync()
+Wait(1)
+FadeFromColor([20.0],0)
+MoveViewObject(Player1,INSTANT)
+Wait(1)
+ActionOverride("Mekrath",StartDialogueNoSet(Player1))
+END

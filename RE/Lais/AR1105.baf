@@ -1,0 +1,7 @@
+IF
+Global("RE_LaisSpawned","GLOBAL",0)
+THEN
+RESPONSE #100
+CreateCreature("RE_Lais",[750.554],0)
+SetGlobal("RE_LaisSpawned","GLOBAL",1)
+END

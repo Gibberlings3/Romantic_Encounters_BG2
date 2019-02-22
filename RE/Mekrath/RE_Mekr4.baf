@@ -1,0 +1,12 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+Wait(1)
+CreateVisualEffect("spplanar",[100.322])
+Wait(2)
+ActionOverride("RE_Dryad",DestroySelf())
+Wait(2)
+ActionOverride("Mekrath",StartDialogueNoSet(Player1))
+END

@@ -1,0 +1,18 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+FadeToColor([20.0],0)
+Wait(1)
+SetGlobal("ADDyanaOffer","GLOBAL",20)
+ActionOverride("Viconia",LeaveAreaLUA("AR0900","",[3762.1581],3))
+LeaveAreaLUAPanic("AR0900","",[3725.1629],10)
+LeaveAreaLUA("AR0900","",[3725.1629],10)
+MoveViewObject(Player1,INSTANT)
+MultiPlayerSync()
+Wait(1)
+FadeFromColor([20.0],0)
+Wait(1)
+ActionOverride("Viconia",StartDialogueNoSet(Player1))
+END

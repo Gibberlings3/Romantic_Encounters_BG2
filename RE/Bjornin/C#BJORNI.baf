@@ -1,0 +1,10 @@
+//C#BJORNI.baf 
+
+IF
+	Gender(Player1,MALE)
+	Global("C#_REBjorninExists","GLOBAL",1)
+THEN 
+  RESPONSE #100
+	SetGlobal("C#_REBjorninExists","GLOBAL",0)
+	EscapeArea()
+END

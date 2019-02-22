@@ -1,0 +1,22 @@
+//Hendak.bcs
+
+IF 
+	Global("C#HendakLove","GLOBAL",1)
+THEN
+	RESPONSE #25
+		SetGlobal("C#HendakLove","GLOBAL",0)
+		SetGlobal("C#HendakTalkAfter","GLOBAL",1)
+		StartDialogNoSet(Player1)
+	RESPONSE #25
+		SetGlobal("C#HendakLove","GLOBAL",0)
+		SetGlobal("C#HendakTalkAfter","GLOBAL",2)
+		StartDialogNoSet(Player1)
+	RESPONSE #25
+		SetGlobal("C#HendakLove","GLOBAL",0)
+		SetGlobal("C#HendakTalkAfter","GLOBAL",3)
+		StartDialogNoSet(Player1)
+	RESPONSE #25
+		SetGlobal("C#HendakLove","GLOBAL",0)
+		SetGlobal("C#HendakTalkAfter","GLOBAL",4)
+		StartDialogNoSet(Player1)
+END

@@ -1,0 +1,21 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+StorePartyLocations()
+Wait(1)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride(Player2,LeaveAreaLUA("AR1600","",[2000.2000],0))
+ActionOverride(Player3,LeaveAreaLUA("AR1600","",[2000.2020],0))
+ActionOverride(Player4,LeaveAreaLUA("AR1600","",[2000.2020],0))
+ActionOverride(Player5,LeaveAreaLUA("AR1600","",[2020.2000],0))
+ActionOverride(Player6,LeaveAreaLUA("AR1600","",[2020.2000],0))
+MultiPlayerSync()
+Wait(1)
+FadeFromColor([20.0],0)
+MoveViewObject(Player1,INSTANT)
+Wait(1)
+ActionOverride("ppdesh",StartDialogueNoSet(Player1))
+END

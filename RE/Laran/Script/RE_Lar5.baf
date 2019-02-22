@@ -1,0 +1,33 @@
+IF
+True()
+THEN
+RESPONSE #100
+    CutSceneId(Player1)
+    StorePartyLocations()
+    Wait(1)
+    FadeToColor([20.0],0)
+    Wait(1)
+    Explore()
+    SmallWait(4)
+    ActionOverride("B!LARAN",MoveBetweenAreas("AR5000",[890.1750],8))
+    LeaveAreaLUAPanic("AR5000","",[930.1670],0)
+    LeaveAreaLUA("AR5000","",[930.1670],0)
+    ActionOverride(Player2,MoveBetweenAreas("AR5000",[840.1650],8)
+    ActionOverride(Player3,MoveBetweenAreas("AR5000",[840.1650],8)
+    ActionOverride(Player4,MoveBetweenAreas("AR5000",[840.1600],8)
+    ActionOverride(Player5,MoveBetweenAreas("AR5000",[840.1750],8)
+    ActionOverride(Player6,MoveBetweenAreas("AR5000",[840.1800],8)
+    ActionOverride("Anomen",MoveToPointNoInterrupt([868.1661]))
+    ActionOverride("Anomen",ApplySpell(Myself,CLERIC_HEAL))
+    ActionOverride("B!LARAN",MoveToPointNoInterrupt([905.1661]))
+    ActionOverride("B!LARAN",ApplySpell(Myself,CLERIC_HEAL))
+    ActionOverride("Anomen",FaceObject("B!LARAN"))
+    ActionOverride("B!LARAN",FaceObject("Anomen"))
+    MultiPlayerSync()
+    Wait(1)
+    FadeFromColor([20.0],0)
+    MoveViewObject(Player1,INSTANT)
+    Wait(3)
+    ActionOverride("B!LARAN",StartDialogueNoSet("Anomen")
+END
+

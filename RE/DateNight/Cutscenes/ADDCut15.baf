@@ -1,0 +1,20 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+Wait(1)
+FadeToColor([20.0],0)
+Wait(1)
+SetGlobal("ADDyanaOffer","GLOBAL",7)
+ActionOverride("Imoen2",LeaveAreaLUA("AR0900","",[2481.2244],5))
+LeaveAreaLUAPanic("AR0900","",[2425.2277],10)
+LeaveAreaLUA("AR0900","",[2425.2277],10)
+MoveViewObject(Player1,INSTANT)
+CreateCreature("ADSunite",[2400.2376],8)
+MultiPlayerSync()
+Wait(1)
+FadeFromColor([20.0],0)
+Wait(1)
+ActionOverride("Imoen2",StartDialogueNoSet(Player1))
+END

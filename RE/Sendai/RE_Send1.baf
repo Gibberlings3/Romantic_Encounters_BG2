@@ -1,0 +1,23 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+StorePartyLocations()
+FadeToColor([30.0],0)
+Wait(1)
+Rest()
+ActionOverride(Player2,Rest())
+ActionOverride(Player3,Rest())
+ActionOverride(Player4,Rest())
+ActionOverride(Player5,Rest())
+ActionOverride(Player6,Rest())
+Wait(1)
+LeaveAreaLUAPanic("AR4500","",[2007.1427],8)
+LeaveAreaLUA("AR4500","",[2007.1427],8)
+MultiPlayerSync()
+FadeFromColor([30.0],0)
+CreateCreature("RE_Send",[1993.1101],0)
+MoveViewObject(Player1,INSTANT)
+ActionOverride("RE_Send",Dialogue(Player1))
+END

@@ -1,0 +1,20 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+CreateVisualEffect("ICMAGICH",[1404.1258])
+CreateVisualEffect("ICMAGICH",[1384.1392])
+CreateVisualEffect("ICMAGICH",[1479.1270])
+CreateVisualEffectObject("SPSDIMPA",Myself)
+CreateVisualEffectObject("SPSDIMPA","MGTEOS01")
+CreateVisualEffect("ICRMPARI",[1470.1289])
+CreateVisualEffect("ICRMPARI",[1360.1300])
+CreateVisualEffect("ICMAGICH",[1390.1264])
+FadeToColor([20.0],0)
+Wait(3)
+FadeFromColor([20.0],0)
+MoveViewObject(Player1,INSTANT)
+Wait(1)
+ActionOverride("MGTEOS01",StartDialogueNoSet(Player1))
+END

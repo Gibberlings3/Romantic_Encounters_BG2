@@ -1,0 +1,1256 @@
+/* Note.
+Polish translation disabled until I get feedback from the translators */
+
+BACKUP ~RE/Backup~
+
+AUTHOR ~http://forums.gibberlings3.net~ // for your bug reports
+
+VERSION ~v12~ //packed 170414
+
+// ALWAYS AT_INTERACTIVE_EXIT ~VIEW RE/Readme-RE.txt~ END
+
+README ~RE/Readme-RE.txt~
+
+AUTO_TRA ~RE/%s~
+
+
+ALWAYS
+  ACTION_IF (GAME_IS ~eet~) BEGIN
+    OUTER_SET bg2_chapter = 12
+  END ELSE BEGIN
+    OUTER_SET bg2_chapter = 0
+  END
+  OUTER_FOR (i=1; i<=10; i=i+1) BEGIN
+    OUTER_SET bg2_chapter = bg2_chapter + 1
+    OUTER_SPRINT name_source ~bg2_chapter_%i%~
+    OUTER_SET EVAL ~%name_source%~ = bg2_chapter
+  END
+
+/* all following actions are only processed ONCE for the whole mod, independent of un- and reinstalling of single components */
+
+ACTION_IF !FILE_EXISTS ~RE/backup/REreinstall.mrk~ BEGIN
+
+
+//  ACTION_DEFINE_ARRAY fl#noconvert BEGIN setup END
+
+  ACTION_DEFINE_ARRAY fl#reload BEGIN setup-RE.tra END
+
+   LAF HANDLE_CHARSETS
+    INT_VAR
+      infer_charset = 1
+    STR_VAR
+      tra_path = EVAL ~RE~
+      noconvert_array = fl#noconvert
+      reload_array = fl#reload
+  END
+
+  COPY ~RE/install/component.xx~ ~RE/backup/REreinstall.mrk~
+
+END //REreinstall.mrk
+
+END
+
+
+LANGUAGE ~English~ ~English~ ~RE/English/Setup-RE.tra~
+LANGUAGE ~Russian (Translated by Aerie.ru)~ ~Russian~ ~RE/Russian/Setup-RE.tra~
+LANGUAGE ~French (Translated by Les d'Oghmatiques)~ ~French~ ~RE/French/Setup-RE.tra~
+//LANGUAGE ~Polski+Angielski (Translated by athkatla.cob-bg.pl)~ ~Polish~ ~RE/Polish/Setup-RE.tra~
+
+// Reactions
+
+BEGIN @0
+
+// CD_STATE_NOTVALID - custom state from CamDawg
+
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+UNLESS ~CD_STATE_NOTVALID~
+
+COPY ~RE/Audio/re_blank.wav~ ~override~
+
+COMPILE ~RE/Reactions/RE_React.d~
+
+EXTEND_TOP ~aerie.bcs~	~RE/Reactions/aerie.baf~
+EXTEND_TOP ~anomen.bcs~	~RE/Reactions/anomen.baf~
+EXTEND_TOP ~jaheira.bcs~ ~RE/Reactions/jaheira.baf~
+EXTEND_TOP ~mazzy.bcs~	~RE/Reactions/mazzy.baf~
+EXTEND_TOP ~viconia.bcs~ ~RE/Reactions/viconia.baf~
+
+
+
+// Ada, by berelinde
+BEGIN @1
+
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+             UNLESS ~CD_STATE_NOTVALID~
+
+COPY_EXISTING ~talkni01.cre~ ~override~
+WRITE_ASCII 0x248 ~talkni01~ #8  // override
+WRITE_ASCII 0x280 ~talkni01~ #32 //DV
+BUT_ONLY_IF_IT_CHANGES
+
+COMPILE ~RE/Ada/B!Ada.d~
+	~RE/Ada/RE_Ada1.baf~
+	~RE/Ada/RE_Ada2.baf~
+	~RE/Ada/RE_Ada3.baf~
+	~RE/Ada/talkni01.baf~
+
+
+// Aimi, by berelinde
+BEGIN @2
+
+COPY ~RE/Areas/ARRE03.are~ ~override~
+
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+             UNLESS ~CD_STATE_NOTVALID~
+
+COPY ~RE/Audio/re_blank.wav~ ~override~
+
+COPY_EXISTING ~DHARLOT2.cre~ ~override/REAimi.cre~
+SAY NAME1 @3
+SAY NAME2 @3
+WRITE_ASCII 0x248 ~REAimi~ #8 // override
+WRITE_ASCII 0x2cc ~REAimi~ #8 // dialogue
+WRITE_ASCII 0x280 ~REAimi~ #32 //DV
+
+COMPILE ~RE/Aimi/REAimi.d~
+
+	~RE/Aimi/Script/REAimi.baf~
+	~RE/Aimi/Script/RE_Aimi1.baf~
+	~RE/Aimi/Script/RE_Aimi2.baf~
+
+EXTEND_TOP ~Player1d.bcs~ ~RE/Aimi/Script/RE_AimiPlayer1d.baf~
+EXTEND_TOP ~AR2010.bcs~ ~RE/Aimi/Script/RE_AR2010.baf~
+
+
+
+// Anishai, by cmorgan
+BEGIN @4
+
+
+ADD_JOURNAL @119 USING ~RE/%LANGUAGE%/RE_Anishai.tra~
+
+
+COMPILE ~RE/Anishai/RE_Anishai.d~
+
+
+
+// Aran, by Kulyok
+BEGIN @5
+
+COPY ~RE/Audio/re_blank.wav~ ~override~
+
+COMPILE ~RE/Aran/RE_Aran.d~
+
+	~RE/Aran/RE_Aran1.baf~
+	~RE/Aran/RE_Aran2.baf~
+
+
+
+// Bjornin, by jastey
+BEGIN @6
+
+COPY ~RE/Areas/ARRE07.are~ ~override~
+
+COMPILE ~RE/Bjornin/C#bjornin.d~
+COMPILE ~RE/Bjornin/C#BJORNI.baf~
+
+COMPILE ~RE/Bjornin/C#BJCUT1.baf~
+COMPILE ~RE/Bjornin/C#BJCUT2.baf~
+
+EXTEND_TOP ~Ar0903.bcs~ ~RE/Bjornin/C#AR0903.baf~
+
+COPY ~RE/Bjornin/C#BJORNI.cre~ ~override~
+SAY NAME1 @7
+SAY NAME2 @7
+
+// RE compat code for flipped NORH, by CamDawg (and he'll deal with any and all bugs, heheheh!)
+ACTION_IF ((MOD_IS_INSTALLED ~BG2_TWEAKS/SETUP-BG2_TWEAKS.TP2~ ~3220~) OR
+                   (FILE_EXISTS_IN_GAME ~oh6000.are~)) THEN BEGIN
+
+  OUTER_SET width = 2368
+
+  COPY_EXISTING ~arre07.are~ ~override~
+        READ_LONG  0xac anim_num
+        READ_LONG  0xb0 anim_off
+        FOR (index = 0 ; index < anim_num ; ++index) BEGIN
+          WRITE_SHORT (anim_off + 0x20 + (index * 0x4c)) (width - THIS) // location
+        END
+
+  COPY_EXISTING ~c#bjcut1.bcs~ ~override~
+        DECOMPILE_AND_PATCH BEGIN
+          REPLACE_EVALUATE ~\[\([0-9]+\)\.\([0-9]+\)\]~
+                BEGIN SET "RESULT" = (width - %MATCH1%) END
+                ~[%RESULT%.%MATCH2%]~
+          REPLACE_EVALUATE ~Color(\[\([0-9]+\)\.\([0-9]+\)\]~ // don't mess up area fades
+                BEGIN SET "RESULT" = (width - %MATCH1%) END
+                ~Color([%RESULT%.%MATCH2%]~
+        END
+
+  COPY_EXISTING ~ar0903.bcs~ ~override~
+        DECOMPILE_AND_PATCH BEGIN
+          REPLACE_TEXTUALLY ~CreateCreature("C#BJORNI",\[1246\.1566\],8)~ ~CreateCreature("C#BJORNI",[1122.1566],8)~
+        END
+
+END
+
+// Bodhi, by Kulyok
+BEGIN @8
+
+COMPILE ~RE/Bodhi/RE_Bodhi.d~
+
+	~RE/Bodhi/RE_Bodh1.baf~
+	~RE/Bodhi/RE_Bodh2.baf~
+
+
+
+// Busya, by magrat
+BEGIN @9
+
+COMPILE ~RE/Busya/RE_Busya.d~
+
+	~RE/Busya/RE_Bus1.baf~
+	~RE/Busya/RE_Bus2.baf~
+	~RE/Busya/RE_Bus3.baf~
+
+EXTEND_TOP ~AR2007.bcs~ ~RE/Busya/AR2007.baf~
+
+
+
+// Cambion, by Kulyok
+BEGIN @10
+REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~mel01.cre~ @11
+
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+UNLESS ~CD_STATE_NOTVALID~
+
+COMPILE EVALUATE_BUFFER ~RE/Cambion/RE_Camb.d~
+
+
+
+// Chanelle, by cmorgan
+BEGIN @12
+
+COMPILE ~RE/Chanelle/RE_Chane.d~
+
+COPY_EXISTING ~KPMAID01.cre~ ~override~
+SAY INITIAL_MEETING @13 
+SAY UNHAPPY_BREAKING_POINT @14 
+SAY SELECT_COMMON1 @13 
+SAY SELECT_COMMON2 @15 
+SAY SELECT_COMMON3 @13 
+SAY SELECT_COMMON4 @16 
+
+/*
+ACTION_IF (~%WEIDU_OS%~ STRING_EQUAL_CASE ~win32~) THEN BEGIN
+    AT_NOW ~RE/Audio/ChanelleInstall.bat~
+    AT_UNINSTALL ~RE/Audio/ChanelleUninstall.bat~
+END ELSE BEGIN
+ACTION_IF (~%WEIDU_OS%~ STRING_EQUAL_CASE ~osx~) THEN BEGIN
+    AT_NOW                   ~sh RE/Audio/ChanelleInstall.sh~
+    AT_INTERACTIVE_UNINSTALL ~sh RE/Audio/ChanelleUninstall.sh~
+END
+END
+*/
+
+
+LAF HANDLE_AUDIO
+  STR_VAR
+    audio_path = ~RE/Audio/Chanelle~
+    oggdec_path = ~RE/Audio~
+END
+
+
+
+// Coran, by magrat
+BEGIN @17
+
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+UNLESS ~CD_STATE_NOTVALID~
+
+COMPILE ~RE/Coran/RE_Coran.d~
+
+EXTEND_TOP ~C6Coran.bcs~ ~RE/Coran/C6Coran.baf~
+
+COPY_EXISTING ~C6Coran.cre~ ~override~
+WRITE_ASCII 0X34 ~CORANS~ #8 //small portrait
+
+
+
+// Cyric, by Kulyok
+BEGIN @18
+REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~mel01.cre~ @11
+
+COMPILE ~RE/Cyric/RE_Cyric.d~
+
+
+
+// Desharik, by Kulyok
+BEGIN @19
+
+COMPILE ~RE/Desharik/RE_Desh.d~
+
+	~RE/Desharik/RE_Desh1.baf~
+	~RE/Desharik/RE_Desh2.baf~
+
+
+
+// Dryad, by Kulyok
+BEGIN @20
+
+COPY ~RE/Audio/re_blank.wav~ ~override~
+
+COMPILE ~RE/Dryad/RE_Dryad.d~
+
+COPY ~RE/Dryad/RE_Dryad.cre~ ~override/RE_Dryad.cre~
+
+EXTEND_TOP ~AR1200.bcs~ ~RE/Dryad/AR1200.baf~
+
+
+
+// Edwin, by Kulyok
+BEGIN @21
+
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+UNLESS ~CD_STATE_NOTVALID~
+
+COPY ~RE/Audio/re_blank.wav~ ~override~
+
+COMPILE ~RE/Edwin/RE_Edwin.d~
+
+EXTEND_TOP ~edwind.bcs~ ~RE/Edwin/edwind.baf~
+EXTEND_TOP ~edwin.bcs~ ~RE/Edwin/edwin.baf~
+
+
+
+// Eldoth, by Kulyok
+BEGIN @22
+
+COPY ~RE/Areas/ARRE01.are~ ~override~
+
+COPY ~RE/Eldoth/RE_Eld.cre~ ~override~
+
+COMPILE ~RE/Eldoth/RE_Eld.d~
+
+	~RE/Eldoth/RE_Eld1.baf~
+	~RE/Eldoth/RE_Eld2.baf~
+	~RE/Eldoth/RE_Eld3.baf~
+
+EXTEND_TOP ~AR0709.bcs~ ~RE/Eldoth/AR0709.baf~
+
+/* disable some content with regard to SoD events */
+ACTION_IF GAME_IS ~bg2ee eet~ THEN BEGIN
+  EXTEND_TOP ~AR0709.bcs~ ~RE/Eldoth/AR0709_bg2ee_add.baf~
+END
+
+/*
+ACTION_IF (~%WEIDU_OS%~ STRING_EQUAL_CASE ~win32~) THEN BEGIN
+    AT_NOW ~RE/Audio/EldothInstall.bat~
+    AT_UNINSTALL ~RE/Audio/EldothUninstall.bat~
+END ELSE BEGIN
+ACTION_IF (~%WEIDU_OS%~ STRING_EQUAL_CASE ~osx~) THEN BEGIN
+    AT_NOW                   ~sh RE/Audio/EldothInstall.sh~
+    AT_INTERACTIVE_UNINSTALL ~sh RE/Audio/EldothUninstall.sh~
+END
+END
+*/
+
+LAF HANDLE_AUDIO
+  STR_VAR
+    audio_path = ~RE/Audio/Eldoth~
+    oggdec_path = ~RE/Audio~
+END
+
+
+
+// Elhan, by Kulyok
+BEGIN @23
+
+COMPILE ~RE/Elhan/RE_Elhan.d~
+
+
+
+// Firkraag, by Kulyok
+BEGIN @24
+
+COMPILE ~RE/Firkraag/RE_Firk.d~
+
+
+
+// Gaelan Bayle, by Evaine Dian
+BEGIN @25
+
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+UNLESS ~CD_STATE_NOTVALID~
+
+COMPILE ~RE/Gaelan/RE_Gael.d~
+
+COMPILE ~RE/Gaelan/RE_Gael.baf~
+
+EXTEND_TOP ~gaelan.bcs~ ~RE/Gaelan/RE_Gael.baf~
+
+COPY ~RE/Gaelan/RE_Gael.itm~ ~override~
+  SAY NAME1 @26
+  SAY NAME2 @26
+  SAY UNIDENTIFIED_DESC @27
+  SAY DESC @28
+
+
+
+// Garren, by Kulyok
+BEGIN @29
+
+COPY ~RE/Audio/re_blank.wav~ ~override~
+
+COMPILE ~RE/Garren/RE_Garr.d~
+
+	~RE/Garren/RE_Gar1.baf~
+	~RE/Garren/RE_Gar2.baf~
+
+EXTEND_TOP ~Garren.bcs~ ~RE/Garren/RE_Gar.baf~
+
+
+
+// Haer'Dalis, by Kulyok
+BEGIN @30
+
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+UNLESS ~CD_STATE_NOTVALID~
+
+COMPILE ~RE/HaerDalis/RE_Haer.d~
+
+EXTEND_TOP ~haerdali.bcs~ ~RE/HaerDalis/RE_Haer.baf~ EVALUATE_BUFFER
+
+/*
+ACTION_IF (~%WEIDU_OS%~ STRING_EQUAL_CASE ~win32~) THEN BEGIN
+    AT_NOW ~RE/Audio/HaerDalisInstall.bat~
+    AT_UNINSTALL ~RE/Audio/HaerDalisUninstall.bat~
+END ELSE BEGIN
+ACTION_IF (~%WEIDU_OS%~ STRING_EQUAL_CASE ~osx~) THEN BEGIN
+    AT_NOW                   ~sh RE/Audio/HaerDalisInstall.sh~
+    AT_INTERACTIVE_UNINSTALL ~sh RE/Audio/HaerDalisUninstall.sh~
+END
+END
+*/
+
+LAF HANDLE_AUDIO
+  STR_VAR
+    audio_path = ~RE/Audio/HaerDalis~
+    oggdec_path = ~RE/Audio~
+END
+
+
+// Hendak, by jastey
+BEGIN @31
+
+COMPILE ~RE/Hendak/RE_Hend.d~
+
+EXTEND_TOP ~hendak.bcs~ ~RE/Hendak/RE_Hend.baf~
+
+
+
+// Ilona, by Kulyok
+BEGIN @32
+
+COPY ~RE/Areas/ARRE03.are~ ~override~
+COPY ~RE/Areas/ARRE06.are~ ~override~
+
+COPY_EXISTING ~BPROST2.cre~ ~override/RE_Ilona.cre~
+SAY NAME1 @33
+SAY NAME2 @33
+WRITE_ASCII 0x2cc ~RE_Ilona~ #8 // dialogue
+WRITE_ASCII 0x280 ~RE_Ilona~ #32 //DV
+
+COPY_EXISTING ~SHOP8.cre~ ~override/RE_Bync.cre~
+SAY NAME1 @34
+SAY NAME2 @34
+WRITE_ASCII 0x248 ~RE_Bync~ #8 // override
+WRITE_ASCII 0x2cc ~RE_Bync~ #8 // dialogue
+WRITE_ASCII 0x280 ~RE_Bync~ #32 //DV
+
+COPY_EXISTING ~THIEF1.cre~ ~override/RE_Mit.cre~
+SAY NAME1 @35
+SAY NAME2 @35
+WRITE_ASCII 0x248 ~RE_Mit~ #8 // override
+WRITE_ASCII 0x2cc ~RE_Mit~ #8 // dialogue
+WRITE_ASCII 0x280 ~RE_Mit~ #32 //DV
+
+COPY ~RE/Audio/re_blank.wav~ ~override~
+
+COMPILE ~RE/Ilona/RE_Ilona.d~
+
+	~RE/Ilona/RE_Bync.baf~
+	~RE/Ilona/RE_Bync1.baf~
+	~RE/Ilona/RE_Bync2.baf~
+	~RE/Ilona/RE_Bync3.baf~
+	~RE/Ilona/RE_Bync4.baf~
+	~RE/Ilona/RE_Bync5.baf~
+
+EXTEND_TOP ~AR0500.bcs~ ~RE/Ilona/AR0500.baf~
+
+
+
+// Jarlaxle, by Catseye
+BEGIN @36
+
+COMPILE ~RE/Jarlaxle/RE_Jar.d~
+
+	~RE/Jarlaxle/RE_Jar1.baf~
+	~RE/Jarlaxle/RE_Jar2.baf~
+	~RE/Jarlaxle/RE_Jar3.baf~
+
+
+
+// Lais, by Kulyok
+BEGIN @37
+
+COMPILE ~RE/Lais/RE_Lais.d~
+
+	~RE/Lais/RE_Lais1.baf~
+	~RE/Lais/RE_Lais2.baf~
+
+COPY ~RE/Lais/RE_Lais.cre~ ~override/RE_Lais.cre~
+SAY NAME1 @38
+SAY NAME2 @38
+
+EXTEND_TOP ~AR1105.bcs~ ~RE/Lais/AR1105.baf~
+EXTEND_TOP ~AR1100.bcs~ ~RE/Lais/AR1100.baf~
+
+
+
+// Laran, by berelinde
+BEGIN @39
+
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+             UNLESS ~CD_STATE_NOTVALID~
+
+COPY ~RE/Areas/ARRE03.are~ ~override~
+
+COPY ~RE/Laran/CRE/B!LARAN.cre~ ~override~
+        ADD_CRE_ITEM ~monhp1~ #0 #0 #0 ~NONE~ ~AMULET~
+SAY NAME1 @40
+SAY NAME2 @40
+WRITE_ASCII 0x248 ~B!LARAN~ #8 // override
+WRITE_ASCII 0x2cc ~B!LARAN~ #8 // dialogue
+WRITE_ASCII 0x280 ~B!LARAN~ #32 //DV
+WRITE_ASCII 0X34 ~BLaranS~ #8 //small portrait
+SAY INITIAL_MEETING @41 
+SAY BATTLE_CRY1 @42 
+SAY DAMAGE @43 
+SAY DYING @43 
+SAY SELECT_COMMON1 @44 
+
+COMPILE ~RE/Laran/Dialogue/B!Laran.d~
+
+	~RE/Laran/Script/RE_Lar1.baf~
+	~RE/Laran/Script/RE_Lar2.baf~
+	~RE/Laran/Script/RE_Lar8.baf~
+
+EXTEND_TOP ~anomen.bcs~ ~RE/Laran/Script/B!ANOMEN.baf~
+EXTEND_TOP ~AR0704.bcs~ ~RE/Laran/Script/B!AR0704.baf~
+
+ACTION_IF FILE_EXISTS_IN_GAME ~mel01.cre~ THEN
+BEGIN
+
+COMPILE EVALUATE_BUFFER ~RE/Laran/Dialogue/B!Laran2.d~
+
+	~RE/Laran/Script/B!REmsn.baf~
+	~RE/Laran/Script/RE_Lar3.baf~
+	~RE/Laran/Script/RE_Lar4.baf~
+	~RE/Laran/Script/RE_Lar5.baf~
+	~RE/Laran/Script/RE_Lar6.baf~
+	~RE/Laran/Script/RE_Lar7.baf~
+
+COPY ~RE/Laran/CRE/B!REmsn.cre~ ~override~
+SAY NAME1 @45
+SAY NAME2 @45
+WRITE_ASCII 0x248 ~B!REmsn~ #8 // override
+WRITE_ASCII 0x2cc ~B!REmsn~ #8 // dialogue
+WRITE_ASCII 0x280 ~B!REmsn~ #32 //DV
+
+EXTEND_TOP ~Baldur25.bcs~ ~RE/Laran/Script/B!RE_Baldur.baf~
+EXTEND_TOP ~anom25.bcs~ ~RE/Laran/Script/B!ANOM25.baf~
+EXTEND_TOP ~AR5003.bcs~ ~RE/Laran/Script/B!AR5003.baf~
+
+COPY ~RE/Laran/CRE/B!LarLet.itm~ ~override~
+  SAY NAME1 @46
+  SAY NAME2 @46
+  SAY UNIDENTIFIED_DESC @47
+  SAY DESC @47
+
+END
+
+/*
+ACTION_IF (~%WEIDU_OS%~ STRING_EQUAL_CASE ~win32~) THEN BEGIN
+    AT_NOW ~RE/Audio/LaranInstall.bat~
+    AT_UNINSTALL ~RE/Audio/LaranUninstall.bat~
+END ELSE BEGIN
+ACTION_IF (~%WEIDU_OS%~ STRING_EQUAL_CASE ~osx~) THEN BEGIN
+    AT_NOW                   ~sh RE/Audio/LaranInstall.sh~
+    AT_INTERACTIVE_UNINSTALL ~sh RE/Audio/LaranUninstall.sh~
+END
+END
+*/
+
+LAF HANDLE_AUDIO
+  STR_VAR
+    audio_path = ~RE/Audio/Laran~
+    oggdec_path = ~RE/Audio~
+END
+
+
+
+// Logan, by Ajnos
+BEGIN @48
+
+COMPILE ~RE/Logan/RE_Logan.d~
+
+
+
+// Mekrath, by Kulyok
+BEGIN @49
+
+COMPILE ~RE/Mekrath/RE_Mekr.d~
+
+	~RE/Mekrath/RE_Mekr1.baf~
+	~RE/Mekrath/RE_Mekr2.baf~
+	~RE/Mekrath/RE_Mekr3.baf~
+	~RE/Mekrath/RE_Mekr4.baf~
+	~RE/Mekrath/RE_Mekr5.baf~
+
+COPY ~RE/Dryad/RE_Dryad.cre~ ~override/RE_MekrN.cre~
+
+
+
+// Mira, by berelinde
+BEGIN @50
+
+COMPILE ~RE/Mira/REMira.d~
+
+COPY_EXISTING ~potn28.itm~ ~override/B!REpotn.itm~
+SAY NAME1 @51
+SAY NAME2 @51
+SAY UNIDENTIFIED_DESC @52
+SAY IDENTIFIED_DESC @53
+
+COPY ~RE/Mira/B!REBook.itm~ ~override~
+SAY NAME1 @54
+SAY NAME2 @54
+
+SAY UNIDENTIFIED_DESC
+@55
+
+SAY IDENTIFIED_DESC
+@56
+
+
+
+// Noober, by cmorgan
+BEGIN @57
+
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+UNLESS ~CD_STATE_NOTVALID~
+
+COMPILE ~RE/Noober/RE_Noob.d~
+
+COPY ~RE/Noober/RE_Noob.cre~ ~override/RE_Noob.cre~
+
+EXTEND_TOP ~AR0513.bcs~ ~RE/Noober/AR0513.baf~
+
+
+
+// Rebecca, by Kulyok
+BEGIN @58
+
+COPY ~RE/Areas/ARRE02.are~ ~override~
+
+COPY ~RE/Audio/re_blank.wav~ ~override~
+
+COMPILE ~RE/Rebecca/RE_Reb.d~
+
+	~RE/Rebecca/RE_Reb1.baf~
+	~RE/Rebecca/RE_Reb2.baf~
+	~RE/Rebecca/RE_Reb3.baf~
+
+COPY ~RE/Rebecca/RE_Reb.cre~ ~override/RE_Reb.cre~
+SAY NAME1 @59
+SAY NAME2 @59
+
+EXTEND_TOP ~AR2000.bcs~ ~RE/Rebecca/AR2000.baf~
+
+/*
+ACTION_IF (~%WEIDU_OS%~ STRING_EQUAL_CASE ~win32~) THEN BEGIN
+    AT_NOW ~RE/Audio/RebeccaInstall.bat~
+    AT_UNINSTALL ~RE/Audio/RebeccaUninstall.bat~
+END ELSE BEGIN
+ACTION_IF (~%WEIDU_OS%~ STRING_EQUAL_CASE ~osx~) THEN BEGIN
+    AT_NOW                   ~sh RE/Audio/RebeccaInstall.sh~
+    AT_INTERACTIVE_UNINSTALL ~sh RE/Audio/RebeccaUninstall.sh~
+END
+END
+*/
+
+LAF HANDLE_AUDIO
+  STR_VAR
+    audio_path = ~RE/Audio/Rebecca~
+    oggdec_path = ~RE/Audio~
+END
+
+
+// Renal, by cmorgan
+BEGIN @60
+
+COPY ~RE/Areas/ARRE03.are~ ~override~
+
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+             UNLESS ~CD_STATE_NOTVALID~
+
+COPY ~RE/Audio/re_blank.wav~ ~override~
+
+COPY_EXISTING ~RENAL.cre~ ~override/C-RENAL.cre~
+SAY NAME1 @61
+SAY NAME2 @61
+WRITE_ASCII 0x2cc ~Renal~ #8 // dialogue
+WRITE_ASCII 0x280 ~C-Renal~ #32 //DV
+
+COMPILE ~RE/Renal/C-Renal.d~
+
+	~RE/Renal/Script/RE_Ren1.baf~
+	~RE/Renal/Script/RE_Ren2.baf~
+
+EXTEND_TOP ~player1d.bcs~ ~RE/Renal/Script/C-RenalPlayer1d.baf~
+
+
+
+// Ribald, by Evaine Dian
+BEGIN @62
+
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+UNLESS ~CD_STATE_NOTVALID~
+
+COMPILE EVALUATE_BUFFER ~RE/Ribald/dialogue/RE_Jah.d~ 
+	~RE/Ribald/dialogue/RE_Riba.d~
+
+	~RE/Ribald/scripts/RE_Riba.baf~
+
+EXTEND_TOP ~jaheira.bcs~ ~RE/Ribald/scripts/RE_Jah.baf~
+
+COPY ~RE/Ribald/RE_Riba.itm~ ~override~
+  SAY NAME1 @63
+  SAY NAME2 @63
+  SAY UNIDENTIFIED_DESC @64
+
+  SAY DESC @64
+
+
+
+// Ryan Trawl, by Kulyok
+BEGIN @65
+
+COMPILE EVALUATE_BUFFER ~RE/Ryan/RE_Ryan.d~
+
+
+
+// Saemon, by Kulyok
+BEGIN @66
+
+COPY ~RE/Areas/ARRE01.are~ ~override~
+
+COMPILE ~RE/Saemon/RE_Saem1.d~
+
+	~RE/Saemon/RE_Saem1.baf~
+	~RE/Saemon/RE_Saem2.baf~
+
+
+
+// Sendai, by Kulyok
+BEGIN @67
+REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~mel01.cre~ @11
+
+COPY ~RE/Sendai/RE_Send.cre~ ~override/RE_Send.cre~
+
+COMPILE ~RE/Sendai/RE_Send.d~
+
+	~RE/Sendai/RE_Send1.baf~
+	~RE/Sendai/RE_Send2.baf~
+
+EXTEND_TOP ~player1d.bcs~ ~RE/Sendai/Player1d.baf~
+
+
+
+// Sheri, by cmorgan
+BEGIN @68
+
+COPY ~RE/Areas/ARRE05.are~ ~override~
+
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+UNLESS ~CD_STATE_NOTVALID~
+
+EXTEND_TOP ~AR0704.bcs~ ~RE/Sheri/AR0704.baf~
+EXTEND_TOP ~Player1d.bcs~ ~RE/Sheri/Player1d.baf~
+
+COMPILE ~RE/Sheri/RE_Sheri.d~
+
+	~RE/Sheri/RE_She1.baf~
+	~RE/Sheri/RE_She2.baf~
+	~RE/Sheri/RE_She3.baf~
+	~RE/Sheri/RE_She4.baf~
+
+COPY ~RE/Sheri/RE_Sheri.cre~ ~override~
+SAY NAME1 @69
+SAY NAME2 @69
+WRITE_ASCII 0x2cc ~C-Sheri~ #8 // dialogue
+WRITE_ASCII 0x280 ~RE_Sheri~ #32 //DV
+WRITE_ASCII 0X34 ~RE_Sheri~ #8 //small portrait
+
+/*
+ACTION_IF (~%WEIDU_OS%~ STRING_EQUAL_CASE ~win32~) THEN BEGIN
+    AT_NOW ~RE/Audio/SheriInstall.bat~
+    AT_UNINSTALL ~RE/Audio/SheriUninstall.bat~
+END ELSE BEGIN
+ACTION_IF (~%WEIDU_OS%~ STRING_EQUAL_CASE ~osx~) THEN BEGIN
+    AT_NOW                   ~sh RE/Audio/SheriInstall.sh~
+    AT_INTERACTIVE_UNINSTALL ~sh RE/Audio/SheriUninstall.sh~
+END
+END
+*/
+
+LAF HANDLE_AUDIO
+  STR_VAR
+    audio_path = ~RE/Audio/Sheri~
+    oggdec_path = ~RE/Audio~
+END
+
+
+
+// Solaufein, by jastey
+BEGIN @70
+
+
+ADD_JOURNAL EXISTING TITLE (#74362) @1 USING ~RE/%LANGUAGE%/RE_Sola.tra~
+
+
+COMPILE ~RE/Sola/RE_Sola.d~
+
+	~RE/Sola/RE_Sola1.baf~
+	~RE/Sola/RE_Sola2.baf~
+	~RE/Sola/RE_Sola3.baf~
+
+
+
+// Talak, by berelinde
+BEGIN @71
+
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+UNLESS ~CD_STATE_NOTVALID~
+
+COPY_EXISTING ~UDDROW23.cre~ ~override/RETalak.cre~
+SAY NAME1 @72
+SAY NAME2 @72
+WRITE_ASCII 0x248 ~RETalak~ #8 // override
+WRITE_ASCII 0x2cc ~RETalak~ #8 // dialogue
+WRITE_ASCII 0x280 ~RETalak~ #32 //DV
+
+COMPILE ~RE/Talak/RETalak.d~
+
+	~RE/Talak/RE_Tala1.baf~
+	~RE/Talak/RE_Tala2.baf~
+
+
+
+// Teos, by Kulyok
+BEGIN @73
+
+COMPILE ~RE/Teos/RE_Teos.d~
+
+	~RE/Teos/RE_Teos1.baf~
+	~RE/Teos/RE_Teos2.baf~
+	~RE/Teos/RE_Teos3.baf~
+
+
+
+// Yoshimo, by Kulyok
+BEGIN @74
+
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+UNLESS ~CD_STATE_NOTVALID~
+
+COPY ~RE/Audio/re_blank.wav~ ~override~
+
+COMPILE ~RE/Yoshimo/RE_Yoshi.d~
+
+	~RE/Yoshimo/RE_Yosh1.baf~
+
+EXTEND_TOP ~yoshd.bcs~ ~RE/Yoshimo/yoshd.baf~
+EXTEND_TOP ~yoshimo.bcs~ ~RE/Yoshimo/yoshimo.baf~ EVALUATE_BUFFER
+
+
+
+// Isabelle, by gertjanvh
+BEGIN @75
+
+COPY ~RE/Isabelle/RE_Isab.cre~ ~override/RE_Isab.cre~
+SAY NAME1 @76
+SAY NAME2 @76
+WRITE_ASCII 0x2cc ~RE_Isab~ #8  // dialogue
+WRITE_ASCII 0x280 ~RE_Isab~ #32 // death variable
+
+COMPILE ~RE/Isabelle/RE_Isab.d~
+
+EXTEND_TOP ~AR0901.bcs~ ~RE/Isabelle/AR0901.baf~
+
+
+
+// Anne, by gertjanvh
+BEGIN @77
+
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+UNLESS ~CD_STATE_NOTVALID~
+
+COPY ~RE/Areas/ARRE08.are~ ~override~
+
+COPY ~RE/Anne/RE_AnneN.itm~ ~override~
+SAY UNIDENTIFIED_DESC @81
+SAY DESC @81
+
+APPEND ~itemdial.2da~
+~RE_ANNEN    16310 RE_ANNEN~
+UNLESS ~RE_ANNEN~
+
+COPY ~RE/Anne/RE_Anne.cre~ ~override/RE_Anne.cre~
+SAY NAME1 @78
+SAY NAME2 @78
+WRITE_ASCII 0x248 ~RE_Anne~ #8  // override
+WRITE_ASCII 0x2cc ~RE_Anne~ #8  // dialogue
+WRITE_ASCII 0x280 ~RE_Anne~ #32 // death variable
+
+COPY ~RE/Anne/RE_Jon.cre~ ~override/RE_Jon.cre~
+SAY NAME1 @79
+SAY NAME2 @79
+WRITE_ASCII 0x248 ~RE_Jon~ #8  // override
+WRITE_ASCII 0x2cc ~RE_Jon~ #8  // dialogue
+WRITE_ASCII 0x280 ~RE_Jon~ #32 // death variable
+
+COPY ~RE/Anne/RE_Carl.cre~ ~override/RE_Carl.cre~
+SAY NAME1 @80
+SAY NAME2 @80
+WRITE_ASCII 0x2cc ~RE_Carl~ #8  // dialogue
+WRITE_ASCII 0x280 ~RE_Carl~ #32 // death variable
+
+COPY ~RE/Anne/RE_Carl1.cre~ ~override/RE_Carl1.cre~
+WRITE_ASCII 0x280 ~RE_Carl1~ #32 // death variable
+
+COPY ~RE/Anne/RE_Carl1.cre~ ~override/RE_Carl2.cre~
+WRITE_ASCII 0x280 ~RE_Carl2~ #32 // death variable
+
+COMPILE ~RE/Anne/RE_Anne.d~
+
+	~RE/Anne/RE_Anne1.baf~
+	~RE/Anne/RE_Anne2.baf~
+	~RE/Anne/RE_Anne4.baf~
+	~RE/Anne/RE_Anne5.baf~
+	~RE/Anne/RE_Anne6.baf~
+	~RE/Anne/RE_Anne7.baf~
+	~RE/Anne/RE_Anne8.baf~
+	~RE/Anne/RE_Anne.baf~
+	~RE/Anne/RE_Jon.baf~
+
+EXTEND_TOP ~AR0400.bcs~ ~RE/Anne/AR0400.baf~
+
+COPY ~RE/Audio/re_blank.wav~ ~override~
+
+
+
+// Ellesime, by Domi
+BEGIN @82
+
+COMPILE ~RE/Ellesime/RE_Elle.d~
+
+
+
+// Valygar, by Kulyok
+BEGIN @83
+
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+UNLESS ~CD_STATE_NOTVALID~
+
+COPY ~RE/Audio/re_blank.wav~ ~override~
+
+COMPILE EVALUATE_BUFFER ~RE/Valygar/RE_Valyg.d~
+
+EXTEND_TOP ~Valygar.bcs~ ~RE/Valygar/RE_Valyg.baf~
+
+COPY ~RE/Valygar/RE_Valam.itm~ ~override/RE_Valam.itm~
+SAY NAME1 @84
+SAY NAME2 @84
+SAY UNIDENTIFIED_DESC @85
+SAY DESC @85
+
+
+
+// Chandra, by Western Paladin
+BEGIN @86
+
+COPY ~RE/Chandra/RE_Chand.cre~ ~override/RE_Chand.cre~
+SAY NAME1 @87
+SAY NAME2 @87
+WRITE_ASCII 0x2cc ~RE_Chand~ #8  // dialogue
+WRITE_ASCII 0x280 ~RE_Chand~ #32 // death variable
+
+COMPILE ~RE/Chandra/RE_Chand.d~
+
+EXTEND_TOP ~AR0709.bcs~ ~RE/Chandra/AR0709.baf~
+
+
+
+// Goldander, by magrat
+BEGIN @88
+
+COMPILE ~RE/Goldander/RE_Gold.d~
+
+	~RE/Goldander/RE_Gold1.baf~
+	~RE/Goldander/RE_Gold2.baf~
+
+
+
+// Viekang, by magrat
+BEGIN @89
+
+REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~mel01.cre~ @11
+
+COMPILE ~RE/Viekang/RE_Viek.d~
+
+
+
+// Sarevok, by Aeryn
+BEGIN @90
+
+REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~mel01.cre~ @11
+
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+UNLESS ~CD_STATE_NOTVALID~
+
+COPY ~RE/Audio/re_blank.wav~ ~override~
+
+COMPILE ~RE/Sarevok/RE_Sarev.d~
+
+EXTEND_TOP ~Sarev25D.bcs~ ~RE/Sarevok/RE_Sared.baf~
+
+
+
+// Cernd, by Aeryn
+BEGIN @91
+
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+UNLESS ~CD_STATE_NOTVALID~
+
+COPY ~RE/Audio/re_blank.wav~ ~override~
+
+COMPILE ~RE/Cernd/RE_Cernd.d~
+
+EXTEND_TOP ~CerndD.bcs~ ~RE/Cernd/RE_Cernd.baf~
+
+
+
+// Cernick, by Cal Jones
+BEGIN @92
+
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+UNLESS ~CD_STATE_NOTVALID~
+
+COPY ~RE/Audio/re_blank.wav~ ~override~
+
+COMPILE ~RE/Cernick/RE_Cerni.d~
+	~RE/Cernick/RE_Cern1.baf~
+	~RE/Cernick/RE_Cern2.baf~
+	~RE/Cernick/RE_Cern3.baf~
+	~RE/Cernick/RE_Cern4.baf~
+
+EXTEND_TOP ~player1d.bcs~ ~RE/Cernick/RE_CernickPlayer1d.baf~ EVALUATE_BUFFER
+
+
+
+// Valygar ToB, by Kulyok
+BEGIN @93
+
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+UNLESS ~CD_STATE_NOTVALID~
+
+COPY ~RE/Audio/re_blank.wav~ ~override~
+
+COMPILE ~RE/Valygar/RE_Valyg25.d~
+
+EXTEND_TOP ~AR6200.bcs~ ~RE/Valygar/AR6200.baf~
+
+EXTEND_TOP ~VALY25.bcs~ ~RE/Valygar/VALY25.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~VALYGARD.bcs~ ~RE/Valygar/VALY25D.baf~ EVALUATE_BUFFER
+
+COPY_EXISTING ~MISC5I.itm~ ~override/RE_Valyg.itm~
+SAY NAME1 @94
+SAY NAME2 @94
+SAY UNIDENTIFIED_DESC @95
+SAY DESC @95
+
+COPY ~RE/Valygar/RE_Val.2da~ ~override/RE_Val.2da~
+REPLACE ~99999~ @96
+
+
+
+// Minsc
+BEGIN @97
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+UNLESS ~CD_STATE_NOTVALID~
+
+COPY ~RE/Audio/re_blank.wav~ ~override~
+
+COPY ~RE/Areas/ARRE01.are~ ~override~
+
+COMPILE ~RE/Minsc/RE_Minsc.d~
+
+	~RE/Minsc/REMinsc1.baf~
+	~RE/Minsc/REMinsc2.baf~
+
+EXTEND_TOP ~MinscD.bcs~ ~RE/Minsc/MinscD.baf~
+
+
+
+// Black Dragon
+BEGIN @98
+
+COMPILE ~RE/Nizidra/RE_Niz.d~
+
+
+
+// Date Night
+
+BEGIN @99
+
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+UNLESS ~CD_STATE_NOTVALID~
+
+COMPILE ~RE/DateNight/ADDate.d~
+	~RE/DateNight/ADDyana.baf~
+	~RE/DateNight/Cutscenes/ADDCut1.baf~
+	~RE/DateNight/Cutscenes/ADDCut2.baf~
+	~RE/DateNight/Cutscenes/ADDCut3.baf~
+	~RE/DateNight/Cutscenes/ADDCut4.baf~
+	~RE/DateNight/Cutscenes/ADDCut5.baf~
+	~RE/DateNight/Cutscenes/ADDCut6.baf~
+	~RE/DateNight/Cutscenes/ADDCut7.baf~
+	~RE/DateNight/Cutscenes/ADDCut8.baf~
+	~RE/DateNight/Cutscenes/ADDCut9.baf~
+	~RE/DateNight/Cutscenes/ADDCut10.baf~
+	~RE/DateNight/Cutscenes/ADDCut11.baf~
+	~RE/DateNight/Cutscenes/ADDCut12.baf~
+	~RE/DateNight/Cutscenes/ADDCut13.baf~
+	~RE/DateNight/Cutscenes/ADDCut14.baf~
+	~RE/DateNight/Cutscenes/ADDCut15.baf~
+	~RE/DateNight/Cutscenes/ADDCut16.baf~
+	~RE/DateNight/Cutscenes/ADDCut17.baf~
+	~RE/DateNight/Cutscenes/ADDCut18.baf~
+	~RE/DateNight/Cutscenes/ADDCut19.baf~
+	~RE/DateNight/Cutscenes/ADDCut20.baf~
+	~RE/DateNight/Cutscenes/ADDCut21.baf~
+	~RE/DateNight/Cutscenes/ADDCut22.baf~
+	~RE/DateNight/Cutscenes/ADDCut23.baf~
+	~RE/DateNight/Cutscenes/ADDCut24.baf~
+	~RE/DateNight/Cutscenes/ADDCut25.baf~
+	~RE/DateNight/Cutscenes/ADDCuta.baf~
+	~RE/DateNight/Cutscenes/ADDCutb.baf~
+	~RE/DateNight/Cutscenes/ADDCutc.baf~
+
+EXTEND_TOP ~AR0900.bcs~	~RE/DateNight/AR0900.baf~
+
+COPY_EXISTING ~ACOLYTE2.cre~ ~override/ADDYANA.cre~
+SAY NAME1 ~D'yana~
+SAY NAME2 ~D'yana~
+WRITE_ASCII 0x248 ~ADDYANA~ #8  // override
+WRITE_ASCII 0x2cc ~ADDYANA~ #8  // dialogue
+WRITE_ASCII 0x280 ~ADDYANA~ #32 // DV
+WRITE_ASCII 0x250 ~~ 	    #8  // class script
+WRITE_ASCII 0x258 ~~ 	    #8  // race script
+WRITE_ASCII 0x260 ~~ 	    #8  // general script
+
+COPY_EXISTING ~PWAUK2.cre~ ~override/ADKAIT.cre~
+SAY NAME1 ~Kait Shea~
+SAY NAME2 ~Kait Shea~
+WRITE_ASCII 0x2cc ~ADKAIT~ #8  // dialogue
+WRITE_ASCII 0x280 ~ADKAIT~ #32 //DV
+
+COPY_EXISTING ~POSTUL6.cre~ ~override/ADWAITER.cre~
+SAY NAME1 ~Waiter~
+SAY NAME2 ~Waiter~
+WRITE_ASCII 0x2cc ~ADWAITER~ #8  // dialogue
+WRITE_ASCII 0x280 ~ADWAITER~ #32 //DV
+
+COPY_EXISTING ~ACOLYTE1.cre~ ~override/ADHOLM.cre~
+SAY NAME1 ~Holmar Sorensen~
+SAY NAME2 ~Holmar Sorensen~
+WRITE_ASCII 0x248 ~~ 	   #8  // override
+WRITE_ASCII 0x2cc ~ADHOLM~ #8  // dialogue
+WRITE_ASCII 0x280 ~ADHOLM~ #32 //DV
+
+COPY_EXISTING ~POSTUL4.cre~ ~override/ADPATRON.cre~
+SAY NAME1 ~Patron~
+SAY NAME2 ~Patron~
+WRITE_ASCII 0x2cc ~ADPATRON~ #8  // dialogue
+WRITE_ASCII 0x280 ~ADPATRON~ #32 //DV
+
+COPY_EXISTING ~TALKNI01.cre~ ~override/ADSTORMA.cre~
+SAY NAME1 ~Storm Knight~
+SAY NAME2 ~Storm Knight~
+WRITE_ASCII 0x248 ~~ 	     #8  // override
+WRITE_ASCII 0x2cc ~ADSTORMA~ #8  // dialogue
+WRITE_ASCII 0x280 ~ADSTORMA~ #32 //DV
+
+COPY_EXISTING ~TALKNI01.cre~ ~override/ADSTORMB.cre~
+SAY NAME1 ~Storm Knight~
+SAY NAME2 ~Storm Knight~
+WRITE_ASCII 0x248 ~~ 	     #8  // override
+WRITE_ASCII 0x2cc ~ADSTORMB~ #8  // dialogue
+WRITE_ASCII 0x280 ~ADSTORMB~ #32 //DV
+
+COPY_EXISTING ~TALKNI01.cre~ ~override/ADSTORMC.cre~
+SAY NAME1 ~Storm Knight~
+SAY NAME2 ~Storm Knight~
+WRITE_ASCII 0x248 ~~ 	     #8  // override
+WRITE_ASCII 0x2cc ~ADSTORMC~ #8  // dialogue
+WRITE_ASCII 0x280 ~ADSTORMC~ #32 //DV
+
+COPY_EXISTING ~CLDAD.cre~ ~override/ADSUNITE.cre~
+SAY NAME1 ~Sunite~
+SAY NAME2 ~Sunite~
+WRITE_ASCII 0x248 ~~ 	     #8  // override
+WRITE_ASCII 0x2cc ~ADSUNITE~ #8  // dialogue
+WRITE_ASCII 0x280 ~ADSUNITE~ #32 //DV
+
+COPY_EXISTING ~BMUGG1.cre~ ~override/ADMUGGER.cre~
+SAY NAME1 ~Mugger~
+SAY NAME2 ~Mugger~
+WRITE_ASCII 0x248 ~~ 	     #8  // override
+WRITE_ASCII 0x2cc ~ADMUGGER~ #8  // dialogue
+WRITE_ASCII 0x280 ~ADMUGGER~ #32 //DV
+
+COPY_EXISTING ~MOOK.cre~ ~override/ADMUGGF.cre~
+SAY NAME1 ~Mugger~
+SAY NAME2 ~Mugger~
+WRITE_ASCII 0x248 ~~ 	    #8  // override
+WRITE_ASCII 0x2cc ~ADMUGGF~ #8  // dialogue
+WRITE_ASCII 0x280 ~ADMUGGF~ #32 //DV
+
+COPY_EXISTING ~SLAVER4.cre~ ~override/ADMUGG1.cre~
+SAY NAME1 ~Mugger~
+SAY NAME2 ~Mugger~
+WRITE_ASCII 0x280 ~ADMUGG1~ #32 //DV
+
+COPY_EXISTING ~SLAVER4.cre~ ~override/ADMUGG2.cre~
+SAY NAME1 ~Mugger~
+SAY NAME2 ~Mugger~
+WRITE_ASCII 0x280 ~ADMUGG2~ #32 //DV
+
+COPY_EXISTING ~SKELE2.cre~ ~override/ADSKELET.cre~
+SAY NAME1 ~Skeleton~
+SAY NAME2 ~Skeleton~
+WRITE_ASCII 0x248 ~~ 	     #8  // override
+WRITE_ASCII 0x280 ~ADSKELET~ #32 //DV
+
+COPY ~RE/Audio/re_blank.wav~ ~override~

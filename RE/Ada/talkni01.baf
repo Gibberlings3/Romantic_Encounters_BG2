@@ -1,0 +1,17 @@
+IF
+Global("RE_AdaGuardMoves","GLOBAL",2)
+Global("Activated","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("Activated","LOCALS",1)
+Activate(Myself)
+END
+
+IF
+Global("RE_AdaGuardMoves","GLOBAL",1)
+Global("Deactivated","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("Deactivated","LOCALS",1)
+Deactivate(Myself)
+END

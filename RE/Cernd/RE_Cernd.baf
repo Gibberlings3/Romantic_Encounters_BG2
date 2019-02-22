@@ -1,0 +1,16 @@
+IF
+InParty(Myself)
+See(Player1)
+Global("loganjob2","GLOBAL",2)
+Global("RE_Cernd","GLOBAL",0)
+AreaCheck("AR1900")
+TimeOfDay(NIGHT)
+Gender(Player1,FEMALE)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("RE_Cernd","GLOBAL",1)
+RealSetGlobalTimer("RE_DreamTimer","GLOBAL",100)
+StartDialogueNoSet(Player1)
+END

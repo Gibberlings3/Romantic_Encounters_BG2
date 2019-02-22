@@ -1,0 +1,9 @@
+/* this is for BGII:EE, with respect to events in SoD ("Global("RE_EldothExists","GLOBAL",2)" is used to disable mod content that was written before SoD was created)
+*/
+
+IF
+Global("RE_EldothExists","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("RE_EldothExists","GLOBAL",2)
+END

@@ -1,0 +1,20 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+StorePartyLocations()
+Wait(1)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride("RE_Reb",MoveBetweenAreas("ARRE02",[472.307],3))
+LeaveAreaLUAPanic("ARRE02","",[440.323],10)
+LeaveAreaLUA("ARRE02","",[440.323],10)
+MultiPlayerSync()
+Explore()
+Wait(1)
+FadeFromColor([20.0],0)
+MoveViewObject(Player1,INSTANT)
+Wait(1)
+ActionOverride("RE_Reb",StartDialogueNoSet(Player1))
+END

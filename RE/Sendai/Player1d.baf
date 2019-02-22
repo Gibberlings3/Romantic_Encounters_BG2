@@ -1,0 +1,12 @@
+IF
+!RealGlobalTimerNotExpired("RE_DreamTimer","GLOBAL")
+Global("Chapter","GLOBAL",%bg2_chapter_9%)
+Global("SendaiCutScene1","GLOBAL",0)
+Gender(Player1,MALE)
+Global("RE_SendaiDream","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("RE_SendaiDream","GLOBAL",1)
+StartCutSceneMode()
+StartCutScene("RE_Send1")
+END

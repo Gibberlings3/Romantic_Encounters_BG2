@@ -1,0 +1,12 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+Wait(1)
+CreateVisualEffect("spplanar",[100.322])
+Wait(2)
+CreateCreature("RE_MekrN",[100.322],0)
+Wait(2)
+ActionOverride("Mekrath",StartDialogueNoSet(Player1))
+END

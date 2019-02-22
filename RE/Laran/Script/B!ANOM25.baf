@@ -1,0 +1,22 @@
+IF
+  Global("B!LaranOver","GLOBAL",1)
+  Global("RE_LaranAnoReactsToB","GLOBAL",1)
+  Global("AnomenRomanceActive","GLOBAL",2)
+  InParty(Myself)
+  CombatCounter(0)
+  !See([ENEMY])
+  See(Player1)
+THEN
+  RESPONSE #100
+    SetGlobal("B!LaranOver","GLOBAL",2)
+END
+
+IF
+  Global("B!LaranOver","GLOBAL",2)
+  InParty(Myself)
+  !StateCheck(Myself,CD_STATE_NOTVALID)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+THEN
+  RESPONSE #100
+    StartDialogueNoSet(Player1)
+END

@@ -1,0 +1,12 @@
+IF
+GlobalLT("RE_AnneTeleport","GLOBAL",4)
+Dead("RE_Carl")
+Dead("RE_Carl1")
+Dead("RE_Carl2")
+CombatCounter(0)
+!See([ENEMY])
+THEN
+RESPONSE #100
+SetGlobal("RE_AnneTeleport","GLOBAL",3)
+StartDialogueNoSet(Player1)
+END

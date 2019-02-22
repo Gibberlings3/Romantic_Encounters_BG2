@@ -1,0 +1,24 @@
+// All cutscenes are divided into groups of five(MOD 5): 1 for Aerie, 2 for Jaheira, 3 for Viconia, 4 for Anomen, 5 for Viconia.
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+Wait(1)
+FadeToColor([20.0],0)
+DayNight(MIDNIGHT)
+Wait(1)
+JumpToPoint([1331.2621])
+MoveViewObject(Player1,INSTANT)
+ActionOverride("Aerie",JumpToPoint([1372.2597]))
+ActionOverride("ADDYANA",JumpToPoint([1235.2556]))
+Face(7)
+ActionOverride("Aerie",Face(4))
+ActionOverride("ADDYANA",Face(11))
+CreateCreature("ADKAIT",[1290.2540],0)
+MultiPlayerSync()
+Wait(1)
+FadeFromColor([20.0],0)
+Wait(1)
+ActionOverride("ADDYANA",StartDialogueNoSet(Player1))
+END

@@ -1,0 +1,26 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+Wait(1)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride("RE_Bync",DestroySelf())
+ActionOverride("RE_Ilona",DestroySelf())
+Wait(1)
+LeaveAreaLUAPanic("AR0500","",[3109.1353],0)
+LeaveAreaLUA("AR0500","",[3109.1353],0)
+ActionOverride(Player2,MoveBetweenAreas("AR0500",[3162.1353],0))
+ActionOverride(Player3,MoveBetweenAreas("AR0500",[3109.1383],0))
+ActionOverride(Player4,MoveBetweenAreas("AR0500",[3162.1383],0))
+ActionOverride(Player5,MoveBetweenAreas("AR0500",[3109.1413],0))
+ActionOverride(Player6,MoveBetweenAreas("AR0500",[3162.1413],0))
+MultiPlayerSync()
+SmallWait(4)
+Wait(1)
+FadeFromColor([20.0],0)
+Wait(1)
+MoveViewObject(Player1,INSTANT)
+EndCutSceneMode()
+END

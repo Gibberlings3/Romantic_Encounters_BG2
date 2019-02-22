@@ -1,0 +1,26 @@
+// 2.
+IF
+!RealGlobalTimerNotExpired("RE_DreamTimer","GLOBAL")
+Global("RE_EdwinFlirt","GLOBAL",1)
+Global("RE_EdwinDo","GLOBAL",3)
+InParty(Myself)
+See(Player1)
+Gender(Myself,MALE)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+OR(10)
+AreaCheck("AR0509")
+AreaCheck("AR0021")
+AreaCheck("AR0406")
+AreaCheck("AR0313")
+AreaCheck("AR0704")
+AreaCheck("AR0709")
+AreaCheck("AR0513")
+AreaCheck("AR1602")
+AreaCheck("AR1105")
+AreaCheck("AR2010")
+THEN
+RESPONSE #100
+SetGlobal("RE_EdwinDo","GLOBAL",4)
+StartDialogueNoSet(Player1)
+END

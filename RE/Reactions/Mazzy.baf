@@ -1,0 +1,44 @@
+// Valygar
+IF
+InParty(Myself)
+InParty("Valygar")
+Global("RE_Valygar","GLOBAL",1)
+GlobalGT("RE_ValygarRomance","GLOBAL",20)
+Global("RE_MazzyValygarConf","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("RE_MazzyValygarConf","GLOBAL",1)
+RealSetGlobalTimer("RE_MazzyValygarTimer","GLOBAL",1000)
+END
+
+IF
+RealGlobalTimerExpired("RE_MazzyValygarTimer","GLOBAL")
+InParty(Myself)
+InParty("Valygar")
+Global("RE_Valygar","GLOBAL",1)
+Global("RE_MazzyValygarConf","GLOBAL",1)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!StateCheck("Valygar",CD_STATE_NOTVALID)
+CombatCounter(0)
+!See([ENEMY])
+See("Valygar")
+THEN
+RESPONSE #100
+SetGlobal("RE_MazzyValygarConf","GLOBAL",2)
+END
+
+IF
+Global("RE_MazzyValygarConf","GLOBAL",2)
+RealGlobalTimerExpired("RE_MazzyValygarTimer","GLOBAL")
+InParty(Myself)
+InParty("Valygar")
+Global("RE_Valygar","GLOBAL",1)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!StateCheck("Valygar",CD_STATE_NOTVALID)
+CombatCounter(0)
+!See([ENEMY])
+See("Valygar")
+THEN
+RESPONSE #100
+StartDialogueNoSet("Valygar")
+END

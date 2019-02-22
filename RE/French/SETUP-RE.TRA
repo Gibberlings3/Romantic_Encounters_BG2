@@ -1,0 +1,447 @@
+@0    = ~Reactions d'Aerie, Anomen, Jaheira et Viconia aux Rencontres~
+@1    = ~Tempetes et Eclairs, par berelinde (Seigneure des Tempêtes Ada, contenu adulte)~
+@2    = ~La Magie d'Aimi, par berelinde (contenu adulte)~
+@3    = ~Aimi~
+@4    = ~Les Doigts Agiles d'Anishai, par cmorgan~
+@5    = ~Une Soiree en Compagnie d'Aran, par Kulyok~
+@6    = ~Les Desirs de Bjornin, par jastey (contenu adulte)~
+@7    = ~Sire Bjornin~
+@8    = ~La Tentation de Bodhi, par Kulyok (contenu adulte)~
+@9    = ~A Franc-Marche avec la Maitresse de Guilde Busya, par magrat~
+@10   = ~Le Cambion Joueur, par Kulyok~
+@11   = ~Vous ne semblez pas avoir installe Throne of Bhaal.~
+@12   = ~Les Dons de Chanelle, par cmorgan (contenu adulte)~
+@13   = ~Je suis à votre service.~ [RE_cha5]
+@14   = ~Que quelqu'un m'aide !~ [RE_cha4]
+@15   = ~Je ne suis personne d'importance...~ [RE_cha2]
+@16   = ~Excusez-moi, je ne m'occupe que de mes petites affaires...~ [RE_cha3]
+@17   = ~Une Nuit avec Coran, par magrat~
+@18   = ~L'Epreuve de Cyric, par Kulyok~
+@19   = ~Un Rendez-Vous avec un Seigneur Pirate, par Kulyok (Desharik, contenu adulte)~
+@20   = ~La Dryade Esseulee, par Kulyok (contenu adulte)~
+@21   = ~La Douceur d'Edwin, par Kulyok~
+@22   = ~Les Exploits d'Eldoth, par Kulyok~
+@23   = ~Une Romance avec Elhan, par Kulyok~
+@24   = ~Le Gros Gourdin de Firkraag~
+@25   = ~Le Contrat de Gaelan, par Evaine Dian~
+@26   = ~Le contrat de Gaelan~
+@27   = ~Ceci est le contrat que Gaelan Bayle a donné à <CHARNAME>. L'écriture en pattes de mouche, à peine lisible, et les tâches d'encre çà et là laissent penser que le document a été rédigé à la hâte, et pourtant, étonnamment, à l'exception de la signature de Gaelan, il n'y a pas une seule faute d'orthographe.
+
+  "Fait à Athkatla, <DAYANDMONTH>.
+  
+Le soussigné promet désormais de garantir un soutien gratuit à <CHARNAME> dans sa quête pour retrouver sa connaissance Imoen, sous réserve que <CHARNAME> accepte de le sauter.
+
+  - Gayling Bail
+  - <CHARNAME>"~
+@28   = ~Ceci est le contrat que Gaelan Bayle a donné à <CHARNAME>. L'écriture en pattes de mouche, à peine lisible, et les tâches d'encre çà et là laissent penser que le document a été rédigé à la hâte, et pourtant, étonnamment, à l'exception de la signature de Gaelan, il n'y a pas une seule faute d'orthographe.
+
+  "Fait à Athkatla, <DAYANDMONTH>.
+  
+Le soussigné promet désormais de garantir un soutien gratuit à <CHARNAME> dans sa quête pour retrouver sa connaissance Imoen, sous réserve que <CHARNAME> accepte de le sauter.
+  
+  - Gayling Bail
+  - <CHARNAME>"~
+@29   = ~Une Promenade avec Garren Lancevent, par Kulyok~
+@30   = ~Haer'Dalis, par Kulyok~
+@31   = ~Le Coeur d'Hendak, par jastey~
+@32   = ~Ilona, une Fille de Marchand, par Kulyok~
+@33   = ~Ilona~
+@34   = ~Bync~
+@35   = ~Mit~
+@36   = ~Les Fascinations de Jarlaxle, par Catseye~
+@37   = ~Une Nuit avec Lais a Imnesvale, par Kulyok~
+@38   = ~Lais~
+@39   = ~La Promesse de Laran, par berelinde (contenu adulte)~
+@40   = ~Laran~
+@41   = ~Bonjour, <PRO_SIRMAAM>. Vous semblez être un étranger à ces lieux.~ [RE_Lar00]
+@42   = ~Torm ! Guide ma lame !~ [RE_Lar01]
+@43   = ~[RE_Lar02]~ [RE_Lar02]
+@44   = ~Bonjour !~ [RE_Lar03]
+@45   = ~Réfugié~
+@46   = ~Lettre~
+@47   = ~Ma Très Chère Dame <CHARNAME>,
+
+  J'écris en toute hâte, mais je tenais à ce que vous sachiez que je pense souvent à vous. Si je devais survivre, je partirai à votre recherche, mais ceci apparaît de moins en moins probable au fur et à mesure des heures qui passent. Néanmoins, je garde foi en Torm, et ma place est ici, à défendre Saradush. Que la bénédiction de tous les dieux bons vous accompagne.
+
+  Avec tout mon amour, Laran.~
+@48   = ~Le Chant d'Amour de Logan, Lord Coprith, par Ajnos~
+@49   = ~Mekrath et la Nymphologie, par Kulyok~
+@50   = ~Les Marchandises Speciales de Mira, par berelinde~
+@51   = ~Breuvage Fortifiant de Mira~
+@52   = ~Breuvage Fortifiant de Mira
+
+C'est Mira, commerçante à la Promenade de Waukyne, qui vous a donné ce fortifiant.~
+@53   = ~Breuvage Fortifiant de Mira
+
+Mira, commerçante à la Promenade de Waukyne, prépare cette potion pour assister tous ceux qui passent leur temps à conter fleurette sans s'inquiéter de la fatigue, ou d'une éventuelle progéniture.~
+@54   = ~Livre des Versets de Ceilla~
+
+/*Des poèmes présents dans le recueil, je n'en ai traduit/réadapté qu'un seul, le premier. Les autres étaient trop longs, je les ai donc remplacés par diverses oeuvres. Dans l'ordre : "Je l'aime à Mourir", chanson de Francis Cabrel, et "Mon Rêve Familier", poème de Verlaine.*/
+@55   = ~Le Voeu
+
+Quand Heaum cessera enfin d'être vigilant,
+Quand Séluné appartiendra aux cieux du jour,
+Quand Lathandre oubliera les lueurs du levant,
+Quand Mystra méprisera magie pour toujours,
+Quand Sunie se dépouillera de tout éclat,
+Quand Torm reniera la justice à tout jamais,
+Quand ces dieux trahiront leur être, ce jour-là,
+Ce jour seulement, cesserai-je de t'aimer.
+
+
+Je l'aime à Mourir
+
+Moi je n'étais rien,
+Et voilà qu'aujourd'hui,
+Je suis le gardien
+Du sommeil de ses nuits,
+Je l'aime à mourir.
+Vous pouvez détruire
+Tout ce qu'il vous plaira,
+Elle n'a qu'à ouvrir
+L'espace de ses bras
+Pour tout reconstruire,
+Pour tout reconstruire,
+Je l'aime à mourir.
+
+Elle a gommé les chiffres
+Des horloges du quartier,
+Elle a fait de ma vie
+Des cocottes en papier,
+Des éclats de rire.
+Elle a bâti des ponts
+Entre nous et le ciel,
+Et nous les traversons
+A chaque fois qu'elle
+Ne veut pas dormir,
+Ne veut pas dormir,
+Je l'aime à mourir.
+
+Elle a dû faire toutes les guerres
+Pour être si forte aujourd'hui,
+Elle a dû faire toutes les guerres
+De la vie, et l'amour aussi.
+
+Elle vit de son mieux
+Son rêve d'opaline,
+Elle danse au milieu
+Des forêts qu'elle dessine,
+Je l'aime à mourir.
+Elle porte des rubans
+Qu'elle laisse s'envoler,
+Elle me chante souvent
+Que j'ai tort d'essayer,
+De les retenir,
+De les retenir,
+Je l'aime à mourir.
+
+Pour monter dans sa grotte
+Cachée sous les toits,
+Je dois clouer des notes
+À mes sabots de bois,
+Je l'aime à mourir.
+Je dois juste m'asseoir,
+Je ne dois pas parler,
+Je ne dois rien vouloir,
+Je dois juste essayer
+De lui appartenir,
+De lui appartenir,
+Je l'aime à mourir.
+
+Elle a dû faire toutes les guerres
+Pour etre si forte aujourd'hui,
+Elle a dû faire toutes les guerres
+De la vie, et l'amour aussi.
+
+Moi je n'étais rien,
+Et voilà qu'aujourd'hui,
+Je suis le gardien
+Du sommeil de ses nuits,
+Je l'aime à mourir.
+Vous pouvez détruire
+Tout ce qu'il vous plaira,
+Elle n'aura qu'à ouvrir
+L'espace de ses bras
+Pour tout reconstruire,
+Pour tout reconstruire,
+Je l'aime à mourir.
+
+
+Mon Rêve Familier
+
+Je fais souvent ce rêve étrange et pénétrant
+D'une femme inconnue et que j'aime, et qui m'aime,
+Et qui n'est, chaque fois, ni tout à fait la même,
+Ni tout à fait une autre, qui m'aime et me comprend.
+ 
+Car elle me comprend et mon coeur, transparent
+Pour elle seule, hélas !, cesse d'être un problème
+Pour elle seule, et les moiteurs de mon front blême,
+Elle seule les sait rafraîchir, en pleurant.
+ 
+Est-elle brune, blonde ou rousse ? Je l'ignore.
+Son nom ? Je me souviens qu'il est doux et sonore,
+Comme ceux des aimés que la Vie exila.
+ 
+Son regard est pareil au regard des statues,
+Et pour sa voix, lointaine, si calme et grave, elle a
+L'inflexion des voix chères qui se sont tues.~
+
+
+@56   = ~Le Voeu
+
+Quand Heaum cessera enfin d'être vigilant,
+Quand Séluné appartiendra aux cieux du jour,
+Quand Lathandre oubliera les lueurs du levant,
+Quand Mystra méprisera magie pour toujours,
+Quand Sunie se dépouillera de tout éclat,
+Quand Torm reniera la justice à tout jamais,
+Quand ces dieux trahiront leur être, ce jour-là,
+Ce jour seulement, cesserai-je de t'aimer.
+
+
+Je l'aime à Mourir
+
+Moi je n'étais rien,
+Et voilà qu'aujourd'hui,
+Je suis le gardien
+Du sommeil de ses nuits,
+Je l'aime à mourir.
+Vous pouvez détruire
+Tout ce qu'il vous plaira,
+Elle n'a qu'à ouvrir
+L'espace de ses bras
+Pour tout reconstruire,
+Pour tout reconstruire,
+Je l'aime à mourir.
+
+Elle a gommé les chiffres
+Des horloges du quartier,
+Elle a fait de ma vie
+Des cocottes en papier,
+Des éclats de rire.
+Elle a bâti des ponts
+Entre nous et le ciel,
+Et nous les traversons
+A chaque fois qu'elle
+Ne veut pas dormir,
+Ne veut pas dormir,
+Je l'aime à mourir.
+
+Elle a dû faire toutes les guerres
+Pour être si forte aujourd'hui,
+Elle a dû faire toutes les guerres
+De la vie, et l'amour aussi.
+
+Elle vit de son mieux
+Son rêve d'opaline,
+Elle danse au milieu
+Des forêts qu'elle dessine,
+Je l'aime à mourir.
+Elle porte des rubans
+Qu'elle laisse s'envoler,
+Elle me chante souvent
+Que j'ai tort d'essayer,
+De les retenir,
+De les retenir,
+Je l'aime à mourir.
+
+Pour monter dans sa grotte
+Cachée sous les toits,
+Je dois clouer des notes
+À mes sabots de bois,
+Je l'aime à mourir.
+Je dois juste m'asseoir,
+Je ne dois pas parler,
+Je ne dois rien vouloir,
+Je dois juste essayer
+De lui appartenir,
+De lui appartenir,
+Je l'aime à mourir.
+
+Elle a dû faire toutes les guerres
+Pour etre si forte aujourd'hui,
+Elle a dû faire toutes les guerres
+De la vie, et l'amour aussi.
+
+Moi je n'étais rien,
+Et voilà qu'aujourd'hui,
+Je suis le gardien
+Du sommeil de ses nuits,
+Je l'aime à mourir.
+Vous pouvez détruire
+Tout ce qu'il vous plaira,
+Elle n'aura qu'à ouvrir
+L'espace de ses bras
+Pour tout reconstruire,
+Pour tout reconstruire,
+Je l'aime à mourir.
+
+
+Mon Rêve Familier
+
+Je fais souvent ce rêve étrange et pénétrant
+D'une femme inconnue et que j'aime, et qui m'aime,
+Et qui n'est, chaque fois, ni tout à fait la même,
+Ni tout à fait une autre, qui m'aime et me comprend.
+ 
+Car elle me comprend et mon coeur, transparent
+Pour elle seule, hélas !, cesse d'être un problème
+Pour elle seule, et les moiteurs de mon front blême,
+Elle seule les sait rafraîchir, en pleurant.
+ 
+Est-elle brune, blonde ou rousse ? Je l'ignore.
+Son nom ? Je me souviens qu'il est doux et sonore,
+Comme ceux des aimés que la Vie exila.
+ 
+Son regard est pareil au regard des statues,
+Et pour sa voix, lointaine, si calme et grave, elle a
+L'inflexion des voix chères qui se sont tues.~
+
+@57   = ~Le Retour de Noober, par cmorgan~
+@58   = ~Rebecca la Bohemienne, par Kulyok~
+@59   = ~Rebecca~
+@60   = ~Renal Bloodscalp : une Dangereuse Affaire, par cmorgan (contenu adulte)~
+@61   = ~Renal~
+@62   = ~La Specialite du Vieux Ribald, par Evaine Dian~
+@63   = ~Le collier de Ribald~
+@64   = ~C'est le collier que Ribald a offert à <CHARNAME>. Selon Ribald, il appartenait à un vieil homme qui lui associait de nombreux bons souvenirs, et il était convaincu que ce collier lui portait chance. La surface du pendentif est polie à force d'avoir été fréquemment effleurée de la main lors de ces dernières décennies. Il n'a aucune valeur, hormis sentimentale.~
+@65   = ~Sire Ryan Trawl, par Kulyok~
+@66   = ~Saemon, un Pirate, par Kulyok (contenu adulte)~
+@67   = ~Le Reve de Sendai, par Kulyok~
+@68   = ~Sheri D'Avignon, la Barde, par cmorgan (contenu adulte)~
+@69   = ~Sheri D'Avignon~
+@70   = ~Solaufein et la Chambre des Plaisirs, par jastey~
+@71   = ~La Recompense de Phaere, par berelinde (Talak, esclave sexuel, contenu adulte)~
+@72   = ~Talak~
+@73   = ~Recherches Magiques avec Teos, par Kulyok~
+@74   = ~Un Flirt avec Yoshimo, par Kulyok~
+@75   = ~Les Peurs d'Isabelle, par gertjanvh (contenu adulte)~
+@76   = ~Isabelle~
+@77   = ~Au Secours d'Anne, par gertjanvh (contenu adulte)~
+@78   = ~Anne~
+@79   = ~Jonathan~
+@80   = ~Carlos~
+@81   = ~Jonathan, si tu veux retrouver ta soeur chérie, on peut tout à fait s'arranger ! Mais ça va te coûter bonbon, bien sûr. Je pense que mille pièces d'or serait un prix très raisonnable. Tu n'es pas d'accord ?
+
+Tu as raison, peu importe que tu sois d'accord ou non. Tu vas payer, ou ta soeur sera sujette à un malheureux accident. Mais sois en assuré : si tu décidais de ne pas payer, ta soeur ne souffrirait pas. Trop.
+
+Bon, je pense avoir été assez clair, non ? Et si on se mettait au boulot ? Si tu suis les instructions sur la carte ci-jointe, tu trouveras une baraque. C'est là que tu livreras l'or. Si nous trouvons satisfaction, ta soeur te sera rendue indemne et quasiment en bonne santé.~
+@82   = ~La Reine Ellesime, par Domi~
+@83   = ~La Romance de Valygar, par Kulyok~
+@84   = ~Collier de famille Corthala~
+@85   = ~Ce collier tout simple, bien qu'il n'ait pas grande valeur monétaire, est un héritage de la famille Corthala.~
+@86   = ~Une Repetition avec Chandra, par Western Paladin~
+@87   = ~Chandra~
+@88   = ~Goldander Blackenrock : Apres la Fete, par magrat~
+@89   = ~Une Conversation avc Viekang, par magrat~
+@90   = ~Bravoure ou Folie ? par Aeryn (Sarevok, contenu adulte)~
+@91   = ~A Cause de la Lune, par Aeryn (Cernd)~
+@92   = ~La Confession de Cernick, par Cal Jones~
+@93   = ~Romance avec Valygar - Trône de Bhaal, par Kulyok~
+@94   = ~La clé de Valygar~
+@95   = ~D'après Valygar, cette clé ouvrira la porte de son ancien hôtel particulier à Athkatla. C'est un cadeau à <CHARNAME>, le serment que sa maison lui sera toujours ouverte, la promesse de choses à venir.~
+@96   = ~L'idylle éclair et le mariage précipité de Valygar Corthala et <CHARNAME> devint bientôt l'histoire d'amour la plus osée et la plus romantique d'Amn. Les femmes nobles murmurèrent des histoires de cavaliers sur la plage, d'un voyage en mer au coucher du soleil, d'une cérémonie rapide mais somptueuse sur la frontière d'Amn, et bien sûr de cette grande maison des Corthala. Certains détails étaient justes d'autres non, mais lorsque les Corthala arrivèrent à Atkhatla, tous s'accordèrent pour dire que c'était le couple le plus beau et le plus majestueux qu'ils avaient jamais vu.
+
+Les nouvelles aventures des Corthala à Padhiver se révélèrent encore plus passionnantes, et ajoutèrent aux richesses déjà considérables de la famille. Lorsque <CHARNAME> revint, une place sur le Conseil des Six fut négociée et obtenue quasi immédiatement. Valygar, lui, devint Inspecteur Chef, et son mandat marqua le début d'une nouvelle page dans l'histoire d'Amn, lui valant respect et admirateurs, alors que sa mystérieuse épouse acquit encore plus de pouvoir à travers conflits et diplomatie.
+
+<CHARNAME> et Valygar voyagèrent dans des terres lointaines. Ils renouvelèrent leurs voeux des années plus tard, à la Porte de Baldur, découvrirent des secrets près de l'Epine du Monde, et, à en croire les histoires de Volo, affrontèrent même la Dame de la Souffrance dans Sigil. Leurs amis n'acceptèrent pas tous leur mariage précipité facilement, mais la plupart restèrent proches de <CHARNAME>, toujours prêts à la retrouver et se plonger tête baissée dans une nouvelle aventure imprudente, Valygar le premier. Leur demeure dans le quartier du Gouvernement devint l'une des plus belles d'Athkatla, emplie de lumière, d'amour et de rires. Et leurs routes, entrelacées, se poursuivirent encore et toujours.~
+@97   = ~Minsc prend un bain, par Thimblerig~
+@98   = ~La Vanité de Nizidramanii'yt, par Thimblerig~
+@99   = ~Un rendez-vous nocturne, par SisterVigilante~
+@888   = ~J'ai une offre pour qui veut l'entendre !~ 
+
+
+// WeiDU prompts
+@-1000= "Le mod %TP2_FILE_NAME% contient"
+@-1001= "composants optionnels distincts.
+Pour gagner du temps, vous pouvez choisir ce que vous souhaitez faire d'eux
+au niveau general plutot que de repondre aux questions pour chacun.
+"
+@-1002= "Que faut-il faire de tous les composants qui NE sont PAS ENCORE installes ?
+Les [I]nstaller, les [S]auter, dem[A]nder pour chacun ? "
+@-1003= "Que faut-il faire de tous les composants qui sont DEJA installes ?
+Les [R]einstaller, les s[U]pprimer, les [S]auter, dem[A]nder pour chacun ? "
+
+@-1004= "S'IL VOUS PLAIT, envoyez par e-mail le fichier"
+@-1005= "a"
+
+@-1006= "Installer le composant ["
+@-1007= "] ?
+[R]einstaller, co[N]server, s[U]pprimer ou [Q]uitter ? "
+@-1008= "] ?
+[I]nstaller, [N]e pas installer ou [Q]uitter ? "
+
+@-1009= "Entrez une partie du nom du module : "
+
+@-1010= "Reinstallation du composant ["
+@-1011= "] "
+@-1012= "Reinstallation dans la langue"
+
+@-1013= "Suppression de l'ancienne installation de ["
+@-1014= "] au prealable..."
+@-1015= "SUPPRESSION REUSSIE DE L'ANCIEN"
+
+@-1016= "Installation en cours"
+@-1017= "ERREUR pendant l'installation de ["
+@-1018= "], retour a l'etat anterieur"
+@-1019= "INSTALLATION REUSSIE"
+@-1020= "Saute"
+@-1021= "Suppression de ["
+@-1022= "] (composant #"
+@-1023= ")"
+@-1024= "SUPPRESSION REUSSIE DE ["
+
+@-1025= "] ?
+[R]einstaller, co[N]server, s[U]pprimer, [Q]uitter ou choisir un parmi :"
+@-1026= "] ?
+[N]e pas installer, [Q]uitter ou choisir un parmi :"
+@-1027= " (installe actuellement)"
+
+@-1028= "Souhaitez-vous afficher les composants de ["
+@-1029= "] ?
+[Y]Oui, [N]on ? "
+
+@-1030= "] ?
+choisir un parmi :"
+@-1031= "] ?
+[R]einstaller, co[N]server, [Q]uitter ou choisir un parmi :"
+@-1032= "INSTALLATION ECHOUEE A CAUSE D'ERREURS"
+@-1033= "INSTALLATION AVEC DES ALERTES"
+@-1034= "Souhaitez-vous afficher les instructions (ReadMe) ? [Y]Oui [N]on"
+@-1035= "Dans la langue"
+
+@-1036= "Saute le GROUPE ["
+@-1037= "] pour cause d'absence des pre-requis."
+
+@-1038= "dem[A]nder pour chaque composant, tout [S]auter, ou choisir une selection pre-definie :"
+@-1039= "dem[A]nder pour chaque composant, [R]einstaller la configuration courante, tout s[U]pprimer, tout [S]auter, ou choisir une selection pre-definie :"
+
+@-1040= "
+Veuillez choisir la langue dans laquelle vous souhaitez jouer au jeu.
+Si par la suite vous desirez jouer au jeu dans une langue differente, il vous
+faudra editer le fichier weidu.conf et reinstaller vos mods.
+"
+@-1041= "Tcheque"
+@-1042= "Allemand"
+@-1043= "Anglais"
+@-1044= "Espagnol"
+@-1045= "Francais"
+@-1046= "Italien"
+@-1047= "Polonais"
+@-1048= "Portugais"
+@-1049= "Turc"
+@-1050= "Japonais"
+@-1051= "Coreen"
+@-1052= "Chinois simplifie"
+@-1053= "Russe"
+@-1054= "Ukrainien"
+
+@-1060= "
+Ce jeu est disponible en plusieurs langues mais WeiDU ne sait pas laquelle a ete choisie quand ce mod a ete installe.
+
+Veuillez indiquer quelle langue du jeu a ete utilisee quand vous avez installe ce mod. Votre choix servira jusqu'a ce que WeiDU s'arrete mais ne sera pas memorise.
+"
+@-1061= "
+Utilisation de"
+@-1062= " et "

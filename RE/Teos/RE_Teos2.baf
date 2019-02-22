@@ -1,0 +1,23 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+CreateVisualEffectObject("spdimndr",Myself)
+ActionOverride("MGTEOS01",CreateVisualEffectObject("spdimndr",Myself))
+PlaySound("EFF_M29")
+Wait(2)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride("MGTEOS01",JumpToPoint([2900.2580])
+JumpToPoint([2910.2620])
+MultiPlayerSync()
+CreateVisualEffectObject("spdimndr",Myself)
+ActionOverride("MGTEOS01",CreateVisualEffectObject("spdimndr",Myself))
+PlaySound("EFF_M29")
+Wait(2)
+FadeFromColor([20.0],0)
+MoveViewObject(Player1,INSTANT)
+Wait(3)
+ActionOverride("MGTEOS01",StartDialogueNoSet(Player1))
+END

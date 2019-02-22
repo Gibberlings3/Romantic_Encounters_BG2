@@ -1,0 +1,11 @@
+IF
+!RealGlobalTimerNotExpired("RE_DreamTimer","GLOBAL")
+AreaCheck("AR0704")
+Global("RE_SheriMatch","GLOBAL",4)
+Gender(Player1,MALE)
+THEN
+RESPONSE #100
+SetGlobal("RE_SheriMatch","GLOBAL",5)
+StartCutSceneMode()
+StartCutScene("RE_She1")
+END
