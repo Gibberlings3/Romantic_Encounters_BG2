@@ -1308,6 +1308,9 @@ winLAME					http://winlame.sourceforge.net
 VI. Version History
 ---------------------
 
+Version 13
+- fixed error preventing encounter with Sendai
+
 Version 12
 - removed portraits with unclear copyright status
 - added HANDLE_CHARSETS for BGII:EE compatibility
