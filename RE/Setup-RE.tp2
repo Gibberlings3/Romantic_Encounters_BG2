@@ -773,7 +773,7 @@ COMPILE ~RE/Sendai/RE_Send.d~
 	~RE/Sendai/RE_Send1.baf~
 	~RE/Sendai/RE_Send2.baf~
 
-EXTEND_TOP ~player1d.bcs~ ~RE/Sendai/Player1d.baf~
+EXTEND_TOP ~player1d.bcs~ ~RE/Sendai/Player1d.baf~ EVALUATE_BUFFER
 
 
 
