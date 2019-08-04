@@ -1310,6 +1310,7 @@ VI. Version History
 
 Version 13
 - fixed error preventing encounter with Sendai
+- fixed installation of audio files on macOS
 
 Version 12
 - removed portraits with unclear copyright status

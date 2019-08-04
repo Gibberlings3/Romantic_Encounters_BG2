@@ -257,6 +257,7 @@ LAF HANDLE_AUDIO
   STR_VAR
     audio_path = ~RE/Audio/Chanelle~
     oggdec_path = ~RE/Audio~
+    sox_path = ~RE/Audio~
 END
 
 
@@ -358,6 +359,7 @@ LAF HANDLE_AUDIO
   STR_VAR
     audio_path = ~RE/Audio/Eldoth~
     oggdec_path = ~RE/Audio~
+    sox_path = ~RE/Audio~
 END
 
 
@@ -436,6 +438,7 @@ LAF HANDLE_AUDIO
   STR_VAR
     audio_path = ~RE/Audio/HaerDalis~
     oggdec_path = ~RE/Audio~
+    sox_path = ~RE/Audio~
 END
 
 
@@ -595,6 +598,7 @@ LAF HANDLE_AUDIO
   STR_VAR
     audio_path = ~RE/Audio/Laran~
     oggdec_path = ~RE/Audio~
+    sox_path = ~RE/Audio~
 END
 
 
@@ -693,6 +697,7 @@ LAF HANDLE_AUDIO
   STR_VAR
     audio_path = ~RE/Audio/Rebecca~
     oggdec_path = ~RE/Audio~
+    sox_path = ~RE/Audio~
 END
 
 
@@ -818,6 +823,7 @@ LAF HANDLE_AUDIO
   STR_VAR
     audio_path = ~RE/Audio/Sheri~
     oggdec_path = ~RE/Audio~
+    sox_path = ~RE/Audio~
 END
 
 
