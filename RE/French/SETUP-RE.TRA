@@ -351,6 +351,12 @@ Les nouvelles aventures des Corthala à Padhiver se révélèrent encore plus passio
 @99   = ~Un rendez-vous nocturne, par SisterVigilante~
 @888   = ~J'ai une offre pour qui veut l'entendre !~ 
 
+/* new for v13 */
+@889 = ~D'yana~
+@890 = ~Kait Shea~
+@891 = ~Holmar Sorensen~
+@892 = ~Sunite~
+
 
 // WeiDU prompts
 @-1000= "Le mod %TP2_FILE_NAME% contient"

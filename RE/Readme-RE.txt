@@ -1,5 +1,5 @@
-		   Romantic Encounters MOD for Baldur's Gate II
-				   Version 12
+﻿		   Romantic Encounters MOD for Baldur's Gate II
+				   Version 15
 			    A Gibberlings Three Mod
 			  http://www.gibberlings3.net
 
@@ -1307,6 +1307,10 @@ winLAME					http://winlame.sourceforge.net
 ---------------------
 VI. Version History
 ---------------------
+
+Version 15
+- all lines from tp2 traifyed
+- Updated Russian translation
 
 Version 14
 - Updated Russian translation

@@ -5,7 +5,7 @@ BACKUP ~RE/Backup~
 
 AUTHOR ~http://forums.gibberlings3.net~ // for your bug reports
 
-VERSION ~v12~ //packed 170414
+VERSION ~v15~ //packed 120515
 
 // ALWAYS AT_INTERACTIVE_EXIT ~VIEW RE/Readme-RE.txt~ END
 
@@ -1167,8 +1167,8 @@ COMPILE ~RE/DateNight/ADDate.d~
 EXTEND_TOP ~AR0900.bcs~	~RE/DateNight/AR0900.baf~
 
 COPY_EXISTING ~ACOLYTE2.cre~ ~override/ADDYANA.cre~
-SAY NAME1 ~D'yana~
-SAY NAME2 ~D'yana~
+SAY NAME1 @889 /* ~D'yana~ */
+SAY NAME2 @889 /* ~D'yana~ */
 WRITE_ASCII 0x248 ~ADDYANA~ #8  // override
 WRITE_ASCII 0x2cc ~ADDYANA~ #8  // dialogue
 WRITE_ASCII 0x280 ~ADDYANA~ #32 // DV
@@ -1177,85 +1177,85 @@ WRITE_ASCII 0x258 ~~ 	    #8  // race script
 WRITE_ASCII 0x260 ~~ 	    #8  // general script
 
 COPY_EXISTING ~PWAUK2.cre~ ~override/ADKAIT.cre~
-SAY NAME1 ~Kait Shea~
-SAY NAME2 ~Kait Shea~
+SAY NAME1 @890 /* ~Kait Shea~ */
+SAY NAME2 @890 /* ~Kait Shea~ */
 WRITE_ASCII 0x2cc ~ADKAIT~ #8  // dialogue
 WRITE_ASCII 0x280 ~ADKAIT~ #32 //DV
 
 COPY_EXISTING ~POSTUL6.cre~ ~override/ADWAITER.cre~
-SAY NAME1 ~Waiter~
-SAY NAME2 ~Waiter~
+SAY NAME1 #13891 /* ~Waiter~ */
+SAY NAME2 #13891 /* ~Waiter~ */
 WRITE_ASCII 0x2cc ~ADWAITER~ #8  // dialogue
 WRITE_ASCII 0x280 ~ADWAITER~ #32 //DV
 
 COPY_EXISTING ~ACOLYTE1.cre~ ~override/ADHOLM.cre~
-SAY NAME1 ~Holmar Sorensen~
-SAY NAME2 ~Holmar Sorensen~
+SAY NAME1 @891 /* ~Holmar Sorensen~ */
+SAY NAME2 @891 /* ~Holmar Sorensen~ */
 WRITE_ASCII 0x248 ~~ 	   #8  // override
 WRITE_ASCII 0x2cc ~ADHOLM~ #8  // dialogue
 WRITE_ASCII 0x280 ~ADHOLM~ #32 //DV
 
 COPY_EXISTING ~POSTUL4.cre~ ~override/ADPATRON.cre~
-SAY NAME1 ~Patron~
-SAY NAME2 ~Patron~
+SAY NAME1 #23724 /* ~Patron~ */
+SAY NAME2 #23724 /* ~Patron~ */
 WRITE_ASCII 0x2cc ~ADPATRON~ #8  // dialogue
 WRITE_ASCII 0x280 ~ADPATRON~ #32 //DV
 
 COPY_EXISTING ~TALKNI01.cre~ ~override/ADSTORMA.cre~
-SAY NAME1 ~Storm Knight~
-SAY NAME2 ~Storm Knight~
+SAY NAME1 #27932 /* ~Storm Knight~ */
+SAY NAME2 #27932 /* ~Storm Knight~ */
 WRITE_ASCII 0x248 ~~ 	     #8  // override
 WRITE_ASCII 0x2cc ~ADSTORMA~ #8  // dialogue
 WRITE_ASCII 0x280 ~ADSTORMA~ #32 //DV
 
 COPY_EXISTING ~TALKNI01.cre~ ~override/ADSTORMB.cre~
-SAY NAME1 ~Storm Knight~
-SAY NAME2 ~Storm Knight~
+SAY NAME1 #27932 /* ~Storm Knight~ */
+SAY NAME2 #27932 /* ~Storm Knight~ */
 WRITE_ASCII 0x248 ~~ 	     #8  // override
 WRITE_ASCII 0x2cc ~ADSTORMB~ #8  // dialogue
 WRITE_ASCII 0x280 ~ADSTORMB~ #32 //DV
 
 COPY_EXISTING ~TALKNI01.cre~ ~override/ADSTORMC.cre~
-SAY NAME1 ~Storm Knight~
-SAY NAME2 ~Storm Knight~
+SAY NAME1 #27932 /* ~Storm Knight~ */
+SAY NAME2 #27932 /* ~Storm Knight~ */
 WRITE_ASCII 0x248 ~~ 	     #8  // override
 WRITE_ASCII 0x2cc ~ADSTORMC~ #8  // dialogue
 WRITE_ASCII 0x280 ~ADSTORMC~ #32 //DV
 
 COPY_EXISTING ~CLDAD.cre~ ~override/ADSUNITE.cre~
-SAY NAME1 ~Sunite~
-SAY NAME2 ~Sunite~
+SAY NAME1 @892 /* ~Sunite~ */
+SAY NAME2 @892 /* ~Sunite~ */
 WRITE_ASCII 0x248 ~~ 	     #8  // override
 WRITE_ASCII 0x2cc ~ADSUNITE~ #8  // dialogue
 WRITE_ASCII 0x280 ~ADSUNITE~ #32 //DV
 
 COPY_EXISTING ~BMUGG1.cre~ ~override/ADMUGGER.cre~
-SAY NAME1 ~Mugger~
-SAY NAME2 ~Mugger~
+SAY NAME1 #14692 /* ~Mugger~ */
+SAY NAME2 #14692 /* ~Mugger~ */
 WRITE_ASCII 0x248 ~~ 	     #8  // override
 WRITE_ASCII 0x2cc ~ADMUGGER~ #8  // dialogue
 WRITE_ASCII 0x280 ~ADMUGGER~ #32 //DV
 
 COPY_EXISTING ~MOOK.cre~ ~override/ADMUGGF.cre~
-SAY NAME1 ~Mugger~
-SAY NAME2 ~Mugger~
+SAY NAME1 #14692 /* ~Mugger~ */
+SAY NAME2 #14692 /* ~Mugger~ */
 WRITE_ASCII 0x248 ~~ 	    #8  // override
 WRITE_ASCII 0x2cc ~ADMUGGF~ #8  // dialogue
 WRITE_ASCII 0x280 ~ADMUGGF~ #32 //DV
 
 COPY_EXISTING ~SLAVER4.cre~ ~override/ADMUGG1.cre~
-SAY NAME1 ~Mugger~
-SAY NAME2 ~Mugger~
+SAY NAME1 #14692 /* ~Mugger~ */
+SAY NAME2 #14692 /* ~Mugger~ */
 WRITE_ASCII 0x280 ~ADMUGG1~ #32 //DV
 
 COPY_EXISTING ~SLAVER4.cre~ ~override/ADMUGG2.cre~
-SAY NAME1 ~Mugger~
-SAY NAME2 ~Mugger~
+SAY NAME1 #14692 /* ~Mugger~ */
+SAY NAME2 #14692 /* ~Mugger~ */
 WRITE_ASCII 0x280 ~ADMUGG2~ #32 //DV
 
 COPY_EXISTING ~SKELE2.cre~ ~override/ADSKELET.cre~
-SAY NAME1 ~Skeleton~
-SAY NAME2 ~Skeleton~
+SAY NAME1 #8765 /* ~Skeleton~ */
+SAY NAME2 #8765 /* ~Skeleton~ */
 WRITE_ASCII 0x248 ~~ 	     #8  // override
 WRITE_ASCII 0x280 ~ADSKELET~ #32 //DV
 
