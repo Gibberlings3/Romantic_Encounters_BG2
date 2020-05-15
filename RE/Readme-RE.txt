@@ -1308,17 +1308,20 @@ winLAME					http://winlame.sourceforge.net
 VI. Version History
 ---------------------
 
+Version 14
+- Updated Russian translation
+
 Version 13
-- fixed error preventing encounter with Sendai
-- fixed installation of audio files on macOS
-- updated to WeiDU 246
+- Fixed error preventing encounter with Sendai
+- Fixed installation of audio files on macOS
+- Updated to WeiDU 246
 
 Version 12
-- removed portraits with unclear copyright status
-- added HANDLE_CHARSETS for BGII:EE compatibility
-- changed audio installation to HANDLE_AUDIO
-- added EET compatibility
-- added readme description to installation procedure (OSX / Linux)
+- Removed portraits with unclear copyright status
+- Added HANDLE_CHARSETS for BGII:EE compatibility
+- Changed audio installation to HANDLE_AUDIO
+- Added EET compatibility
+- Added readme description to installation procedure (OSX / Linux)
 - "Bjornin's Desire": moved Bjornin's spawn location a tiny little bit so 
 he doesn't stand right at the wall for switched area graphics in BGII:EE
 - "Eldoth's Exploits" (BGII:EE): lines about Skie will be skipped with 
