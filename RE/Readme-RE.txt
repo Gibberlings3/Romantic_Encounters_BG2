@@ -1310,7 +1310,9 @@ VI. Version History
 
 Version 15
 - all lines from tp2 traifyed
-- Updated Russian translation
+- Updated Russian translation, by Austin
+- Typo correction in French translation, by Gwendolyne
+- Added re.ini with mod metadata to support Project Infinity
 
 Version 14
 - Updated Russian translation
