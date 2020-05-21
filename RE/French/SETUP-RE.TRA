@@ -347,9 +347,15 @@ Les nouvelles aventures des Corthala à Padhiver se révélèrent encore plus passio
 
 <CHARNAME> et Valygar voyagèrent dans des terres lointaines. Ils renouvelèrent leurs voeux des années plus tard, à la Porte de Baldur, découvrirent des secrets près de l'Epine du Monde, et, à en croire les histoires de Volo, affrontèrent même la Dame de la Souffrance dans Sigil. Leurs amis n'acceptèrent pas tous leur mariage précipité facilement, mais la plupart restèrent proches de <CHARNAME>, toujours prêts à la retrouver et se plonger tête baissée dans une nouvelle aventure imprudente, Valygar le premier. Leur demeure dans le quartier du Gouvernement devint l'une des plus belles d'Athkatla, emplie de lumière, d'amour et de rires. Et leurs routes, entrelacées, se poursuivirent encore et toujours.~
 @97   = ~Minsc prend un bain, par Thimblerig~
-@98   = ~La Vanité de Nizidramanii'yt, par Thimblerig~
+@98   = ~La Vanite de Nizidramanii'yt, par Thimblerig~
 @99   = ~Un rendez-vous nocturne, par SisterVigilante~
 @888   = ~J'ai une offre pour qui veut l'entendre !~ 
+
+/* new for v13 */
+@889 = ~D'yana~
+@890 = ~Kait Shea~
+@891 = ~Holmar Sorensen~
+@892 = ~Sunite~
 
 
 // WeiDU prompts
